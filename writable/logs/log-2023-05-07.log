@@ -1,0 +1,22 @@
+CRITICAL - 2023-05-07 15:40:33 --> Undefined array key "lecturer_id "
+in APPPATH\Views\lecturerTableView.php on line 75.
+ 1 APPPATH\Views\lecturerTableView.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "lecturer_id "', 'APPPATH\\Views\\lecturerTableView.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\lecturerTableView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('lecturerTableView', [], true)
+ 5 APPPATH\Controllers\LecturerController.php(47): view('lecturerTableView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerController->showdata()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-07 18:04:37 --> Undefined array key "student_id "
+in APPPATH\Views\studentTableView.php on line 75.
+ 1 APPPATH\Views\studentTableView.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "student_id "', 'APPPATH\\Views\\studentTableView.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\studentTableView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('studentTableView', [], true)
+ 5 APPPATH\Controllers\StudentContoller.php(46): view('studentTableView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\StudentContoller->showdata()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentContoller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

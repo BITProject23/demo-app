@@ -1,0 +1,14 @@
+CRITICAL - 2023-05-02 06:20:23 --> Undefined property: App\Controllers\CourseController::$input
+in APPPATH\Controllers\CourseController.php on line 28.
+ 1 APPPATH\Controllers\CourseController.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\CourseController::$input', 'APPPATH\\Controllers\\CourseController.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CourseController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 18:26:28 --> Undefined property: App\Controllers\CourseController::$input
+in APPPATH\Controllers\CourseController.php on line 28.
+ 1 APPPATH\Controllers\CourseController.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\CourseController::$input', 'APPPATH\\Controllers\\CourseController.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CourseController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

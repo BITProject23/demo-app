@@ -10,3 +10,4 @@ class AboutController extends BaseController
         return view('aboutView');
     }
 }
+?>

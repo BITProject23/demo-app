@@ -7,6 +7,9 @@ class Home extends BaseController
     public function index()
     {
         //return view('welcome_message');
-        return view('layouts/class_layout');
+        return view('homeView');
+      
     }
+
 }
+?>

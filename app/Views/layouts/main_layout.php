@@ -1,327 +1,1363 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<!-- Mirrored from designreset.com/preview-equation/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2023 10:08:35 GMT -->
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.108.0">
-    <title> <?= $this->renderSection('title') ?></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title><?= $this->renderSection('title') ?></title>
+    <link rel="icon" type="image/x-icon" href="public/assets_1/assets/img/favicon.ico"/>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="public/assets_1/assets/css/loader.css" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link href="public/assets_1/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="public/assets_1/assets/css/plugins.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <link href="public/assets_1/assets/css/support-chat.css" rel="stylesheet" type="text/css" />
+    <link href="public/assets_1/plugins/maps/vector/jvector/jquery-jvectormap-2.0.3.css" rel="stylesheet" type="text/css" />
+    <link href="public/assets_1/plugins/charts/chartist/chartist.css" rel="stylesheet" type="text/css">
+    <link href="public/assets_1/assets/css/default-dashboard/style.css" rel="stylesheet" type="text/css" />    
+    <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->  
 
-    
+    <!--  BEGIN CUSTOM STYLE FILE of Forms buttons -->
+    <link href="public/assets_1/assets/css/ui-kit/buttons/creative/creative-material.css" rel="stylesheet" type="text/css" />
+    <!--  END CUSTOM STYLE FILE of Forms buttons -->
 
-    
+    <!-- BEGIN PAGE LEVEL STYLES of Tables -->
+    <link rel="stylesheet" type="text/css" href="public/assets_1/plugins/table/datatable/datatables.css">
+    <link rel="stylesheet" type="text/css" href="public/assets_1/plugins/table/datatable/custom_dt_ordering_sorting.css">
+    <!-- END PAGE LEVEL STYLES of Tables -->
 
-<link href="public/assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+</head>
 
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-    </style>
-
-    
-    <!-- Custom styles for this template -->
-    <link href="public/assets/dist/css/dashboard.css" rel="stylesheet">
-  </head>
-  <body>
-    
-<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">Company name</a>
-  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search" aria-label="Search">
-  <div class="navbar-nav">
-    <div class="nav-item text-nowrap">
-      <a class="nav-link px-3" href="#">Sign out</a>
+<body class="default-sidebar">
+    <div id="eq-loader">
+      <div class="eq-loader-div">
+          <div class="eq-loading dual-loader mx-auto mb-5"></div>
+      </div>
     </div>
-  </div>
-</header>
 
-<div class="container-fluid">
-  <div class="row">
-    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-      <div class="position-sticky pt-3 sidebar-sticky">
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">
-              <span data-feather="home" class="align-text-bottom"></span>
-              Dashboard
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file" class="align-text-bottom"></span>
-              Orders
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="shopping-cart" class="align-text-bottom"></span>
-              Products
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="users" class="align-text-bottom"></span>
-              Customers
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="bar-chart-2" class="align-text-bottom"></span>
-              Reports
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="layers" class="align-text-bottom"></span>
-              Integrations
-            </a>
-          </li>
-        </ul>
-
-        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase">
-          <span>Saved reports</span>
-          <a class="link-secondary" href="#" aria-label="Add a new report">
-            <span data-feather="plus-circle" class="align-text-bottom"></span>
-          </a>
-        </h6>
-        <ul class="nav flex-column mb-2">
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file-text" class="align-text-bottom"></span>
-              Current month
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file-text" class="align-text-bottom"></span>
-              Last quarter
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file-text" class="align-text-bottom"></span>
-              Social engagement
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file-text" class="align-text-bottom"></span>
-              Year-end sale
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Dashboard</h1>
-        <div class="btn-toolbar mb-2 mb-md-0">
-          <div class="btn-group me-2">
-            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
-            
-            <?= $this->renderSection('content') ?>
-
-            
-          </div>
-          <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-            <span data-feather="calendar" class="align-text-bottom"></span>
-            This week
-          </button>
+    <!-- Tab Mobile View Header -->
+    <header class="tabMobileView header navbar fixed-top d-lg-none">
+        <div class="nav-toggle">
+                <a href="javascript:void(0);" class="nav-link sidebarCollapse" data-placement="bottom">
+                    <i class="flaticon-menu-line-2"></i>
+                </a>
+            <a href="index-2.html" class=""> <img src="public/assets_1/assets/img/logo-3.png" class="img-fluid" alt="logo"></a>
         </div>
-      </div>
+        <ul class="nav navbar-nav">
+            <li class="nav-item d-lg-none"> 
+                <form class="form-inline justify-content-end" role="search">
+                    <input type="text" class="form-control search-form-control mr-3">
+                </form>
+            </li>
+        </ul>
+    </header>
+    <!-- Tab Mobile View Header -->
 
-      <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+    <!--  BEGIN NAVBAR  -->
+    <header class="header navbar fixed-top navbar-expand-sm">
+        <a href="javascript:void(0);" class="sidebarCollapse d-none d-lg-block" data-placement="bottom"><i class="flaticon-menu-line-2"></i></a>
 
-      <h2>Section title</h2>
-      <div class="table-responsive">
-        <table class="table table-striped table-sm">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Header</th>
-              <th scope="col">Header</th>
-              <th scope="col">Header</th>
-              <th scope="col">Header</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1,001</td>
-              <td>random</td>
-              <td>data</td>
-              <td>placeholder</td>
-              <td>text</td>
-            </tr>
-            <tr>
-              <td>1,002</td>
-              <td>placeholder</td>
-              <td>irrelevant</td>
-              <td>visual</td>
-              <td>layout</td>
-            </tr>
-            <tr>
-              <td>1,003</td>
-              <td>data</td>
-              <td>rich</td>
-              <td>dashboard</td>
-              <td>tabular</td>
-            </tr>
-            <tr>
-              <td>1,003</td>
-              <td>information</td>
-              <td>placeholder</td>
-              <td>illustrative</td>
-              <td>data</td>
-            </tr>
-            <tr>
-              <td>1,004</td>
-              <td>text</td>
-              <td>random</td>
-              <td>layout</td>
-              <td>dashboard</td>
-            </tr>
-            <tr>
-              <td>1,005</td>
-              <td>dashboard</td>
-              <td>irrelevant</td>
-              <td>text</td>
-              <td>placeholder</td>
-            </tr>
-            <tr>
-              <td>1,006</td>
-              <td>dashboard</td>
-              <td>illustrative</td>
-              <td>rich</td>
-              <td>data</td>
-            </tr>
-            <tr>
-              <td>1,007</td>
-              <td>placeholder</td>
-              <td>tabular</td>
-              <td>information</td>
-              <td>irrelevant</td>
-            </tr>
-            <tr>
-              <td>1,008</td>
-              <td>random</td>
-              <td>data</td>
-              <td>placeholder</td>
-              <td>text</td>
-            </tr>
-            <tr>
-              <td>1,009</td>
-              <td>placeholder</td>
-              <td>irrelevant</td>
-              <td>visual</td>
-              <td>layout</td>
-            </tr>
-            <tr>
-              <td>1,010</td>
-              <td>data</td>
-              <td>rich</td>
-              <td>dashboard</td>
-              <td>tabular</td>
-            </tr>
-            <tr>
-              <td>1,011</td>
-              <td>information</td>
-              <td>placeholder</td>
-              <td>illustrative</td>
-              <td>data</td>
-            </tr>
-            <tr>
-              <td>1,012</td>
-              <td>text</td>
-              <td>placeholder</td>
-              <td>layout</td>
-              <td>dashboard</td>
-            </tr>
-            <tr>
-              <td>1,013</td>
-              <td>dashboard</td>
-              <td>irrelevant</td>
-              <td>text</td>
-              <td>visual</td>
-            </tr>
-            <tr>
-              <td>1,014</td>
-              <td>dashboard</td>
-              <td>illustrative</td>
-              <td>rich</td>
-              <td>data</td>
-            </tr>
-            <tr>
-              <td>1,015</td>
-              <td>random</td>
-              <td>tabular</td>
-              <td>information</td>
-              <td>text</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </main>
-  </div>
-</div>
+        <ul class="navbar-nav flex-row ml-lg-auto">
+            
+            <li class="nav-item  d-lg-block d-none">
+                <form class="form-inline" role="search">
+                    <input type="text" class="form-control search-form-control" placeholder="Search...">
+                </form>
+            </li>
+
+            <li class="nav-item dropdown user-profile-dropdown ml-lg-0 mr-lg-2 ml-3 order-lg-0 order-1">
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="flaticon-user-12"></span>
+                </a>
+                <div class="dropdown-menu  position-absolute" aria-labelledby="userProfileDropdown">
+                    <a class="dropdown-item" href="user_profile.html">
+                        <i class="mr-1 flaticon-user-6"></i> <span>My Profile</span>
+                    </a>
+                    <a class="dropdown-item" href="apps_scheduler.html">
+                        <i class="mr-1 flaticon-calendar-bold"></i> <span>My Schedule</span>
+                    </a>
+                    <a class="dropdown-item" href="apps_mailbox.html">
+                        <i class="mr-1 flaticon-email-fill-1"></i> <span>My Inbox</span>
+                    </a>
+                    <a class="dropdown-item" href="user_lockscreen_1.html">
+                        <i class="mr-1 flaticon-lock-2"></i> <span>Lock Screen</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="<?=base_url()?>/logout">
+                        <i class="mr-1 flaticon-power-button"></i> <span>Log Out</span>
+                    </a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown cs-toggle order-lg-0 order-3"> 
+                <a href="#" class="nav-link toggle-control-sidebar suffle">
+                    <span class="flaticon-menu-dot-fill d-lg-inline-block d-none"></span>
+                    <span class="flaticon-dots d-lg-none"></span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <!--  END NAVBAR  -->
+
+    <!--  BEGIN MAIN CONTAINER  -->
+    <div class="main-container" id="container">
+
+        <div class="overlay"></div>
+        <div class="cs-overlay"></div>
+
+        <!--  BEGIN SIDEBAR  -->
+
+        <div class="sidebar-wrapper sidebar-theme">
+            
+            <div id="dismiss" class="d-lg-none"><i class="flaticon-cancel-12"></i></div>
+            
+            <nav id="sidebar">
+
+                <ul class="navbar-nav theme-brand flex-row  d-none d-lg-flex">
+                    <li class="nav-item d-flex">
+                        <a href="index-2.html" class="navbar-brand">
+                            <img src="public/assets_1/assets/img/logo-3.png" class="img-fluid" alt="logo">
+                        </a>
+                        <p class="border-underline"></p>
+                    </li>
+                    <li class="nav-item theme-text">
+                        <a href="index-2.html" class="nav-link"> Demo </a>
+                    </li>
+                </ul>
 
 
-    <script src="public/assets/dist/js/bootstrap.bundle.min.js"></script>
+                <ul class="list-unstyled menu-categories" id="accordionExample">
+                    <li class="menu">
+                        <a href="#dashboard" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
+                            <div class="">
+                                <i class="flaticon-computer-6 ml-3"></i>
+                                <span>Dashboard</span>
+                            </div>
 
-      <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="dashboard.js"></script>
-  </body>
+                            <div>
+                                <span class="badge badge-pill badge-secondary mr-2">7</span>
+                            </div>
+                        </a>
+                        
+                    </li>
+                    <li class="menu">
+                        <a href="#ecommerce" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <i class="flaticon-avatar"></i>
+                                <span>Lecturer Management </span>
+                            </div>
+                            <div>
+                                <i class="flaticon-right-arrow"></i>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="ecommerce" data-parent="#accordionExample">
+                            <li>
+                                <a href="<?=base_url()?>/Lecturer_add"> Add Lecturer </a>
+                            </li>
+                            <li>
+                                <a href="<?=base_url()?>/Lecturer_View"> View Lecturer </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#ui-features" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <i class="flaticon-user-group"></i>
+                                <span>Student Management</span>
+                            </div>
+                            <div>
+                                <i class="flaticon-right-arrow"></i>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="ui-features"  data-parent="#accordionExample">
+                            <li>
+                                <a href="<?=base_url()?>/Student_add"> Add Student </a>
+                            </li>
+                            <li>
+                                <a href="<?=base_url()?>/Student_View"> View Student </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#components" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <i class="flaticon-crm-screen"></i>
+                                <span>Course Management</span>
+                            </div>
+                            <div>
+                                <i class="flaticon-right-arrow"></i>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="components" data-parent="#accordionExample">
+                            <li>
+                                <a href="<?=base_url()?>/Course_add"> Add Course </a>
+                            </li>
+                            <li>
+                                <a href="<?=base_url()?>/Course_View"> View Course </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#forms" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <i class="flaticon-copy-line"></i>
+                                <span>Subject Management</span>
+                            </div>
+                            <div>
+                                <i class="flaticon-right-arrow"></i>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="forms" data-parent="#accordionExample">
+                            
+                            <li>
+                                <a href="<?=base_url()?>/Subject_add"> Add Subject </a>
+                            </li>
+
+
+                            <li>
+                                <a href="<?=base_url()?>/Subject_View"> View Subject </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#elements" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <i class="flaticon-layers"></i>
+                                <span>Batch Management</span>
+                            </div>
+                            <div>
+                                <i class="flaticon-right-arrow"></i>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="elements" data-parent="#accordionExample">
+
+                            <li>
+                                <a href="<?=base_url()?>/Batch"> Add Batch </a>
+                            </li>
+
+
+                            <li>
+                                <a href="element_list.html"> View Batch </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#maps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <i class="flaticon-notes-2"></i>
+                                <span>Course-Subject</span>
+                            </div>
+                            <div>
+                                <i class="flaticon-right-arrow"></i>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="maps"  data-parent="#accordionExample">
+                            <li>
+                                <a href=" ">Course-Subject Assign</a>
+                            </li>
+                            <li>
+                                <a href=" "> View Course-Subject</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#mailing" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <i class="flaticon-user-group-2"></i>
+                                <span>Batch-Student</span>
+                            </div>
+                            <div>
+                                <i class="flaticon-right-arrow"></i>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="mailing"  data-parent="#accordionExample">
+                            <li>
+                                <a href=" ">Batch-Student Assign</a>
+                            </li>
+                            <li>
+                                <a href=" "> View Batch-Student</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#modules" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <i class="flaticon-crm-screen-line "></i>
+                                <span>Course-Lecturer</span>
+                            </div>
+                            <div>
+                                <i class="flaticon-right-arrow"></i>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="modules"  data-parent="#accordionExample">
+                            <li>
+                                <a href=" ">Course-Lecturer Assign</a>
+                            </li>
+                            <li>
+                                <a href=" "> View Course-Lecturer</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#editors" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <i class="flaticon-employees"></i>
+                                <span>Attendance Management</span>
+                            </div>
+                            <div>
+                                <i class="flaticon-right-arrow"></i>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="editors" data-parent="#accordionExample">
+
+                            <li>
+                                <a href="editor_tinymce.html"> View Attendance </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#tables" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <i class="flaticon-table"></i>
+                                <span>TimeTable Management</span>
+                            </div>
+                            <div>
+                                <i class="flaticon-right-arrow"></i>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="tables" data-parent="#accordionExample">
+
+                            <li>
+                                <a href="<?=base_url()?>/Timetable"> Add classes to timetable </a>
+                            </li>
+
+                            <li>
+                                <a href="table_tablesaw.html"> View Timetable</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#charts" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <i class="flaticon-credit-card-1"></i>
+                                <span>Payments</span>
+                            </div>
+                            <div>
+                                <i class="flaticon-right-arrow"></i>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="charts" data-parent="#accordionExample">
+                            
+                            
+                            <li>
+                                <a href="<?=base_url()?>/Payment"> payment View </a>
+                            </li>                            
+                        </ul>
+                    </li>
+
+                    
+
+                    <li class="menu">
+                        <a href="#users" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <i class="flaticon-user-6"></i>
+                                <span>Users</span>
+                            </div>
+                            <div>
+                                <i class="flaticon-right-arrow"></i>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="users" data-parent="#accordionExample">
+                            <li>
+                                <a href="user_profile.html"> Profile </a>
+                            </li>
+                            <li>
+                                <a href="user_account_setting.html"> Account Settings </a>
+                            </li>
+
+                            <li>
+                                <a href="#user-login" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Login <i class="flaticon-right-arrow"></i> </a>
+                                <ul class="collapse list-unstyled sub-submenu" id="user-login" data-parent="#users"> 
+                                    <li>
+                                        <a href="user_login_1.html"> Login 1 </a>
+                                    </li>
+                                    <li>
+                                        <a href="user_login_2.html"> Login 2 </a>
+                                    </li>
+                                    <li>
+                                        <a href="user_login_3.html"> Login 3 </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#user-register" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Register <i class="flaticon-right-arrow"></i> </a>
+                                <ul class="collapse list-unstyled sub-submenu" id="user-register" data-parent="#users"> 
+                                    <li>
+                                        <a href="user_register_1.html"> Register 1 </a>
+                                    </li>
+                                    <li>
+                                        <a href="user_register_2.html"> Register 2 </a>
+                                    </li>
+                                    <li>
+                                        <a href="user_register_3.html"> Register 3 </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#user-passRecovery" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Password Recovery <i class="flaticon-right-arrow"></i> </a>
+                                <ul class="collapse list-unstyled sub-submenu" id="user-passRecovery" data-parent="#users"> 
+                                    <li>
+                                        <a href="user_pass_recovery_1.html"> Password Recovery 1 </a>
+                                    </li>
+                                    <li>
+                                        <a href="user_pass_recovery_2.html"> Password Recovery 2 </a>
+                                    </li>
+                                    <li>
+                                        <a href="user_pass_recovery_3.html"> Password Recovery 3 </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#user-lockscreen" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Lockscreen <i class="flaticon-right-arrow"></i> </a>
+                                <ul class="collapse list-unstyled sub-submenu" id="user-lockscreen" data-parent="#users"> 
+                                    <li>
+                                        <a href="user_lockscreen_1.html"> Lockscreen 1 </a>
+                                    </li>
+                                    <li>
+                                        <a href="user_lockscreen_2.html"> Lockscreen 2 </a>
+                                    </li>
+                                    <li>
+                                        <a href="user_lockscreen_3.html"> Lockscreen 3 </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <!--  END SIDEBAR  -->
+        
+        <!--  BEGIN CONTENT PART  -->
+
+        <?= $this->renderSection('content') ?>
+
+        <!--  END CONTENT PART  -->
+
+    </div>
+    <!-- END MAIN CONTAINER -->
+
+    
+    <!--  BEGIN FOOTER  -->
+    <footer class="footer-section theme-footer">
+
+        <div class="footer-section-1  sidebar-theme">
+            
+        </div>
+
+        <div class="footer-section-2 container-fluid">
+            <div class="row">
+                <div id="toggle-grid" class="col-xl-7 col-md-6 col-sm-6 col-12 text-sm-left text-center">
+                    <ul class="list-inline links ml-sm-5">
+                        <li class="list-inline-item mr-3">
+                            <a href="javascript:void(0);">Home</a>
+                        </li>
+                        <li class="list-inline-item mr-3">
+                            <a href="javascript:void(0);">Blog</a>
+                        </li>
+                        <li class="list-inline-item mr-3">
+                            <a href="javascript:void(0);">About</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="javascript:void(0);">Buy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-5 col-md-6 col-sm-6 col-12">
+                    <ul class="list-inline mb-0 d-flex justify-content-sm-end justify-content-center mr-sm-3 ml-sm-0 mx-3">
+                        <li class="list-inline-item  mr-3">
+                            <p class="bottom-footer">&#xA9;  <a target="_blank" href="https://designreset.com/equation">Anushika Rodrigo</a></p>
+                        </li>
+                        <li class="list-inline-item align-self-center">
+                            <div class="scrollTop"><i class="flaticon-up-arrow-fill-1"></i></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--  END FOOTER  -->
+
+    <!--  BEGIN CONTROL SIDEBAR  -->
+    <aside class="control-sidebar control-sidebar-light-color cs-content">
+        <div class="">
+
+            <div class="row">
+                <div class="col-md-12 text-right">
+                    <div class="close-sidebar">
+                        <i class="flaticon-close-fill p-3 toggle-control-sidebar"></i>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="usr-info text-center mb-5">
+                        <img alt="admin-profile" src="public/assets_1/assets/img/c-14.jpg" class="img-fluid rounded-circle mb-3">
+                        <div class=" mt-2">
+                            <h5 class="usr-name mb-0">Linda Nelson</h5>
+                            <p class="usr-occupation mb-0 mt-1">Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-navigation-section text-center mb-5 mt-3">
+                <ul class="nav nav-tabs nav-justified mx-2">
+                    <li class="nav-item">
+                        <a data-toggle="tab" href="#feeds-tab" class="nav-link rounded-circle active show">
+                            <p class="mb-0">Task</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="tab" href="#friends-tab" class="nav-link rounded-circle">
+                            <p class="mb-0">Friends</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="tab" href="#alerts-tab" class="nav-link rounded-circle">
+                            <p class="mb-0">Settings</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-content">
+
+                <div id="feeds-tab" class="tab-pane tab-1 fade show active">
+                    
+                    <div class="tasks">
+
+                        <div class="recent">
+
+                            <div class="d-flex justify-content-between mb-5">
+                                
+                                <div class="icon">
+                                    <i class="flaticon-clock-1"></i>
+                                </div>
+
+
+                                <div>
+                                    <span class="">Today</span> <span class="notification-count ml-2">12</span>
+                                </div>
+
+                                <div>
+                                    <p class="r-view-all">See all</p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="media">
+                                <img alt="admin-profile" src="public/assets_1/assets/img/c-13.jpg" class="img-fluid mr-3">
+                                <div class="media-body">
+                                    <h6 class="mb-0">Sean Freeman</h6>
+                                    <p>has replied your mail.</p>
+                                    <p class="meta-time">7 mins ago</p>
+                                </div>
+                                <i class="flaticon-close-fill remove-noti"></i>
+                            </div>
+
+                            <div class="media">
+                                <img alt="admin-profile" src="public/assets_1/assets/img/c-15.jpg" class="img-fluid mr-3">
+                                <div class="media-body">
+                                    <h6 class="mb-0">Laurie Fox</h6>
+                                    <p>comment to your posts.</p>
+                                    <p class="meta-time">13 mins ago</p>
+                                </div>
+                                <i class="flaticon-close-fill remove-noti"></i>
+                            </div>
+
+                            <div class="media system-notify">
+                                <i class="flaticon-settings-7  mr-3"></i>
+                                <div class="media-body">
+                                    <h6 class="mb-0">System Notifications</h6>
+                                    <p>has replied your mail.</p>
+                                    <p class="meta-time">7 mins ago</p>
+                                </div>
+                                <i class="flaticon-close-fill remove-noti"></i>
+                            </div>
+
+
+                            <div class="media mail-notify">
+                                <i class="flaticon-folder-fill-1  mr-3"></i>
+                                <div class="media-body">
+                                    <h6 class="mb-0">Ricky Turner</h6>
+                                    <p>has replied your mails.</p>
+                                    <p class="meta-time">7 mins ago</p>
+                                </div>
+                                <i class="flaticon-close-fill remove-noti"></i>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="today mt-5">
+                            
+                            <div class="d-flex justify-content-between mb-5">
+                                
+                                <div class="icon">
+                                    <i class="flaticon-bell-fill-1"></i>
+                                </div>
+                                <div>
+                                    <span>Yesterday</span> <span class="notification-count ml-2">8</span>
+                                </div>
+
+                                <div>
+                                    <p class="r-view-all">See all</p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="media">
+                                <img alt="admin-profile" src="public/assets_1/assets/img/c-7.jpg" class="img-fluid mr-3">
+                                <div class="media-body">
+                                    <h6 class="mb-0">Angie Lamb</h6>
+                                    <p>has replied your mail.</p>
+                                    <p class="meta-time">7 mins ago</p>
+                                </div>
+                                <i class="flaticon-close-fill  remove-noti"></i>
+                            </div>
+
+                            <div class="media">
+                                <img alt="admin-profile" src="public/assets_1/assets/img/c-5.jpg" class="img-fluid mr-3">
+                                <div class="media-body">
+                                    <h6 class="mb-0">Amy Diaz</h6>
+                                    <p>comment to your posts.</p>
+                                    <p class="meta-time">13 mins ago</p>
+                                </div>
+                                <i class="flaticon-close-fill  remove-noti"></i>
+                            </div>
+
+                            <div class="media">
+                                <img alt="admin-profile" src="public/assets_1/assets/img/c-7.jpg" class="img-fluid mr-3">
+                                <div class="media-body">
+                                    <h6 class="mb-0">Irene Collins</h6>
+                                    <p>has replied your mail.</p>
+                                    <p class="meta-time">7 mins ago</p>
+                                </div>
+                                <i class="flaticon-close-fill  remove-noti"></i>
+                            </div>
+
+
+                            <div class="media">
+                                <img alt="admin-profile" src="public/assets_1/assets/img/c-9.jpg" class="img-fluid mr-3">
+                                <div class="media-body">
+                                    <h6 class="mb-0">Lila Perry</h6>
+                                    <p>has replied your mails.</p>
+                                    <p class="meta-time">7 mins ago</p>
+                                </div>
+                                <i class="flaticon-close-fill  remove-noti"></i>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="task-stats mt-5">
+                            
+                            <div class="t-s-header mb-5">
+                                <div class="row">
+                                    <div class="col-md-10 text-center">
+                                        <h6><span>Task Statistics</span></h6>
+                                    </div>
+                                    <div class="col-md-2 text-center">
+                                        <i class="flaticon-close-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="t-s-body">
+                                
+                                <div class="row">
+
+                                    <div class="col-md-12">
+                                        
+                                        <div class="d-flex justify-content-between">
+                                            <p>Feature Development</p>
+                                            <p>70%</p>
+                                        </div>
+
+                                        <div class="progress  br-30 mb-4">
+                                            <div class="progress-bar  br-30 bg-secondary" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        
+                                        <div class="d-flex justify-content-between mt-3">
+                                            <p>Uploading files</p>
+                                            <p>30%</p>
+                                        </div>
+
+                                        <div class="progress  br-30 mb-4">
+                                            <div class="progress-bar  br-30 bg-danger" role="progressbar" style="width: 30%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        
+                                        <div class="d-flex justify-content-between mt-3">
+                                            <p>Total Progress</p>
+                                            <p>86%</p>
+                                        </div>
+
+                                        <div class="progress  br-30">
+                                            <div class="progress-bar  br-30 bg-info" role="progressbar" style="width: 86%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="text-center mt-5 mb-5">
+                                    <button class="btn btn-primary btn-rounded mb-5">See all</button>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="friends-tab" class="tab-pane tab-2 fade">
+
+                    <div class="friends">
+
+                        <div class="recent">
+
+                            <div class="t-s-header mb-5">
+
+                                <div class="row">
+                                    
+                                    <div class="col-md-8 text-center">
+                                        <h6>
+                                            <span>New Activity</span>
+                                        </h6>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div>
+                                            <p>See all</p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <ul class="list-inline text-center mb-5">
+                                
+                                <li class="list-inline-item">
+                                    <img alt="admin-profile" src="public/assets_1/assets/img/c-1.jpg">
+                                    <span class="badge badge-pill badge-new">8</span>
+                                </li>
+
+                                <li class="list-inline-item">
+                                    <img alt="admin-profile" src="public/assets_1/assets/img/c-2.jpg">
+                                </li>
+
+                                <li class="list-inline-item">
+                                    <img alt="admin-profile" src="public/assets_1/assets/img/c-13.jpg">
+                                </li>
+
+                                <li class="list-inline-item">
+                                    <img alt="admin-profile" src="public/assets_1/assets/img/c-3.jpg">
+                                    <span class="badge badge-pill badge-new">5</span>
+                                </li>
+
+                                <li class="list-inline-item">
+                                    <img alt="admin-profile" src="public/assets_1/assets/img/c-4.jpg">
+                                </li>
+
+                            </ul>
+
+
+                            <div class="friend-request">
+                                
+                                <div class="d-flex justify-content-between header mb-5">
+                                    
+                                    <div class="media">
+                                        <i class="flaticon-user-plus mr-3"></i>
+                                        <div class="media-body">
+                                            <h6 class="mt-1">Friend request</h6>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <p class="mb-0 mt-2">See all</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="media">
+                                    <img alt="admin-profile" src="public/assets_1/assets/img/c-15.jpg" class="img-fluid mr-3">
+                                    <div class="media-body">
+                                        <h6>Kara Young</h6>
+                                        <p>2 mins ago</p>
+                                    </div>
+                                    <i class="flaticon-fill-tick mr-2"></i>
+                                    <i class="flaticon-close-fill"></i>
+                                </div>
+
+                                <div class="media mt-2">
+                                    <img alt="admin-profile" src="public/assets_1/assets/img/P-2.jpg" class="img-fluid mr-3">
+                                    <div class="media-body">
+                                        <h6>Justin Cross</h6>
+                                        <p>5 mins ago</p>
+                                    </div>
+                                    <i class="flaticon-fill-tick mr-2"></i>
+                                    <i class="flaticon-close-fill"></i>
+                                </div>
+
+                                <div class="media mt-2">
+                                    <img alt="admin-profile" src="public/assets_1/assets/img/c-5.jpg" class="img-fluid mr-3">
+                                    <div class="media-body">
+                                        <h6>Amy Diaz</h6>
+                                        <p>7 mins ago</p>
+                                    </div>
+                                    <i class="flaticon-fill-tick mr-2"></i>
+                                    <i class="flaticon-close-fill"></i>
+                                </div>
+
+
+                                <div class="media mt-2">
+                                    <img alt="admin-profile" src="public/assets_1/assets/img/c-6.jpg" class="img-fluid mr-3">
+                                    <div class="media-body">
+                                        <h6>Ernest Reeves</h6>
+                                        <p>10 mins ago</p>
+                                    </div>
+                                    <i class="flaticon-fill-tick mr-2"></i>
+                                    <i class="flaticon-close-fill"></i>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="online mt-5">
+                            
+                            <div class="t-s-header mb-5">
+
+                                <div class="row">
+                                    
+                                    <div class="col-md-8 text-center">
+                                        <h6>
+                                            <span>Online</span>
+                                        </h6>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div>
+                                            <p class="mb-0 mt-0">See all</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="media d-block d-sm-flex text-sm-left text-center">
+                                <img alt="admin-profile" class="mr-sm-3 mb-sm-0 mb-3" src="public/assets_1/assets/img/c-7.jpg">
+                                <div class="media-body mb-4">
+                                    <h6 class="media-heading mt-0"><span class="media-title"> Irene Collins</span><span class="badge badge-info float-sm-right ml-2">9</span></h6>
+                                    <p class="media-text">
+                                        Cras sit amet gravida nulla.
+                                    </p><p class="meta-time">7 mins ago</p>
+                                </div>
+                            </div>
+
+
+                            <div class="media d-block d-sm-flex text-sm-left text-center">
+                                <img alt="admin-profile" class="mr-sm-3 mb-sm-0 mb-3 rounded" src="public/assets_1/assets/img/c-8.jpg">
+                                <div class="media-body mb-4">
+                                    <h6 class="media-heading mt-0"><span class="media-title"> Thomas Granger</span><span class="badge badge-secondary float-sm-right ml-2">9</span></h6>
+                                    <p class="media-text">
+                                        Cras sit amet gravida nulla.
+                                    </p><p class="meta-time">13 mins ago</p>
+                                </div>
+                            </div>
+
+
+                            <div class="media d-block d-sm-flex text-sm-left text-center">
+                                <img alt="admin-profile" class="mr-sm-3 mb-sm-0 mb-3 rounded-circle" src="public/assets_1/assets/img/c-9.jpg">
+                                <div class="media-body mb-4">
+                                    <h6 class="media-heading mt-0"><span class="media-title"> Grace Roberts</span><span class="badge badge-warning float-sm-right ml-2">9</span></h6>
+                                    <p class="media-text">
+                                        Cras sit amet gravida nulla.
+                                    </p><p class="meta-time">7 mins ago</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="away-stats">
+                            
+
+                            <div class="t-s-header mb-5 mt-5">
+
+                                <div class="row">
+                                        
+                                    <div class="col-md-12">
+                                        <h6>
+                                            <span>Away</span>
+                                        </h6>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="a-s-media mb-5">
+                                    
+                                <div class="media mb-3">
+                                    <div class="profile-img mr-3">
+                                        <img alt="admin-profile" src="public/assets_1/assets/img/profile-16.jpg" class="img-fluid">
+                                    </div>
+                                    <div class="media-body">
+                                        <h6 class="mt-2">Traci Lopez</h6>
+                                    </div>
+                                </div>
+                                
+                                <div class="media mb-3">
+                                    <div class="profile-img mr-3">
+                                        <img alt="admin-profile" src="public/assets_1/assets/img/c-11.jpg" class="img-fluid">
+                                    </div>
+                                    <div class="media-body">
+                                        <h6 class="mt-2">Kristen Beck</h6>
+                                    </div>
+                                </div>
+                                
+                                <div class="media mb-5">
+                                    <div class="profile-img mr-3">
+                                        <img alt="admin-profile" src="public/assets_1/assets/img/c-12.jpg" class="img-fluid">
+                                    </div>
+                                    <div class="media-body">
+                                        <h6 class="mt-2">Keith Foster</h6>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div id="alerts-tab" class="tab-pane tab-3 fade">
+
+                    <div class="settings">
+
+                        <div class="admin-setting">
+
+
+                            <div class="d-flex justify-content-between">
+                                        
+                                <div class="media">
+                                    <i class="flaticon-gear-5 mr-3"></i>
+                                    <div class="media-body">
+                                        <h6 class="mt-2">Admin settings</h6>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <p class="mb-0 mt-2">See all</p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="mb-3 mt-5">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="mb-0 mt-1">Show notifications</h6>
+                                    <label class="custom-control material-switch mb-4 material-s-rounded material-primary">
+                                        <input type="checkbox" class="material-switch-control-input" checked="">
+                                        <span class="material-switch-control-indicator"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="mb-0 mt-1">Enable auto logout</h6>
+                                    <label class="custom-control material-switch mb-4 material-s-rounded material-primary">
+                                        <input type="checkbox" class="material-switch-control-input" checked="">
+                                        <span class="material-switch-control-indicator"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="mb-0 mt-1">Show recent activity</h6>
+                                    <label class="custom-control material-switch mb-4 material-s-rounded material-primary">
+                                        <input type="checkbox" class="material-switch-control-input" checked="">
+                                        <span class="material-switch-control-indicator"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="mb-0 mt-1">Chat history</h6>
+                                    <label class="custom-control material-switch mb-4 material-s-rounded material-primary">
+                                        <input type="checkbox" class="material-switch-control-input" checked="">
+                                        <span class="material-switch-control-indicator"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="mb-0 mt-1">Users activity</h6>
+                                    <label class="custom-control material-switch mb-4 material-s-rounded material-primary">
+                                        <input type="checkbox" class="material-switch-control-input" checked="">
+                                        <span class="material-switch-control-indicator"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="mb-0 mt-1">Orders history</h6>
+                                    <label class="custom-control material-switch mb-4 material-s-rounded material-primary">
+                                        <input type="checkbox" class="material-switch-control-input" checked="">
+                                        <span class="material-switch-control-indicator"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="mb-0 mt-1">Show task statistics</h6>
+                                    <label class="custom-control material-switch mb-4 material-s-rounded material-primary">
+                                        <input type="checkbox" class="material-switch-control-input" checked="">
+                                        <span class="material-switch-control-indicator"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="general-setting mt-5">
+
+
+                            <div class="d-flex justify-content-between mb-5">
+                                        
+                                <div class="media">
+                                    <i class="flaticon-gear-5 mr-3"></i>
+                                    <div class="media-body">
+                                        <h6 class="mt-2">General Settings</h6>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="media mb-4">
+                                <i class="flaticon-facebook-logo fb"></i>
+                                <div class="media-body d-flex justify-content-around">
+                                    <h6 class="mb-0 mt-2">Show notfications</h6>
+                                    <label class="custom-control material-switch mb-4  mt-2 material-s-rounded material-primary">
+                                        <input type="checkbox" class="material-switch-control-input" checked="">
+                                        <span class="material-switch-control-indicator"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+
+                            <div class="media mb-4">
+                                <i class="flaticon-dribbble-bold dribbble"></i>
+                                <div class="media-body d-flex justify-content-around">
+                                    <h6 class="mb-0 mt-2">Show notfications</h6>
+                                    <label class="custom-control material-switch mb-4  mt-2 material-s-rounded material-primary">
+                                        <input type="checkbox" class="material-switch-control-input" checked="">
+                                        <span class="material-switch-control-indicator"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+
+                            <div class="media mb-4">
+                                <i class="flaticon-linkedin-logo lin"></i>
+                                <div class="media-body d-flex justify-content-around">
+                                    <h6 class="mb-0 mt-2">Show notfications</h6>
+                                    <label class="custom-control material-switch mb-4  mt-2 material-s-rounded material-primary">
+                                        <input type="checkbox" class="material-switch-control-input" checked="">
+                                        <span class="material-switch-control-indicator"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+
+                            <div class="media mb-4">
+                                <i class="flaticon-twitter-logo tweet"></i>
+                                <div class="media-body d-flex justify-content-around">
+                                    <h6 class="mb-0 mt-2">Show notfications</h6>
+                                    <label class="custom-control material-switch mb-4  mt-2 material-s-rounded material-primary">
+                                        <input type="checkbox" class="material-switch-control-input" checked="">
+                                        <span class="material-switch-control-indicator"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+
+                            <div class="media mb-4">
+                                <i class="flaticon-behance-logo behance"></i>
+                                <div class="media-body d-flex justify-content-around">
+                                    <h6 class="mb-0 mt-2">Show notfications</h6>
+                                    <label class="custom-control material-switch mb-4  mt-2 material-s-rounded material-primary">
+                                        <input type="checkbox" class="material-switch-control-input" checked="">
+                                        <span class="material-switch-control-indicator"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+
+
+                            
+
+
+                            <div class="chk-settings mt-5">
+                                
+                                <div class="media mb-4 ">
+                                    <div class="media-body">
+                                        <h6 class="media-heading mt-0"><span class="media-title">Report panel usage</span>
+                                        </h6>
+                                        <p class="media-text">
+                                            Show information on any malicious activity
+                                        </p>
+                                    </div>
+                                    <div class="n-chk">
+                                        <label class="new-control new-checkbox checkbox-secondary mr-1">
+                                          <input type="checkbox" class="new-control-input" checked>
+                                          <span class="new-control-indicator"></span><span class="invisible">C</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+
+                                <div class="media mb-4 ">
+                                    <div class="media-body">
+                                        <h6 class="media-heading mt-0"><span class="media-title">Allow mail redirect</span>
+                                        </h6>
+                                        <p class="media-text">
+                                            Redirect mail through exchange server
+                                        </p>
+                                    </div>
+                                    <div class="n-chk">
+                                        <label class="new-control new-checkbox checkbox-secondary mr-1">
+                                          <input type="checkbox" class="new-control-input">
+                                          <span class="new-control-indicator"></span><span class="invisible">C</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+
+                                <div class="media mb-4 ">
+                                    <div class="media-body">
+                                        <h6 class="media-heading mt-0"><span class="media-title"> Show author name in posts</span>
+                                        </h6>
+                                        <p class="media-text">
+                                            Allow the user to show his name in blog posts
+                                        </p>
+                                    </div>
+                                    <div class="n-chk">
+                                        <label class="new-control new-checkbox checkbox-secondary mr-1">
+                                          <input type="checkbox" class="new-control-input" checked>
+                                          <span class="new-control-indicator"></span><span class="invisible">C</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+
+                                <div class="media mb-4 ">
+                                    <div class="media-body">
+                                        <h6 class="media-heading mt-0"><span class="media-title"> Sync phone when connected to the PC</span>
+                                        </h6>
+                                        <p class="media-text">
+                                            Connect smart phone automatically and sync with user profile
+                                        </p>
+                                    </div>
+                                    <div class="n-chk">
+                                        <label class="new-control new-checkbox checkbox-secondary mr-1">
+                                          <input type="checkbox" class="new-control-input" checked>
+                                          <span class="new-control-indicator"></span><span class="invisible">C</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="mt-5 delete-chat mb-5">
+                                
+                                <div class="media mb-4">
+                                    <div class="media-body">
+                                        <h6 class="media-heading mt-0"><span class="media-title"> Delete chat history</span>
+                                        </h6>
+                                    </div>
+                                    <i class="del-chat-his flaticon-delete-1 mb-4"></i>
+
+                                </div>
+
+                            </div>
+
+
+                            
+
+                            <div class="mt-5 usr-status mb-5">
+                                
+                                <div class="d-flex justify-content-between mb-5">
+                                        
+                                    <div class="media">
+                                        <i class="flaticon-chat-fill mr-3"></i>
+                                        <div class="media-body">
+                                            <h6 class="mt-2">Status</h6>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="media mb-2 stats">
+                                    <div class="media-body">
+                                        <h6 class="media-heading mt-0"><span class="media-title"> Online</span>
+                                        </h6>
+                                    </div>
+
+                                    <div class="n-chk">
+                                        <label class="new-control new-checkbox  mr-1  checkbox-outline-success new-checkbox-rounded">
+                                          <input type="checkbox" class="chb new-control-input">
+                                          <span class="new-control-indicator"></span><span class="invisible">C</span>
+                                        </label>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="media mb-2 stats">
+                                    <div class="media-body">
+                                        <h6 class="media-heading mt-0"><span class="media-title"> Offline</span>
+                                        </h6>
+                                    </div>
+
+                                    <div class="n-chk">
+                                        <label class="new-control new-checkbox  mr-1  checkbox-outline-default new-checkbox-rounded">
+                                          <input type="checkbox" class="chb new-control-input">
+                                          <span class="new-control-indicator"></span><span class="invisible">C</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+
+                                <div class="media mb-5 stats">
+                                    <div class="media-body mb-5">
+                                        <h6 class="media-heading mt-0"><span class="media-title"> Away</span>
+                                        </h6>
+                                    </div>
+
+                                    <div class="n-chk">
+                                        <label class="new-control new-checkbox  mr-1  checkbox-outline-warning new-checkbox-rounded">
+                                          <input type="checkbox" class="chb new-control-input">
+                                          <span class="new-control-indicator"></span><span class="invisible">C</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </aside>
+    <!--  END CONTROL SIDEBAR  -->
+
+    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="public/assets_1/assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="public/assets_1/assets/js/loader.js"></script>
+    <script src="public/assets_1/bootstrap/js/popper.min.js"></script>
+    <script src="public/assets_1/bootstrap/js/bootstrap.min.js"></script>
+    <script src="public/assets_1/plugins/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="public/assets_1/assets/js/app.js"></script>
+    <script>
+        $(document).ready(function() {
+            App.init();
+        });
+    </script>
+    <script src="public/assets_1/assets/js/custom.js"></script>
+    <!-- END GLOBAL MANDATORY SCRIPTS -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    <script src="public/assets_1/plugins/charts/chartist/chartist.js"></script>
+    <script src="public/assets_1/plugins/maps/vector/jvector/jquery-jvectormap-2.0.3.min.js"></script>
+    <script src="public/assets_1/plugins/maps/vector/jvector/worldmap_script/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="public/assets_1/plugins/calendar/pignose/moment.latest.min.js"></script>
+    <script src="public/assets_1/plugins/calendar/pignose/pignose.calendar.js"></script>
+    <script src="public/assets_1/plugins/progressbar/progressbar.min.js"></script>
+    <script src="public/assets_1/assets/js/default-dashboard/default-custom.js"></script>
+    <script src="public/assets_1/assets/js/support-chat.js"></script>
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script src="public/assets_1/plugins/table/datatable/datatables.js"></script>
+    <script>        
+        $('#default-ordering').DataTable( {
+            "language": {
+                "paginate": { "previous": "<i class='flaticon-arrow-left-1'></i>", "next": "<i class='flaticon-arrow-right'></i>" },
+                "info": "Showing page _PAGE_ of _PAGES_"
+            }, "order": [[ 3, "desc" ]],
+            drawCallback: function () { $('.dataTables_paginate > .pagination').addClass(' pagination-style-13 pagination-bordered mb-5'); }
+	    } );
+    </script>
+    <!-- END PAGE LEVEL SCRIPTS -->
+</body>
+
+<!-- Mirrored from designreset.com/preview-equation/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2023 10:08:36 GMT -->
 </html>
