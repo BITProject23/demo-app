@@ -1,0 +1,22 @@
+CRITICAL - 2023-05-19 05:53:30 --> Attempt to read property "course_subject_id" on array
+in APPPATH\Views\courseSubject\courseSubjectTableView.php on line 70.
+ 1 APPPATH\Views\courseSubject\courseSubjectTableView.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "course_subject_id" on array', 'APPPATH\\Views\\courseSubject\\courseSubjectTableView.php', 70)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\courseSubject\\courseSubjectTableView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('courseSubject/courseSubjectTableView', [], true)
+ 5 APPPATH\Controllers\CourseSubjectController.php(77): view('courseSubject/courseSubjectTableView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CourseSubjectController->courseJoin()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseSubjectController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-19 06:34:28 --> Attempt to read property "course_subject_id" on array
+in APPPATH\Views\courseSubject\courseSubjectTableView.php on line 70.
+ 1 APPPATH\Views\courseSubject\courseSubjectTableView.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "course_subject_id" on array', 'APPPATH\\Views\\courseSubject\\courseSubjectTableView.php', 70)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\courseSubject\\courseSubjectTableView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('courseSubject/courseSubjectTableView', [], true)
+ 5 APPPATH\Controllers\CourseSubjectController.php(77): view('courseSubject/courseSubjectTableView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CourseSubjectController->courseJoin()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseSubjectController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

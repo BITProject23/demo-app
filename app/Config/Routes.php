@@ -50,17 +50,33 @@ $menu_items ['logout'] = 'LoginController::logout';
 $menu_items ['Course_add'] = 'CourseController::index';
 $menu_items ['create'] = 'CourseController::create';
 $menu_items ['Course_View'] = 'CourseController::showdata';
-$menu_items ['Course_update'] = 'CourseController::update';
+
+
+//$menu_items ['Course_UpdateView'] = 'CourseController::singleCourse';
+//$menu_items ['Course_update'] = 'CourseController::update';
+
 
 $menu_items ['Subject_add'] = 'SubjectController::index';
 $menu_items ['Subcreate'] = 'SubjectController::create';
 $menu_items ['Subject_View'] = 'SubjectController::showdata';
 
+$menu_items ['Subject_assign'] = 'CourseSubjectController::index';
+$menu_items ['Subject_save'] = 'CourseSubjectController::save';
+$menu_items ['Course_join'] = 'CourseSubjectController::courseSubjectJoin';
+
+
 $menu_items ['Lecturer_add'] = 'LecturerController::index';
 $menu_items ['LecCreate'] = 'LecturerController::create';
 $menu_items ['Lecturer_View'] = 'LecturerController::showdata';
 
+$menu_items ['CourseLecturer_assign'] = 'CourseLecturerController::index';
+$menu_items ['CourseLecturer_save'] = 'CourseLecturerController::save';
+$menu_items ['CourseLecturer_View'] = 'CourseLecturerController::courseLecturerJoin';
+
 $menu_items ['Batch'] = 'BatchController::index';
+$menu_items ['getCourseCode'] = 'BatchController::getCourseCode';
+$menu_items ['Batch_save'] = 'BatchController::save';
+$menu_items ['Batch_Join'] = 'BatchController::courseBatchJoin';
 
 
 $menu_items ['Student_add'] = 'StudentContoller::index';
@@ -79,6 +95,13 @@ $menu_items ['online-registration'] = 'MenuController::register';*/
 $menu_items ['test-db'] = 'DbTestController::index';
 
 $routes->map($menu_items);
+
+// $routes->get('Course_UpdateView','CourseController::singleCourse');
+$routes->get('Course_UpdateView/(:num)','CourseController::singleCourse/$1');
+$routes->get('Course_update','CourseController::update');
+
+$routes->get('courseSubjectEdit/(:num)', 'CourseSubjectController::edit/$1');
+$routes->post('courseSubjectUpdate', 'CourseSubjectController::update');
 
 
 

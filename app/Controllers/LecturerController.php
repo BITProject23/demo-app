@@ -9,7 +9,7 @@ class LecturerController extends BaseController
     public function index()
     {
         //return view('welcome_message');
-        return view('lecturerFormView');
+        return view('lecturer/lecturerFormView');
       
     }
 
@@ -44,7 +44,7 @@ class LecturerController extends BaseController
 
         $data['lecturer'] = $lecturerModel->findAll();
 
-        return view('lecturerTableView',$data);
+        return view('lecturer/lecturerTableView',$data);
 
     }
 

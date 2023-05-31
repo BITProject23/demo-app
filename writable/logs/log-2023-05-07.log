@@ -20,3 +20,12 @@ in APPPATH\Views\studentTableView.php on line 75.
  7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentContoller))
  8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-07 19:09:55 --> Invalid file: "courseTableView.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('courseTableView.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('courseTableView', [], true)
+ 3 APPPATH\Controllers\CourseController.php(42): view('courseTableView', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CourseController->showdata()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

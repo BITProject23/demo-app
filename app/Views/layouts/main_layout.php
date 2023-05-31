@@ -7,29 +7,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
     <title><?= $this->renderSection('title') ?></title>
-    <link rel="icon" type="image/x-icon" href="public/assets_1/assets/img/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" href="<?=base_url()?>/public/assets_1/assets/img/favicon.ico"/>
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
-    <link href="public/assets_1/assets/css/loader.css" rel="stylesheet" type="text/css" />
+    <link href="<?=base_url()?>/public/assets_1/assets/css/loader.css" rel="stylesheet" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-    <link href="public/assets_1/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="public/assets_1/assets/css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="<?=base_url()?>/public/assets_1/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?=base_url()?>/public/assets_1/assets/css/plugins.css" rel="stylesheet" type="text/css" />
     <!-- END GLOBAL MANDATORY STYLES -->
 
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
-    <link href="public/assets_1/assets/css/support-chat.css" rel="stylesheet" type="text/css" />
-    <link href="public/assets_1/plugins/maps/vector/jvector/jquery-jvectormap-2.0.3.css" rel="stylesheet" type="text/css" />
-    <link href="public/assets_1/plugins/charts/chartist/chartist.css" rel="stylesheet" type="text/css">
-    <link href="public/assets_1/assets/css/default-dashboard/style.css" rel="stylesheet" type="text/css" />    
+    <link href="<?=base_url()?>/public/assets_1/assets/css/support-chat.css" rel="stylesheet" type="text/css" />
+    <link href="<?=base_url()?>/public/assets_1/plugins/maps/vector/jvector/jquery-jvectormap-2.0.3.css" rel="stylesheet" type="text/css" />
+    <link href="<?=base_url()?>/public/assets_1/plugins/charts/chartist/chartist.css" rel="stylesheet" type="text/css">
+    <link href="<?=base_url()?>/public/assets_1/assets/css/default-dashboard/style.css" rel="stylesheet" type="text/css" />    
     <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->  
 
     <!--  BEGIN CUSTOM STYLE FILE of Forms buttons -->
-    <link href="public/assets_1/assets/css/ui-kit/buttons/creative/creative-material.css" rel="stylesheet" type="text/css" />
+    <link href="<?=base_url()?>/public/assets_1/assets/css/ui-kit/buttons/creative/creative-material.css" rel="stylesheet" type="text/css" />
     <!--  END CUSTOM STYLE FILE of Forms buttons -->
 
     <!-- BEGIN PAGE LEVEL STYLES of Tables -->
-    <link rel="stylesheet" type="text/css" href="public/assets_1/plugins/table/datatable/datatables.css">
-    <link rel="stylesheet" type="text/css" href="public/assets_1/plugins/table/datatable/custom_dt_ordering_sorting.css">
+    <link rel="stylesheet" type="text/css" href="<?=base_url()?>/public/assets_1/plugins/table/datatable/datatables.css">
+    <link rel="stylesheet" type="text/css" href="<?=base_url()?>/public/assets_1/plugins/table/datatable/custom_dt_ordering_sorting.css">
     <!-- END PAGE LEVEL STYLES of Tables -->
+
+    <!-- BEGIN PAGE LEVEL STYLES of Form Errors -->
+    <link rel="stylesheet" type="text/css" href="<?=base_url()?>/public/assets_1/assets/css/errorstyles.css">
+    <!-- END PAGE LEVEL STYLES of Form Errors -->
+
+    <script src="<?=base_url()?>/public/assets_1/assets/js/libs/jquery-3.1.1.min.js"></script>
+    <!-- <script src="< ?=base_url()?>/public/assets_1/assets/js/validation.js"></script> -->
+    <!-- <script> 
+        function check01(){
+            if(document.getElementById("course_name").value==""){
+                //document.getElementById("course_name").style.backgroundColor="red";
+                document.getElementById("coures_n").innerHTML="Course name is required ";
+                document.getElementById("coures_n").style.color="red";
+                //document.getElementById("coures_l").placeholder = "Course name is required ";
+                return false;
+            } else if(document.getElementById("course_code").value==""){
+                document.getElementById("coures_c").innerHTML="Course code is required ";
+                document.getElementById("coures_c").style.color="red";
+                return false;
+            } else if(document.getElementById("course_name").value==""){
+                document.getElementById("coures_f").innerHTML="Course fee is required ";
+                document.getElementById("coures_f").style.color="red";
+                return false;
+            }
+        }
+
+ </script> -->
+
+    
 
 
 
@@ -48,7 +77,7 @@
                 <a href="javascript:void(0);" class="nav-link sidebarCollapse" data-placement="bottom">
                     <i class="flaticon-menu-line-2"></i>
                 </a>
-            <a href="index-2.html" class=""> <img src="public/assets_1/assets/img/logo-3.png" class="img-fluid" alt="logo"></a>
+            <a href="index-2.html" class=""> <img src="<?=base_url()?>/public/assets_1/assets/img/logo-3.png" class="img-fluid" alt="logo"></a>
         </div>
         <ul class="nav navbar-nav">
             <li class="nav-item d-lg-none"> 
@@ -123,7 +152,7 @@
                 <ul class="navbar-nav theme-brand flex-row  d-none d-lg-flex">
                     <li class="nav-item d-flex">
                         <a href="index-2.html" class="navbar-brand">
-                            <img src="public/assets_1/assets/img/logo-3.png" class="img-fluid" alt="logo">
+                            <img src="<?=base_url()?>/public/assets_1/assets/img/logo-3.png" class="img-fluid" alt="logo">
                         </a>
                         <p class="border-underline"></p>
                     </li>
@@ -266,10 +295,10 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="maps"  data-parent="#accordionExample">
                             <li>
-                                <a href=" ">Course-Subject Assign</a>
+                                <a href="<?=base_url()?>/Subject_assign">Course-Subject Assign</a>
                             </li>
                             <li>
-                                <a href=" "> View Course-Subject</a>
+                                <a href="<?=base_url()?>/Course_join"> View Course-Subject</a>
                             </li>
                         </ul>
                     </li>
@@ -286,10 +315,10 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="mailing"  data-parent="#accordionExample">
                             <li>
-                                <a href=" ">Batch-Student Assign</a>
+                                <a href="<?=base_url()?>/Batch">Batch-Student Assign</a>
                             </li>
                             <li>
-                                <a href=" "> View Batch-Student</a>
+                                <a href="<?=base_url()?>/Batch_Join"> View Batch-Student</a>
                             </li>
                         </ul>
                     </li>
@@ -306,10 +335,10 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="modules"  data-parent="#accordionExample">
                             <li>
-                                <a href=" ">Course-Lecturer Assign</a>
+                                <a href="<?=base_url()?>/CourseLecturer_assign">Course-Lecturer Assign</a>
                             </li>
                             <li>
-                                <a href=" "> View Course-Lecturer</a>
+                                <a href="<?=base_url()?>/CourseLecturer_View"> View Course-Lecturer</a>
                             </li>
                         </ul>
                     </li>
@@ -349,7 +378,7 @@
                             </li>
 
                             <li>
-                                <a href="table_tablesaw.html"> View Timetable</a>
+                                <a href=""> View Timetable</a>
                             </li>
                             
                         </ul>
@@ -526,7 +555,7 @@
                 </div>
                 <div class="col-md-12">
                     <div class="usr-info text-center mb-5">
-                        <img alt="admin-profile" src="public/assets_1/assets/img/c-14.jpg" class="img-fluid rounded-circle mb-3">
+                        <img alt="admin-profile" src="<?=base_url()?>/public/assets_1/assets/img/c-14.jpg" class="img-fluid rounded-circle mb-3">
                         <div class=" mt-2">
                             <h5 class="usr-name mb-0">Linda Nelson</h5>
                             <p class="usr-occupation mb-0 mt-1">Developer</p>
@@ -582,7 +611,7 @@
 
 
                             <div class="media">
-                                <img alt="admin-profile" src="public/assets_1/assets/img/c-13.jpg" class="img-fluid mr-3">
+                                <img alt="admin-profile" src="<?=base_url()?>/public/assets_1/assets/img/c-13.jpg" class="img-fluid mr-3">
                                 <div class="media-body">
                                     <h6 class="mb-0">Sean Freeman</h6>
                                     <p>has replied your mail.</p>
@@ -592,7 +621,7 @@
                             </div>
 
                             <div class="media">
-                                <img alt="admin-profile" src="public/assets_1/assets/img/c-15.jpg" class="img-fluid mr-3">
+                                <img alt="admin-profile" src="<?=base_url()?>/public/assets_1/assets/img/c-15.jpg" class="img-fluid mr-3">
                                 <div class="media-body">
                                     <h6 class="mb-0">Laurie Fox</h6>
                                     <p>comment to your posts.</p>
@@ -645,7 +674,7 @@
 
 
                             <div class="media">
-                                <img alt="admin-profile" src="public/assets_1/assets/img/c-7.jpg" class="img-fluid mr-3">
+                                <img alt="admin-profile" src="<?=base_url()?>/public/assets_1/assets/img/c-7.jpg" class="img-fluid mr-3">
                                 <div class="media-body">
                                     <h6 class="mb-0">Angie Lamb</h6>
                                     <p>has replied your mail.</p>
@@ -655,7 +684,7 @@
                             </div>
 
                             <div class="media">
-                                <img alt="admin-profile" src="public/assets_1/assets/img/c-5.jpg" class="img-fluid mr-3">
+                                <img alt="admin-profile" src="<?=base_url()?>/public/assets_1/assets/img/c-5.jpg" class="img-fluid mr-3">
                                 <div class="media-body">
                                     <h6 class="mb-0">Amy Diaz</h6>
                                     <p>comment to your posts.</p>
@@ -665,7 +694,7 @@
                             </div>
 
                             <div class="media">
-                                <img alt="admin-profile" src="public/assets_1/assets/img/c-7.jpg" class="img-fluid mr-3">
+                                <img alt="admin-profile" src="<?=base_url()?>/public/assets_1/assets/img/c-7.jpg" class="img-fluid mr-3">
                                 <div class="media-body">
                                     <h6 class="mb-0">Irene Collins</h6>
                                     <p>has replied your mail.</p>
@@ -676,7 +705,7 @@
 
 
                             <div class="media">
-                                <img alt="admin-profile" src="public/assets_1/assets/img/c-9.jpg" class="img-fluid mr-3">
+                                <img alt="admin-profile" src="<?=base_url()?>/public/assets_1/assets/img/c-9.jpg" class="img-fluid mr-3">
                                 <div class="media-body">
                                     <h6 class="mb-0">Lila Perry</h6>
                                     <p>has replied your mails.</p>
@@ -788,25 +817,25 @@
                             <ul class="list-inline text-center mb-5">
                                 
                                 <li class="list-inline-item">
-                                    <img alt="admin-profile" src="public/assets_1/assets/img/c-1.jpg">
+                                    <img alt="admin-profile" src="<?=base_url()?>/public/assets_1/assets/img/c-1.jpg">
                                     <span class="badge badge-pill badge-new">8</span>
                                 </li>
 
                                 <li class="list-inline-item">
-                                    <img alt="admin-profile" src="public/assets_1/assets/img/c-2.jpg">
+                                    <img alt="admin-profile" src="<?=base_url()?>/public/assets_1/assets/img/c-2.jpg">
                                 </li>
 
                                 <li class="list-inline-item">
-                                    <img alt="admin-profile" src="public/assets_1/assets/img/c-13.jpg">
+                                    <img alt="admin-profile" src="<?=base_url()?>/public/assets_1/assets/img/c-13.jpg">
                                 </li>
 
                                 <li class="list-inline-item">
-                                    <img alt="admin-profile" src="public/assets_1/assets/img/c-3.jpg">
+                                    <img alt="admin-profile" src="<?=base_url()?>/public/assets_1/assets/img/c-3.jpg">
                                     <span class="badge badge-pill badge-new">5</span>
                                 </li>
 
                                 <li class="list-inline-item">
-                                    <img alt="admin-profile" src="public/assets_1/assets/img/c-4.jpg">
+                                    <img alt="admin-profile" src="<?=base_url()?>/public/assets_1/assets/img/c-4.jpg">
                                 </li>
 
                             </ul>
@@ -830,7 +859,7 @@
                                 </div>
 
                                 <div class="media">
-                                    <img alt="admin-profile" src="public/assets_1/assets/img/c-15.jpg" class="img-fluid mr-3">
+                                    <img alt="admin-profile" src="<?=base_url()?>/public/assets_1/assets/img/c-15.jpg" class="img-fluid mr-3">
                                     <div class="media-body">
                                         <h6>Kara Young</h6>
                                         <p>2 mins ago</p>
@@ -840,7 +869,7 @@
                                 </div>
 
                                 <div class="media mt-2">
-                                    <img alt="admin-profile" src="public/assets_1/assets/img/P-2.jpg" class="img-fluid mr-3">
+                                    <img alt="admin-profile" src="<?=base_url()?>/public/assets_1/assets/img/P-2.jpg" class="img-fluid mr-3">
                                     <div class="media-body">
                                         <h6>Justin Cross</h6>
                                         <p>5 mins ago</p>
@@ -850,7 +879,7 @@
                                 </div>
 
                                 <div class="media mt-2">
-                                    <img alt="admin-profile" src="public/assets_1/assets/img/c-5.jpg" class="img-fluid mr-3">
+                                    <img alt="admin-profile" src="<?=base_url()?>/public/assets_1/assets/img/c-5.jpg" class="img-fluid mr-3">
                                     <div class="media-body">
                                         <h6>Amy Diaz</h6>
                                         <p>7 mins ago</p>
@@ -861,7 +890,7 @@
 
 
                                 <div class="media mt-2">
-                                    <img alt="admin-profile" src="public/assets_1/assets/img/c-6.jpg" class="img-fluid mr-3">
+                                    <img alt="admin-profile" src="<?=base_url()?>/public/assets_1/assets/img/c-6.jpg" class="img-fluid mr-3">
                                     <div class="media-body">
                                         <h6>Ernest Reeves</h6>
                                         <p>10 mins ago</p>
@@ -901,7 +930,7 @@
 
 
                             <div class="media d-block d-sm-flex text-sm-left text-center">
-                                <img alt="admin-profile" class="mr-sm-3 mb-sm-0 mb-3" src="public/assets_1/assets/img/c-7.jpg">
+                                <img alt="admin-profile" class="mr-sm-3 mb-sm-0 mb-3" src="<?=base_url()?>/public/assets_1/assets/img/c-7.jpg">
                                 <div class="media-body mb-4">
                                     <h6 class="media-heading mt-0"><span class="media-title"> Irene Collins</span><span class="badge badge-info float-sm-right ml-2">9</span></h6>
                                     <p class="media-text">
@@ -912,7 +941,7 @@
 
 
                             <div class="media d-block d-sm-flex text-sm-left text-center">
-                                <img alt="admin-profile" class="mr-sm-3 mb-sm-0 mb-3 rounded" src="public/assets_1/assets/img/c-8.jpg">
+                                <img alt="admin-profile" class="mr-sm-3 mb-sm-0 mb-3 rounded" src="<?=base_url()?>/public/assets_1/assets/img/c-8.jpg">
                                 <div class="media-body mb-4">
                                     <h6 class="media-heading mt-0"><span class="media-title"> Thomas Granger</span><span class="badge badge-secondary float-sm-right ml-2">9</span></h6>
                                     <p class="media-text">
@@ -923,7 +952,7 @@
 
 
                             <div class="media d-block d-sm-flex text-sm-left text-center">
-                                <img alt="admin-profile" class="mr-sm-3 mb-sm-0 mb-3 rounded-circle" src="public/assets_1/assets/img/c-9.jpg">
+                                <img alt="admin-profile" class="mr-sm-3 mb-sm-0 mb-3 rounded-circle" src="<?=base_url()?>/public/assets_1/assets/img/c-9.jpg">
                                 <div class="media-body mb-4">
                                     <h6 class="media-heading mt-0"><span class="media-title"> Grace Roberts</span><span class="badge badge-warning float-sm-right ml-2">9</span></h6>
                                     <p class="media-text">
@@ -956,7 +985,7 @@
                                     
                                 <div class="media mb-3">
                                     <div class="profile-img mr-3">
-                                        <img alt="admin-profile" src="public/assets_1/assets/img/profile-16.jpg" class="img-fluid">
+                                        <img alt="admin-profile" src="<?=base_url()?>/public/assets_1/assets/img/profile-16.jpg" class="img-fluid">
                                     </div>
                                     <div class="media-body">
                                         <h6 class="mt-2">Traci Lopez</h6>
@@ -965,7 +994,7 @@
                                 
                                 <div class="media mb-3">
                                     <div class="profile-img mr-3">
-                                        <img alt="admin-profile" src="public/assets_1/assets/img/c-11.jpg" class="img-fluid">
+                                        <img alt="admin-profile" src="<?=base_url()?>/public/assets_1/assets/img/c-11.jpg" class="img-fluid">
                                     </div>
                                     <div class="media-body">
                                         <h6 class="mt-2">Kristen Beck</h6>
@@ -974,7 +1003,7 @@
                                 
                                 <div class="media mb-5">
                                     <div class="profile-img mr-3">
-                                        <img alt="admin-profile" src="public/assets_1/assets/img/c-12.jpg" class="img-fluid">
+                                        <img alt="admin-profile" src="<?=base_url()?>/public/assets_1/assets/img/c-12.jpg" class="img-fluid">
                                     </div>
                                     <div class="media-body">
                                         <h6 class="mt-2">Keith Foster</h6>
@@ -1320,33 +1349,33 @@
     <!--  END CONTROL SIDEBAR  -->
 
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
-    <script src="public/assets_1/assets/js/libs/jquery-3.1.1.min.js"></script>
-    <script src="public/assets_1/assets/js/loader.js"></script>
-    <script src="public/assets_1/bootstrap/js/popper.min.js"></script>
-    <script src="public/assets_1/bootstrap/js/bootstrap.min.js"></script>
-    <script src="public/assets_1/plugins/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="public/assets_1/assets/js/app.js"></script>
+    <!-- <script src="public/assets_1/assets/js/libs/jquery-3.1.1.min.js"></script> -->
+    <script src="<?=base_url()?>/public/assets_1/assets/js/loader.js"></script>
+    <script src="<?=base_url()?>/public/assets_1/bootstrap/js/popper.min.js"></script>
+    <script src="<?=base_url()?>/public/assets_1/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?=base_url()?>/public/assets_1/plugins/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="<?=base_url()?>/public/assets_1/assets/js/app.js"></script>
     <script>
         $(document).ready(function() {
             App.init();
         });
     </script>
-    <script src="public/assets_1/assets/js/custom.js"></script>
+    <script src="<?=base_url()?>/public/assets_1/assets/js/custom.js"></script>
     <!-- END GLOBAL MANDATORY SCRIPTS -->
 
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
-    <script src="public/assets_1/plugins/charts/chartist/chartist.js"></script>
-    <script src="public/assets_1/plugins/maps/vector/jvector/jquery-jvectormap-2.0.3.min.js"></script>
-    <script src="public/assets_1/plugins/maps/vector/jvector/worldmap_script/jquery-jvectormap-world-mill-en.js"></script>
-    <script src="public/assets_1/plugins/calendar/pignose/moment.latest.min.js"></script>
-    <script src="public/assets_1/plugins/calendar/pignose/pignose.calendar.js"></script>
-    <script src="public/assets_1/plugins/progressbar/progressbar.min.js"></script>
-    <script src="public/assets_1/assets/js/default-dashboard/default-custom.js"></script>
-    <script src="public/assets_1/assets/js/support-chat.js"></script>
+    <script src="<?=base_url()?>/public/assets_1/plugins/charts/chartist/chartist.js"></script>
+    <script src="<?=base_url()?>/public/assets_1/plugins/maps/vector/jvector/jquery-jvectormap-2.0.3.min.js"></script>
+    <script src="<?=base_url()?>/public/assets_1/plugins/maps/vector/jvector/worldmap_script/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="<?=base_url()?>/public/assets_1/plugins/calendar/pignose/moment.latest.min.js"></script>
+    <script src="<?=base_url()?>/public/assets_1/plugins/calendar/pignose/pignose.calendar.js"></script>
+    <script src="<?=base_url()?>/public/assets_1/plugins/progressbar/progressbar.min.js"></script>
+    <script src="<?=base_url()?>/public/assets_1/assets/js/default-dashboard/default-custom.js"></script>
+    <script src="<?=base_url()?>/public/assets_1/assets/js/support-chat.js"></script>
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
 
     <!-- BEGIN PAGE LEVEL SCRIPTS -->
-    <script src="public/assets_1/plugins/table/datatable/datatables.js"></script>
+    <script src="<?=base_url()?>/public/assets_1/plugins/table/datatable/datatables.js"></script>
     <script>        
         $('#default-ordering').DataTable( {
             "language": {

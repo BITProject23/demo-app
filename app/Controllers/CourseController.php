@@ -11,7 +11,7 @@ class CourseController extends BaseController
     public function index() 
     {
         
-        return view('courseAddView');
+        return view('course/courseAddView');
     } 
 
     public function create(){ //take the form data to pass it to DB | ex: which we filled in course_form (data) pass it-> course table col names
@@ -33,25 +33,51 @@ class CourseController extends BaseController
 
     }
 
-    public function showdata(){
+    public function showdata(){ //show the course list in table
 
         $courseModel = new CourseModel();
 
         $data['courses'] = $courseModel->findAll();
 
-        return view('courseTableView',$data);
+        return view('course/courseTableView',$data);
 
+    }
+
+    public function singleCourse($course_id = null){ //show single course in update form
+
+       $courseModel = new CourseModel();
+
+      // $course_id ;
+       //$this->request->getVar('course_id');
+
+       $data['course_single'] = $courseModel->where('course_id',$course_id)->first(); //check first row
+
+      // print_r($data);
+      return view('course/courseUpdateView',$data);
+        // return view('course/courseUpdateView');
     }
 
     public function update(){
 
         $courseModel = new CourseModel();
 
-        $course_name = $this->request->getPost('course_name');
-        $course_code = $this->request->getPost('course_code');
-        $course_fee = $this->request->getPost('course_fee');
 
-        $courseModel->update('course_id',['course_name'=>$course_name, 'course_code'=>$course_code, 'course_fee'=>$course_fee]);
+        // $data['courses'] = $courseModel->where('course_id');
+
+        // return view('course/courseUpdateView',$data);
+
+        $course_id=$this->request->getPost('course_id');
+        $course_name=$this->request->getPost('course_name');
+        $course_code=$this->request->getPost('course_code');
+        $course_fee=$this->request->getPost('course_fee');
+
+        $courseModel->update($course_id,
+                            ['course_name'=>$course_name,
+                             'course_code'=>$course_code,
+                             'course_fee'=>$course_fee]
+                            );
+
+        return redirect()->to('Course_View')->with('success','Course Details Updated!');                    
     }
     
 

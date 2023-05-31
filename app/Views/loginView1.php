@@ -35,7 +35,7 @@
             </div>
 
             <?php if(session()->has('error')) : ?>
-                  <div class="alert alert-danger mb-5"><?=session('error')?></div> 
+                  <div class="col-xl-12 alert alert-danger mb-4"><?=session('error')?></div> 
             <?php endif; ?>
 
             <div class="col-md-12">

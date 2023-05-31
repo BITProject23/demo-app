@@ -9,7 +9,7 @@ class SubjectController extends BaseController
     public function index() //display the form
     {
         //return view('welcome_message');
-        return view('subjectAddView');
+        return view('subject/subjectAddView');
       
     }
 
@@ -36,7 +36,7 @@ class SubjectController extends BaseController
 
         $data['subject'] = $subjectModel->findAll();
 
-        return view('subjectTableView',$data);
+        return view('subject/subjectTableView',$data);
 
     }
 

@@ -9,7 +9,7 @@ class StudentContoller extends BaseController
     public function index()
     {
         //return view('welcome_message');
-        return view('studentFormView');
+        return view('student/studentFormView');
       
     }
 
@@ -43,7 +43,7 @@ class StudentContoller extends BaseController
 
         $data['student'] = $studentModel->findAll();
 
-        return view('studentTableView',$data);
+        return view('student/studentTableView',$data);
 
     }
 

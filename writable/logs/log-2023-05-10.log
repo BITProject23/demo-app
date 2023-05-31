@@ -1,0 +1,11 @@
+CRITICAL - 2023-05-10 16:23:33 --> Trying to access array offset on value of type null
+in APPPATH\Views\course\courseUpdateView.php on line 61.
+ 1 APPPATH\Views\course\courseUpdateView.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\course\\courseUpdateView.php', 61)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\course\\courseUpdateView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('course/courseUpdateView', [], true)
+ 5 APPPATH\Controllers\CourseController.php(53): view('course/courseUpdateView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CourseController->singleCourse()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
