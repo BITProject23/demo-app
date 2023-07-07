@@ -52,7 +52,7 @@
                             <div class="widget-content widget-content-area">
 
 
-                                <?php echo form_open('Subcreate') ?>
+                                <?php echo form_open('Subject_create') ?>
                                     <!-- <form> -->
 
 

@@ -35,7 +35,24 @@
     <link rel="stylesheet" type="text/css" href="<?=base_url()?>/public/assets_1/assets/css/errorstyles.css">
     <!-- END PAGE LEVEL STYLES of Form Errors -->
 
+    <!--  BEGIN CUSTOM STYLE FILE of REPORTS -->
+    <link href="<?=base_url()?>/public/assets_1/assets/css/ecommerce/invoice.css" rel="stylesheet" type="text/css" />
+    <!--  END CUSTOM STYLE FILE  -->
+
+     <!-- BEGIN THEME GLOBAL STYLES -->
+     <link href="<?=base_url()?>/public/assets_1/plugins/animate/animate.css" rel="stylesheet" type="text/css" />
+    <script src="<?=base_url()?>/public/assets_1/plugins/sweetalerts/promise-polyfill.js"></script>
+    <link href="<?=base_url()?>/public/assets_1/plugins/sweetalerts/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?=base_url()?>/public/assets_1/plugins/sweetalerts/sweetalert.css" rel="stylesheet" type="text/css" />
+    <link href="<?=base_url()?>/public/assets_1/assets/css/ui-kit/custom-sweetalert.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME GLOBAL STYLES -->
+
+     <!-- BEGIN PAGE LEVEL STYLES -->
+     <link rel="stylesheet" type="text/css" href="<?=base_url()?>/public/assets_1/plugins/jqvalidation/custom-jqBootstrapValidation.css">
+    <!-- END PAGE LEVEL STYLES -->
+
     <script src="<?=base_url()?>/public/assets_1/assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- <script src="< ?=base_url()?>/public/assets_1/assets/js/validation.js"></script> -->
     <!-- <script> 
         function check01(){
@@ -59,7 +76,20 @@
  </script> -->
 
     
+ <style>
+    .help-block {
+  color: red;
+}
 
+.form-group.has-error.has-danger .form-control-label {
+  color: red;
+}
+
+.form-group.has-error.has-danger .form-control {
+  border: 1px solid red;
+  box-shadow: 0 0 0 0.2rem rgba(250, 16, 0, 0.18);
+}
+    </style> 
 
 
 </head>
@@ -150,14 +180,15 @@
             <nav id="sidebar">
 
                 <ul class="navbar-nav theme-brand flex-row  d-none d-lg-flex">
-                    <li class="nav-item d-flex">
+                    <!-- <li class="nav-item d-flex">
                         <a href="index-2.html" class="navbar-brand">
-                            <img src="<?=base_url()?>/public/assets_1/assets/img/logo-3.png" class="img-fluid" alt="logo">
+                            <img src="< ?=base_url()?>/public/assets_1/assets/img/logo-3.png" class="img-fluid" alt="logo">
                         </a>
                         <p class="border-underline"></p>
-                    </li>
+                    </li> -->
                     <li class="nav-item theme-text">
-                        <a href="index-2.html" class="nav-link"> Demo </a>
+                        <!-- <a href="index-2.html" class="nav-link"> Wide Awake Solutions </a> -->
+                        <a href="index-2.html" class="nav-link"> Demo-app</a>
                     </li>
                 </ul>
 
@@ -273,13 +304,16 @@
                         <ul class="collapse submenu list-unstyled" id="elements" data-parent="#accordionExample">
 
                             <li>
-                                <a href="<?=base_url()?>/Batch"> Add Batch </a>
+                                <a href="<?=base_url()?>/Batch_add"> Add Batch </a>
                             </li>
-
 
                             <li>
-                                <a href="element_list.html"> View Batch </a>
+                                <a href="<?=base_url()?>/Batch_View"> View Batch</a>
                             </li>
+                            
+                            <!-- <li>
+                                <a href="element_list.html"> View Batch </a>
+                            </li> -->
                         </ul>
                     </li>
 
@@ -307,7 +341,7 @@
                         <a href="#mailing" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <i class="flaticon-user-group-2"></i>
-                                <span>Batch-Student</span>
+                                <span>Enrollment Management</span>
                             </div>
                             <div>
                                 <i class="flaticon-right-arrow"></i>
@@ -315,7 +349,7 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="mailing"  data-parent="#accordionExample">
                             <li>
-                                <a href="<?=base_url()?>/Batch">Batch-Student Assign</a>
+                                <a href="<?=base_url()?>/Enrollment_search">Student Enrollment</a>
                             </li>
                             <li>
                                 <a href="<?=base_url()?>/Batch_Join"> View Batch-Student</a>
@@ -1358,6 +1392,7 @@
     <script>
         $(document).ready(function() {
             App.init();
+
         });
     </script>
     <script src="<?=base_url()?>/public/assets_1/assets/js/custom.js"></script>
@@ -1384,8 +1419,39 @@
             }, "order": [[ 3, "desc" ]],
             drawCallback: function () { $('.dataTables_paginate > .pagination').addClass(' pagination-style-13 pagination-bordered mb-5'); }
 	    } );
+
+
+ function deleteData(url){ 
+    swal({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        type: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Delete',
+        padding: '2em'
+      }).then(function(result) { 
+        if (result.value==true) { 
+              window.location.assign(url); //javascript redirect
+            }
+      })
+ }
+
+
     </script>
     <!-- END PAGE LEVEL SCRIPTS -->
+
+    <!-- BEGIN THEME GLOBAL STYLE -->
+    <script src="<?=base_url()?>/public/assets_1/plugins/sweetalerts/sweetalert2.min.js"></script>
+    <script src="<?=base_url()?>/public/assets_1/plugins/sweetalerts/custom-sweetalert.js"></script>
+    <!-- END THEME GLOBAL STYLE -->
+
+    <!--  BEGIN CUSTOM SCRIPTS FILE  -->
+    <script src="<?=base_url()?>/public/assets_1/plugins/bootstrap_validate/validator.min.js"></script>
+    <!--  END CUSTOM SCRIPTS FILE  --> 
+
+    <?= $this->renderSection('footer') ?>
 </body>
 
 <!-- Mirrored from designreset.com/preview-equation/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2023 10:08:36 GMT -->

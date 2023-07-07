@@ -17,8 +17,7 @@
                             <ul id="breadcrumbs" class="breadcrumb">
                                 <li><a href="index-2.html"><i class="flaticon-home-fill"></i></a></li>
                                 <li><a href="#">Student</a></li>
-                                <li><a href="#">View Student</a> </li>
-                                <!-- <li class="active"><a href="#">Order Sorting</a> </li> -->
+                                <li><a href="#">View Student</a></li>
                             </ul>
                         </div>
                     </div>
@@ -44,7 +43,12 @@
 
                             <?php if(session()->getFlashdata('success')): ?>
                             
-                            <?php echo session()->getFlashdata('success'); ?>
+                                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                    <?= session()->getFlashdata('success');?>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
                             
                             <?php endif; ?>
 
@@ -56,6 +60,7 @@
                                         <thead>
                                             <tr>
                                                 <th>Student ID</th>
+                                                <th>Student No</th>
                                                 <th>First Name</th>
                                                 <th>Last Name</th>
                                                 <th>NIC</th>
@@ -65,7 +70,8 @@
                                                 <th>Contact Number</th>
                                                 <th>Address</th>
                                                 <th>Edit</th>
-                                                <th>Delete</th>
+                                                <th>Enrollment</th>
+                                                <th>Status</th>
                                                 <!-- <th class="invisible"></th> -->
                                             </tr>
                                         </thead>
@@ -73,6 +79,7 @@
                                             <?php foreach($student as $stu): ?>
                                                 <tr>
                                                     <td><?= $stu['student_id']?></td>
+                                                    <td><?= $stu['student_no']?></td>
                                                     <td><?= $stu['student_first_name']?></td>
                                                     <td><?= $stu['student_last_name']?></td>
                                                     <td><?= $stu['student_nic']?></td>
@@ -81,8 +88,11 @@
                                                     <td><?= $stu['student_bod']?></td>
                                                     <td><?= $stu['student_contact_no']?></td>
                                                     <td><?= $stu['student_address']?></td>
-                                                    <td class="text-center"><a href="" data-toggle="tooltip" data-placement="top"><i class="flaticon-edit  bg-success p-1 text-white br-6 mb-1"></i></a></td>
-                                                    <td class="text-center"><a href="" data-toggle="tooltip" data-placement="top" title="Delete"><i class="flaticon-delete  bg-danger p-1 text-white br-6 mb-1"></i></a></td>
+                                                    <td class="text-center"><a href="<?=base_url()?>/Student_Edit/<?= $stu['student_id']?>" data-toggle="tooltip" data-placement="top"><i class="flaticon-edit  bg-success p-1 text-white br-6 mb-1"></i></a></td>
+                                                    <td class="text-center"><a href="<?=base_url()?>/Enroll_Student/<?= $stu['student_id']?>" data-toggle="tooltip" data-placement="top"><i class="flaticon-user-6 bg-primary p-1 text-white br-6 mb-1"></i></a></td>
+                                                    <td class="text-center"><a href="#" onclick="deleteData('<?=base_url()?>/Student_Delete/<?= $stu['student_id']?>')" data-toggle="tooltip" data-placement="top" title="Delete"><i class="flaticon-delete  bg-danger p-1 text-white br-6 mb-1"></i></a></td>
+                                                    <td><?=$stu['student_status']?></td>
+                                                    <!-- <td class="text-center"><a href="" data-toggle="tooltip" data-placement="top" title="Delete"><i class="flaticon-delete  bg-danger p-1 text-white br-6 mb-1"></i></a></td> -->
                                                     
                                                 </tr>
                                             <?php endforeach; ?>    
@@ -91,6 +101,7 @@
                                         <tfoot>
                                             <tr>
                                                 <th>Student ID</th>
+                                                <th>Student No</th>
                                                 <th>First Name</th>
                                                 <th>Last Name</th>
                                                 <th>NIC</th>
@@ -100,7 +111,8 @@
                                                 <th>Contact Number</th>
                                                 <th>Address</th>
                                                 <th>Edit</th>
-                                                <th>Delete</th>
+                                                <th>Enrollment</th>
+                                                <th>Status</th>
                                                 <!-- <th class="invisible"></th> -->
                                             </tr>
                                         </tfoot>

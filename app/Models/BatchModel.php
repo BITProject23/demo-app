@@ -9,7 +9,7 @@ class BatchModel extends Model
 
     protected $table = 'tbl_batch';
     protected $primaryKey = 'batch_id';
-    protected $allowedFields =['batch_no','batch_day','batch_time_from','batch_time_to','course_id'];
+    protected $allowedFields =['batch_no','batch_start_date','batch_end_date','course_id'];
 
 
 }

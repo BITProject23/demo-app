@@ -42,11 +42,16 @@
                                 </div>
                             </div>
 
-                            <!-- < ?php if(session()->getFlashdata('success')): ?>
+                            <?php if(session()->getFlashdata('success')): ?>
                             
-                            < ?php echo session()->getFlashdata('success'); ?>
-                            
-                            < ?php endif; ?> -->
+                                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                    <?= session()->getFlashdata('success');?>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                        
+                            <?php endif; ?>
 
 
 
@@ -69,22 +74,23 @@
                                                     <td><?= $course['course_subject_id']?></td>
                                                     <td><?= $course['course_name']?></td>
                                                     <td><?= $course['subject_name']?></td>
-                                                    <td class="text-center"><a href="<?=base_url()?>/courseSubjectEdit/<?= $course['course_subject_id']?>" data-toggle="tooltip" data-placement="top"><i class="flaticon-edit  bg-success p-1 text-white br-6 mb-1"></i></a></td>
                                                     <td class="text-center">
-                                                        
+                                                        <a href="<?=base_url()?>/courseSubjectEdit/<?= $course['course_subject_id']?>" data-toggle="tooltip" data-placement="top"><i class="flaticon-edit  bg-success p-1 text-white br-6 mb-1"></i></a>
+                                                    </td>
+
+                                                    <td class="text-center">     
                                                     <?php
                                                         if($course['status']=='INACTIVE'){
                                                           echo $course['status'];                  
                                                         }else{
                                                     ?>
 
-                                                        <a href="<?=base_url()?>/courseSubjectChangeStatus/<?= $course['course_subject_id']?>" data-toggle="tooltip" data-placement="top" title="Delete">
+                                                        <a href="<?=base_url()?>/courseSubjectChangeStatus/<?= $course['course_subject_id']?>" data-toggle="tooltip" data-placement="top">
                                                         <!-- <i class="flaticon-delete  bg-danger p-1 text-white br-6 mb-1"></i> -->
                                                         <?=$course['status']?>
                                                         </a>
                                                     <?php } ?>
-                                                    </td>
-                                                    
+                                                    </td> 
                                                 </tr>
                                             <?php endforeach; ?>    
                                             

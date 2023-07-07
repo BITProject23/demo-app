@@ -37,7 +37,12 @@
 
                                 <?php if(session()->has('success')):?>
 
-                                    <div class="alert alert-success mb-4"><?=session('success')?></div>
+                                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                        <?= session()->getFlashdata('success');?>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
 
                                 <?php endif ?>
                                     
@@ -50,7 +55,7 @@
                             </div>
                             <div class="widget-content widget-content-area">
                                 
-                                <?php echo form_open('create') ?>
+                                <?php echo form_open('Course_create') ?>
 
                                     <!-- <form name="form1" action="create" method ="post"> -->
                                 

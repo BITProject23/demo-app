@@ -30,7 +30,7 @@ class CourseSubjectController extends BaseController
         return json_encode($subjects);
     }
 
-    public function save()
+    public function create()
     {
         $course_id = $this->request->getPost('courses');
 
@@ -106,7 +106,8 @@ class CourseSubjectController extends BaseController
 
       //  $CourseId = "";
 
-        // $data['courseSubject'] = $courseSubjectModel->find($courseSubjectId);
+        $data['courseSubject'] = $courseSubjectModel->find($courseSubjectId);
+        // select * from tbl_course_subject where course_subject_id = 1;
         $data['courseSubject'] = $courseSubjectModel->where('course_subject_id',$courseSubjectId)->first(); //check first row
        // print_r($data);
         $cid = $data['courseSubject']['course_id'];
@@ -126,7 +127,7 @@ class CourseSubjectController extends BaseController
 
         $courseSubjectId = $this->request->getPost('course_subjects_id_ref');
       //  $course_id = $this->request->getPost('courses');
-        $subjects = $this->request->getPost('subjects');
+        $subjects = $this->request->getPost('course_subject');
 
         $courseSubjectModel->update($courseSubjectId, ['subject_id' => $subjects]);
 

@@ -30,6 +30,7 @@ class LoginController extends BaseController
             'user_name' => $user['user_name'],
             'user_email' => $user['user_email'],
             'login_status' => true,
+            'user_type' => "ADMIN",
         ];
 
         session()->set($userData);

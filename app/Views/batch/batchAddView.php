@@ -38,20 +38,25 @@
 
                                 <?php if(session()->has('success')):?>
 
-                                    <div class="alert alert-success mb-4"><?=session('success')?></div>
+                                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                        <?= session()->getFlashdata('success');?>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
 
                                 <?php endif ?>
 
                                 
                                 <div class="row">
                                     <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                    <a href="<?=base_url()?>/Batch_Join" class="btn btn-dark btn-rounded mb-2 mr-2"><span>Back to previous</span></a>
+                                    <a href="<?=base_url()?>/Batch_View" class="btn btn-dark btn-rounded mb-2 mr-2"><span>Back to previous</span></a>
                                     </div>                                                                        
                                 </div>
                             </div>
                             <div class="widget-content widget-content-area">
 
-                                <form name="formbatch" action='<?php echo base_url();?>/Batch_save' method ="post">
+                                <form name="formbatch" action='<?php echo base_url();?>/Batch_create' method ="post">
                                     
                                     <div class="form-group row mb-4">
                                         <label for="courses" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Course</label>
@@ -59,7 +64,9 @@
                                             <select class="form-control-rounded form-control" name="courses" id="courses" placeholder="">
                                                 <option value="">Select the Course</option>
                                                 <?php foreach($courses as $course): ?>
-                                                        <option value="<?= $course['course_id']?>"><?=$course['course_name'] ?></option>
+                                                    <option value="<?= $course['course_id']?>">
+                                                        <?=$course['course_name'] ?>
+                                                    </option>
                                                 <?php endforeach; ?>  
                                                 
                                             </select>
@@ -74,45 +81,18 @@
                                         </div>
                                     </div>
 
-                                    
-
-                                                       
-                                    <div class="form-group row mb-4">
-                                        <label for="batch_day" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Day </label>
-                                        <div class="col-xl-3 col-lg-9 col-sm-3">
-                                            <select class="form-control-rounded form-control" name="batch_day" id="batch_day" placeholder="">
-                                                <option>Select the day</option>
-                                                <option>Monday</option>
-                                                <option>Tuesday</option>
-                                                <option>Wednesday</option>
-                                                <option>Thursday</option>
-                                                <option>Friday</option>
-                                                <option>Saturday</option>
-                                                <option>Sunday</option>
-                                            </select>
-                                        </div>
-                                    </div>                                
-                                    
-                                    
-                                    <div class="form-group row mb-4">
-                                        <label for="batch_time_from" class="col-xl-2 col-sm-3 col-sm-2 col-form-label"> Time From</label>
-                                        <div class="col-xl-3 col-lg-9 col-sm-3">
-                                                <input type="time" class="form-control-rounded form-control" name="batch_time_from" id="batch_time_from" placeholder="">
-                                        </div>
-                                    </div>
-
-
-                                    <div class="form-group row mb-4">
-                                        <label for="batch_time_to" class="col-xl-2 col-sm-3 col-sm-2 col-form-label"> Time To</label>
-                                        <div class="col-xl-3 col-lg-9 col-sm-3">
-                                                <input type="time" class="form-control-rounded form-control" name="batch_time_to" id="batch_time_to" placeholder="">
-                                        </div>
-                                    </div>
 
                                     <div class="form-group row mb-4">
                                         <label for="batch_start_date" class="col-xl-2 col-sm-3 col-sm-2 col-form-label"> Start Date</label>
                                         <div class="col-xl-3 col-lg-9 col-sm-3">
-                                                <input type="date" class="form-control-rounded form-control" name="batch_start_date" id="batch_start_date" placeholder="">
+                                            <input type="date" class="form-control-rounded form-control" name="batch_start_date" id="batch_start_date" placeholder="">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row mb-4">
+                                        <label for="batch_end_date" class="col-xl-2 col-sm-3 col-sm-2 col-form-label"> End Date</label>
+                                        <div class="col-xl-3 col-lg-9 col-sm-3">
+                                            <input type="date" class="form-control-rounded form-control" name="batch_end_date" id="batch_end_date" placeholder="">
                                         </div>
                                     </div>
 
@@ -138,9 +118,9 @@
             </div>
         </div>
 
-        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 
-<script>
+<!-- <script>
 
 $(document).ready(function(){
 
@@ -176,7 +156,43 @@ $(document).ready(function(){
 });
 
 
-</script>
+</script> -->
+
+<script>
+  $(document).ready(function() {
+   // alert("dd - "  + urltest);
+    // Select the first option on page load
+   // $('#courses').val($('#courses option:first').val());
+
+    // Load data based on selected option
+    $('#courses').change(function() {
+      var selectedValue = $(this).val();
+      loadData(selectedValue);
+    });
+
+    // Function to load data via Ajax
+    function loadData(value) {
+      $.ajax({
+        url: "<?php echo base_url(); ?>" + "/load_data",
+        method: "POST",
+        data: { 
+            selectedValue: value
+         },
+        dataType: "html",
+        success: function(response) {
+          $('#batch_no').val(response);
+        },
+        error: function(xhr, status, error) {
+          console.log(xhr.responseText);
+        }
+      });
+    }
+
+    // Load data for the initially selected option
+    var initialSelectedValue = $('#courses').val();
+    loadData(initialSelectedValue);
+  });
+  </script>
     
 
        

@@ -44,8 +44,13 @@
 
                             <?php if(session()->getFlashdata('success')): ?>
                             
-                            <?php echo session()->getFlashdata('success'); ?>
-                            
+                                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                    <?= session()->getFlashdata('success');?>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                        
                             <?php endif; ?>
 
 
@@ -60,7 +65,7 @@
                                                 <th>Course code</th>
                                                 <th>Course Fee</th>
                                                 <th>Edit</th>
-                                                <th>Delete</th>
+                                                <th>Status</th>
                                                 <!-- <th class="invisible"></th> -->
                                             </tr>
                                         </thead>
@@ -71,7 +76,7 @@
                                                     <td><?= $course['course_name']?></td>
                                                     <td><?= $course['course_code']?></td>
                                                     <td><?= $course['course_fee']?></td>
-                                                    <td class="text-center"><a href="<?=base_url()?>/Course_UpdateView/<?= $course['course_id']?>" data-toggle="tooltip" data-placement="top"><i class="flaticon-edit  bg-success p-1 text-white br-6 mb-1"></i></a></td>
+                                                    <td class="text-center"><a href="<?=base_url()?>/Course_Edit/<?= $course['course_id']?>" data-toggle="tooltip" data-placement="top"><i class="flaticon-edit  bg-success p-1 text-white br-6 mb-1"></i></a></td>
                                                     <td class="text-center"><a href="" data-toggle="tooltip" data-placement="top" title="Delete"><i class="flaticon-delete  bg-danger p-1 text-white br-6 mb-1"></i></a></td>
                                                     
                                                 </tr>
@@ -85,7 +90,7 @@
                                                 <th>Course code</th>
                                                 <th>Course Fee</th>
                                                 <th>Edit</th>
-                                                <th>Delete</th>
+                                                <th>Status</th>
                                                 <!-- <th class="invisible"></th> -->
                                             </tr>
                                         </tfoot>

@@ -1,0 +1,11 @@
+CRITICAL - 2023-06-01 16:56:01 --> Undefined array key "status"
+in APPPATH\Views\student\studentTableView.php on line 85.
+ 1 APPPATH\Views\student\studentTableView.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'APPPATH\\Views\\student\\studentTableView.php', 85)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\student\\studentTableView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('student/studentTableView', [], true)
+ 5 APPPATH\Controllers\StudentContoller.php(48): view('student/studentTableView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\StudentContoller->showdata()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentContoller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

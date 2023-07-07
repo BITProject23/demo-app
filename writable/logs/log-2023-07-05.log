@@ -1,0 +1,141 @@
+CRITICAL - 2023-07-05 15:02:03 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(755): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\BatchController.php(145): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->updatedata()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-05 15:11:04 --> Undefined variable $batchTimes
+in APPPATH\Views\batch\batchTimetableView.php on line 112.
+ 1 APPPATH\Views\batch\batchTimetableView.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $batchTimes', 'APPPATH\\Views\\batch\\batchTimetableView.php', 112)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\batch\\batchTimetableView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('batch/batchTimetableView', [], true)
+ 5 APPPATH\Controllers\BatchController.php(164): view('batch/batchTimetableView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->timetable('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-05 15:11:44 --> Undefined variable $batchTimes
+in APPPATH\Views\batch\batchTimetableView.php on line 112.
+ 1 APPPATH\Views\batch\batchTimetableView.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $batchTimes', 'APPPATH\\Views\\batch\\batchTimetableView.php', 112)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\batch\\batchTimetableView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('batch/batchTimetableView', [], true)
+ 5 APPPATH\Controllers\BatchController.php(164): view('batch/batchTimetableView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->timetable('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-05 15:14:12 --> Call to undefined method App\Models\BatchTimeFrameModel::all
+in SYSTEMPATH\Model.php on line 841.
+ 1 APPPATH\Controllers\BatchController.php(162): CodeIgniter\Model->__call('all', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->timetable('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-05 15:18:28 --> Undefined array key "batch_no"
+in APPPATH\Views\batch\batchTimetableView.php on line 114.
+ 1 APPPATH\Views\batch\batchTimetableView.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "batch_no"', 'APPPATH\\Views\\batch\\batchTimetableView.php', 114)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\batch\\batchTimetableView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('batch/batchTimetableView', [], true)
+ 5 APPPATH\Controllers\BatchController.php(164): view('batch/batchTimetableView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->timetable('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-05 15:18:36 --> Undefined array key "batch_no"
+in APPPATH\Views\batch\batchTimetableView.php on line 114.
+ 1 APPPATH\Views\batch\batchTimetableView.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "batch_no"', 'APPPATH\\Views\\batch\\batchTimetableView.php', 114)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\batch\\batchTimetableView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('batch/batchTimetableView', [], true)
+ 5 APPPATH\Controllers\BatchController.php(164): view('batch/batchTimetableView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->timetable('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-05 15:18:38 --> Undefined array key "batch_no"
+in APPPATH\Views\batch\batchTimetableView.php on line 114.
+ 1 APPPATH\Views\batch\batchTimetableView.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "batch_no"', 'APPPATH\\Views\\batch\\batchTimetableView.php', 114)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\batch\\batchTimetableView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('batch/batchTimetableView', [], true)
+ 5 APPPATH\Controllers\BatchController.php(164): view('batch/batchTimetableView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->timetable('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-05 15:34:27 --> mysqli_sql_exception: Column 'batch_id' in where clause is ambiguous in C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\demo_app\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\demo_app\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\demo_app\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\demo_app\app\Controllers\BatchController.php(164): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(934): App\Controllers\BatchController->timetable('2')
+#8 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+#9 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\demo_app\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-05 15:34:27 --> Column 'batch_id' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_batch_timeframe`
+JOIN `tbl_batch` ON `tbl_batch`.`batch_id` = `tbl_batch_timeframe`.`batch_id`
+WHERE `batch_id` = :batch_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\BatchController.php(164): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->timetable('2')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-05 15:41:44 --> Undefined variable $batchId
+in APPPATH\Controllers\BatchTimeFrameController.php on line 34.
+ 1 APPPATH\Controllers\BatchTimeFrameController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $batchId', 'APPPATH\\Controllers\\BatchTimeFrameController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchTimeFrameController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchTimeFrameController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-05 16:12:09 --> mysqli_sql_exception: Unknown column 'tbl_enrollement.batch_id' in 'where clause' in C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_enr...', 0)
+#1 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_enr...')
+#2 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_enr...')
+#3 C:\xampp\htdocs\demo_app\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_enr...', Array, false)
+#4 C:\xampp\htdocs\demo_app\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\demo_app\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\demo_app\app\Controllers\EnrollmentController.php(71): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(934): App\Controllers\EnrollmentController->searchdata()
+#8 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnrollmentController))
+#9 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\demo_app\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-05 16:12:09 --> Unknown column 'tbl_enrollement.batch_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_enrollment`.`en_id`, `tbl_enrollment`.`en_date`, `tbl_student`.`student_no`, `tbl_student`.`student_first_name`, `tbl_student`.`student_last_name`, `tbl_student`.`student_nic`, `tbl_course`.`course_name`, `tbl_batch`.`batch_no`
+FROM `tbl_enrollment`
+JOIN `tbl_student` ON `tbl_student`.`student_id` = `tbl_enrollment`.`student_id`
+JOIN `tbl_course` ON `tbl_course`.`course_id` = `tbl_enrollment`.`course_id`
+JOIN `tbl_batch` ON `tbl_batch`.`batch_id` = `tbl_enrollment`.`batch_id`
+WHERE `tbl_enrollement`.`batch_id` = :tbl_enrollement.batch_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\EnrollmentController.php(71): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\EnrollmentController->searchdata()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnrollmentController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-05 16:15:34 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::get()
+in APPPATH\Controllers\EnrollmentController.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\EnrollmentController->searchdata()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnrollmentController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

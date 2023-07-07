@@ -43,7 +43,7 @@ class CourseController extends BaseController
 
     }
 
-    public function singleCourse($course_id = null){ //show single course in update form
+    public function editdata($course_id = null){ //show single course in update form
 
        $courseModel = new CourseModel();
 
@@ -57,7 +57,7 @@ class CourseController extends BaseController
         // return view('course/courseUpdateView');
     }
 
-    public function update(){
+    public function updatedata(){
 
         $courseModel = new CourseModel();
 
@@ -71,13 +71,16 @@ class CourseController extends BaseController
         $course_code=$this->request->getPost('course_code');
         $course_fee=$this->request->getPost('course_fee');
 
-        $courseModel->update($course_id,
+        if($courseModel->update($course_id,
                             ['course_name'=>$course_name,
                              'course_code'=>$course_code,
                              'course_fee'=>$course_fee]
-                            );
+                            )){
 
-        return redirect()->to('Course_View')->with('success','Course Details Updated!');                    
+            return redirect()->to('Course_View')->with('success','Course Details Updated!');
+        }else{
+            return redirect()->back()->withInput()->with('errors','Update Failed');
+        }                    
     }
     
 

@@ -43,8 +43,13 @@
                             </div>
 
                             <?php if(session()->getFlashdata('success')): ?>
-                            
-                            <?php echo session()->getFlashdata('success'); ?>
+
+                                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                    <?= session()->getFlashdata('success');?>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
                             
                             <?php endif; ?>
 
@@ -56,6 +61,7 @@
                                         <thead>
                                             <tr>
                                                 <th>Lecturer ID</th>
+                                                <th>Lecturer Emp-no</th>
                                                 <th>First Name</th>
                                                 <th>Last Name</th>
                                                 <th>NIC</th>
@@ -73,6 +79,7 @@
                                             <?php foreach($lecturer as $lec): ?>
                                                 <tr>
                                                     <td><?= $lec['lecturer_id']?></td>
+                                                    <td><?= $lec['lecturer_no']?></td>
                                                     <td><?= $lec['lecturer_first_name']?></td>
                                                     <td><?= $lec['lecturer_last_name']?></td>
                                                     <td><?= $lec['lecturer_nic']?></td>
@@ -81,7 +88,7 @@
                                                     <td><?= $lec['lecturer_bod']?></td>
                                                     <td><?= $lec['lecturer_contact_no']?></td>
                                                     <td><?= $lec['lecturer_address']?></td>
-                                                    <td class="text-center"><a href="" data-toggle="tooltip" data-placement="top"><i class="flaticon-edit  bg-success p-1 text-white br-6 mb-1"></i></a></td>
+                                                    <td class="text-center"><a href="<?=base_url()?>/Lecturer_Edit/<?= $lec['lecturer_id']?>" data-toggle="tooltip" data-placement="top"><i class="flaticon-edit  bg-success p-1 text-white br-6 mb-1"></i></a></td>
                                                     <td class="text-center"><a href="" data-toggle="tooltip" data-placement="top" title="Delete"><i class="flaticon-delete  bg-danger p-1 text-white br-6 mb-1"></i></a></td>
                                                     
                                                 </tr>
@@ -91,6 +98,7 @@
                                         <tfoot>
                                             <tr>
                                                 <th>Lecturer ID</th>
+                                                <th>Lecturer Emp-no</th>
                                                 <th>First Name</th>
                                                 <th>Last Name</th>
                                                 <th>NIC</th>

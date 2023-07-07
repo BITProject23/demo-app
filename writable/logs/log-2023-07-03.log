@@ -1,0 +1,333 @@
+CRITICAL - 2023-07-03 09:19:16 --> Undefined variable $Lecturers
+in APPPATH\Views\lecturer\lecturerUpdateView.php on line 148.
+ 1 APPPATH\Views\lecturer\lecturerUpdateView.php(148): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Lecturers', 'APPPATH\\Views\\lecturer\\lecturerUpdateView.php', 148)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\lecturer\\lecturerUpdateView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('lecturer/lecturerUpdateView', [], true)
+ 5 APPPATH\Controllers\LecturerController.php(58): view('lecturer/lecturerUpdateView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerController->editdata('8')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 09:27:20 --> Undefined variable $lecturers
+in APPPATH\Views\lecturer\lecturerUpdateView.php on line 60.
+ 1 APPPATH\Views\lecturer\lecturerUpdateView.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lecturers', 'APPPATH\\Views\\lecturer\\lecturerUpdateView.php', 60)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\lecturer\\lecturerUpdateView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('lecturer/lecturerUpdateView', [], true)
+ 5 APPPATH\Controllers\LecturerController.php(58): view('lecturer/lecturerUpdateView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerController->editdata('8')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 12:01:35 --> Undefined variable $subjects
+in APPPATH\Views\subject\subjectTableView.php on line 77.
+ 1 APPPATH\Views\subject\subjectTableView.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $subjects', 'APPPATH\\Views\\subject\\subjectTableView.php', 77)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\subject\\subjectTableView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('subject/subjectTableView', [], true)
+ 5 APPPATH\Controllers\SubjectController.php(39): view('subject/subjectTableView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SubjectController->showdata()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubjectController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 12:01:47 --> Undefined variable $subjects
+in APPPATH\Views\subject\subjectTableView.php on line 77.
+ 1 APPPATH\Views\subject\subjectTableView.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $subjects', 'APPPATH\\Views\\subject\\subjectTableView.php', 77)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\subject\\subjectTableView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('subject/subjectTableView', [], true)
+ 5 APPPATH\Controllers\SubjectController.php(39): view('subject/subjectTableView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SubjectController->showdata()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubjectController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 12:10:06 --> Undefined variable $subject
+in APPPATH\Views\subject\subjectTableView.php on line 72.
+ 1 APPPATH\Views\subject\subjectTableView.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $subject', 'APPPATH\\Views\\subject\\subjectTableView.php', 72)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\subject\\subjectTableView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('subject/subjectTableView', [], true)
+ 5 APPPATH\Controllers\SubjectController.php(49): view('subject/subjectTableView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SubjectController->editdata('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubjectController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 14:05:56 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 14:13:16 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 14:17:26 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 14:33:26 --> Trying to access array offset on value of type null
+in APPPATH\Views\batch\batchTimetableView.php on line 34.
+ 1 APPPATH\Views\batch\batchTimetableView.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\batch\\batchTimetableView.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\batch\\batchTimetableView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('batch/batchTimetableView', [], true)
+ 5 APPPATH\Controllers\BatchController.php(133): view('batch/batchTimetableView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->timetable('8')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 14:34:00 --> Trying to access array offset on value of type null
+in APPPATH\Views\batch\batchTimetableView.php on line 34.
+ 1 APPPATH\Views\batch\batchTimetableView.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\batch\\batchTimetableView.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\batch\\batchTimetableView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('batch/batchTimetableView', [], true)
+ 5 APPPATH\Controllers\BatchController.php(133): view('batch/batchTimetableView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->timetable('8')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 14:46:48 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 14:47:17 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 14:47:22 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 14:48:44 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 14:49:54 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 14:50:06 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 14:50:48 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 14:51:11 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 14:51:44 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 14:52:42 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 14:53:29 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 14:54:19 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 14:59:31 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 16:22:48 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 16:22:52 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 16:22:55 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 16:23:00 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 16:47:21 --> Undefined variable $student
+in APPPATH\Views\batch\batchUpdateView.php on line 61.
+ 1 APPPATH\Views\batch\batchUpdateView.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $student', 'APPPATH\\Views\\batch\\batchUpdateView.php', 61)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\batch\\batchUpdateView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('batch/batchUpdateView', [], true)
+ 5 APPPATH\Controllers\BatchController.php(128): view('batch/batchUpdateView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->editdata('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 16:48:50 --> Undefined variable $courses
+in APPPATH\Views\batch\batchUpdateView.php on line 69.
+ 1 APPPATH\Views\batch\batchUpdateView.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $courses', 'APPPATH\\Views\\batch\\batchUpdateView.php', 69)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\batch\\batchUpdateView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('batch/batchUpdateView', [], true)
+ 5 APPPATH\Controllers\BatchController.php(128): view('batch/batchUpdateView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->editdata('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 16:53:04 --> Undefined variable $courses
+in APPPATH\Views\batch\batchUpdateView.php on line 69.
+ 1 APPPATH\Views\batch\batchUpdateView.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $courses', 'APPPATH\\Views\\batch\\batchUpdateView.php', 69)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\batch\\batchUpdateView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('batch/batchUpdateView', [], true)
+ 5 APPPATH\Controllers\BatchController.php(128): view('batch/batchUpdateView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->editdata('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 16:53:48 --> Cannot access offset of type string on string
+in APPPATH\Views\batch\batchUpdateView.php on line 70.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('batch/batchUpdateView', [], true)
+ 4 APPPATH\Controllers\BatchController.php(128): view('batch/batchUpdateView', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->editdata('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 16:53:50 --> Cannot access offset of type string on string
+in APPPATH\Views\batch\batchUpdateView.php on line 70.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('batch/batchUpdateView', [], true)
+ 4 APPPATH\Controllers\BatchController.php(128): view('batch/batchUpdateView', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->editdata('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 16:54:09 --> Cannot access offset of type string on string
+in APPPATH\Views\batch\batchUpdateView.php on line 70.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('batch/batchUpdateView', [], true)
+ 4 APPPATH\Controllers\BatchController.php(128): view('batch/batchUpdateView', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->editdata('2')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 16:55:21 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 16:55:39 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 16:56:15 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 17:06:08 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 17:06:14 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 17:06:18 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 45.
+ 1 APPPATH\Controllers\BatchController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 17:57:46 --> Undefined variable $batch
+in APPPATH\Views\batch\batchUpdateView.php on line 61.
+ 1 APPPATH\Views\batch\batchUpdateView.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $batch', 'APPPATH\\Views\\batch\\batchUpdateView.php', 61)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\batch\\batchUpdateView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('batch/batchUpdateView', [], true)
+ 5 APPPATH\Controllers\BatchController.php(130): view('batch/batchUpdateView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->editdata('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

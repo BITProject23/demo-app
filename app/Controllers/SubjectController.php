@@ -40,5 +40,34 @@ class SubjectController extends BaseController
 
     }
 
+    public function editdata($subId){
+
+        $subjectModel = new SubjectModel();
+
+        $data['subjects'] = $subjectModel->find($subId);
+
+        return view('subject/subjectUpdateView',$data);
+
+    }
+
+    public function updatedata(){
+
+        $subjectId = $this->request->getPost('subject_id');
+
+        $data =[
+            'subject_name'=>$this->request->getPost('subject_name'),
+            'subject_code'=>$this->request->getPost('subject_code'),
+        ];
+
+        $subjectModel = new SubjectModel; //make new object from model that use in this controller
+
+        if($subjectModel->update($subjectId,$data)){
+            return redirect()->to('Subject_View')->with('success','Subject Updated Successfully!');
+        }else{
+            return redirect()->back()->withInput()->with('errors',$subjectModel->errors());
+        }
+            
+    }
+
 }
 ?>

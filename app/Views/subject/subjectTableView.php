@@ -44,7 +44,12 @@
 
                             <?php if(session()->getFlashdata('success')): ?>
                             
-                            <?php echo session()->getFlashdata('success'); ?>
+                                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                    <?= session()->getFlashdata('success');?>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
                             
                             <?php endif; ?>
 
@@ -69,7 +74,7 @@
                                                     <td><?= $sub['subject_id']?></td>
                                                     <td><?= $sub['subject_name']?></td>
                                                     <td><?= $sub['subject_code']?></td>
-                                                    <td class="text-center"><a href="" data-toggle="tooltip" data-placement="top"><i class="flaticon-edit  bg-success p-1 text-white br-6 mb-1"></i></a></td>
+                                                    <td class="text-center"><a href="<?=base_url()?>/Subject_Edit/<?= $sub['subject_id']?>" data-toggle="tooltip" data-placement="top"><i class="flaticon-edit  bg-success p-1 text-white br-6 mb-1"></i></a></td>
                                                     <td class="text-center"><a href="" data-toggle="tooltip" data-placement="top" title="Delete"><i class="flaticon-delete  bg-danger p-1 text-white br-6 mb-1"></i></a></td>   
                                                 </tr>
                                             <?php endforeach; ?>       

@@ -31,13 +31,13 @@
                             <div class="widget-header">
                                 <div class="row">
                                     <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Batch</h4>
+                                        <h4>Batch View</h4>
                                     </div>                 
                                 </div>
 
                                 <div class="row">
                                     <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <a href="<?=base_url()?>/Batch" class="btn btn-primary btn-rounded mb-2 mr-2"><span>Add New Entry</span></a>
+                                        <a href="<?=base_url()?>/Batch_add" class="btn btn-primary btn-rounded mb-2 mr-2"><span>Add New Entry</span></a>
                                     </div>                 
                                 </div>
                             </div>
@@ -58,12 +58,14 @@
                                                 <th>Batch ID</th>
                                                 <th>Course Name</th>
                                                 <th>Batch No</th>
-                                                <th>Day</th>
-                                                <th>Time From</th>
-                                                <th>Time To</th>
+                                                <!-- <th>Day </th> -->
+                                                <!-- <th>Time From</th> -->
+                                                <!-- <th>Time To</th> -->
                                                 <th>Start Date</th>
+                                                <th>End Date</th>
+                                                <th>Timetable</th>
                                                 <th>Edit</th>
-                                                <th>Delete</th>
+                                                <!-- <th>Delete</th> -->
                                                 <!-- <th class="invisible"></th> -->
                                             </tr>
                                         </thead>
@@ -73,12 +75,16 @@
                                                     <td><?= $batch['batch_id']?></td>
                                                     <td><?= $batch['course_name']?></td>
                                                     <td><?= $batch['batch_no']?></td>
-                                                    <td><?= $batch['batch_day']?></td>
-                                                    <td><?= $batch['batch_time_from']?></td>
-                                                    <td><?= $batch['batch_time_to']?></td>
+                                                    <!-- <td>< ?= $batch['batch_day']?></td> -->
+                                                    <!-- <td>< ?= $batch['batch_time_from']?></td> -->
+                                                    <!-- <td>< ?= $batch['batch_time_to']?></td> -->
                                                     <td><?= $batch['batch_start_date']?></td>
-                                                    <td class="text-center"><a href="<?=base_url()?>" data-toggle="tooltip" data-placement="top"><i class="flaticon-edit  bg-success p-1 text-white br-6 mb-1"></i></a></td>
-                                                    <td class="text-center"><a href="" data-toggle="tooltip" data-placement="top" title="Delete"><i class="flaticon-delete  bg-danger p-1 text-white br-6 mb-1"></i></a></td>
+                                                    <td><?= $batch['batch_end_date']?></td>
+                                                    <td class="text-center">
+                                                        <a href="<?=base_url()?>/Batch_Timetable/<?= $batch['batch_id']?>" data-toggle="tooltip" data-placement="top" target="_blank"><i class="flaticon-calendar-1  bg-primary p-1 text-white br-6 mb-1"></i></a>
+                                                    </td>
+                                                    <td class="text-center"><a href="<?=base_url()?>/Batch_Edit/<?= $batch['batch_id']?>" data-toggle="tooltip" data-placement="top"><i class="flaticon-edit  bg-success p-1 text-white br-6 mb-1"></i></a></td>
+                                                    <!-- <td class="text-center"><a href="" data-toggle="tooltip" data-placement="top" title="Delete"><i class="flaticon-delete  bg-danger p-1 text-white br-6 mb-1"></i></a></td> -->
                                                 </tr>
                                             <?php endforeach; ?>    
                                             
@@ -88,12 +94,13 @@
                                                 <th>Batch ID</th>
                                                 <th>Course Name</th>
                                                 <th>Batch No</th>
-                                                <th>Day</th>
-                                                <th>Time From</th>
-                                                <th>Time To</th>
+                                                <!-- <th>Day </th> -->
+                                                <!-- <th>Time From</th> -->
+                                                <!-- <th>Time To</th> -->
                                                 <th>Start Date</th>
+                                                <th>End Date</th>
                                                 <th>Edit</th>
-                                                <th>Delete</th>
+                                                <!-- <th>Delete</th> -->
                                                 <!-- <th class="invisible"></th> -->
                                             </tr>
                                         </tfoot>

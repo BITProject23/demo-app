@@ -77,7 +77,7 @@
                                         <div class="form-group row mb-4">
                                             <label for="subjects" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Subjects</label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <select class="form-control-rounded form-control" name="subjects" id="subjects" placeholder="">
+                                                <select class="form-control-rounded form-control" name="course_subject" id="subjects" placeholder="">
                                                     <option value="">Select the Subject</option>
                                                     <?php foreach ($subjects as $subject): ?>
                                                         <option value="<?= $subject['subject_id']?>"><?=$subject['subject_name'] ?></option>
