@@ -10,6 +10,9 @@
                 <div class="page-header">
                     <div class="page-title">
                         <h3>Accounting Dashboard</h3>
+                        <h3>
+                            <!-- < ?= session()->get('user_type')?> -->
+                        </h3>
                     </div>
                 </div>
                 
@@ -18,15 +21,15 @@
                         <div class="widget-content widget-content-area br-4 accounts-income">
                             <div class="row">
                                 <div class="col-md-6 col-6">
-                                    <h6 class="value">$ 82,341</h6>
-                                    <p class="mt-2">Income</p>
+                                    <h6 class="value"><?= $student_count?></h6>
+                                    <p class="mt-2">Students</p>
                                 </div>
                                 <div class="col-md-6 col-6 text-right">
                                     <i class="flaticon-currency"></i>
                                 </div>
                             </div>
                             <div class="progress br-30 mb-0 mt-5">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 100%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
@@ -34,15 +37,15 @@
                         <div class="widget-content widget-content-area br-4 accounts-cogs">
                             <div class="row">
                                 <div class="col-md-6 col-6">
-                                    <h6 class="value">$ 47,641</h6>
-                                    <p class="mt-2">Cogs</p>
+                                    <h6 class="value"><?= $course_count?></h6>
+                                    <p class="mt-2">Courses</p>
                                 </div>
                                 <div class="col-md-6 col-6 text-right">
                                     <i class="flaticon-dollar-coin"></i>
                                 </div>
                             </div>
                             <div class="progress br-30 mb-0 mt-5">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
@@ -50,15 +53,15 @@
                         <div class="widget-content widget-content-area br-4 accounts-profit">
                             <div class="row">
                                 <div class="col-md-6 col-6">
-                                    <h6 class="value">$ 84,534</h6>
-                                    <p class="mt-2">Profit</p>
+                                <h6 class="value"><?= $lecture_count?></h6>
+                                    <p class="mt-2">Lecturers</p>
                                 </div>
                                 <div class="col-md-6 col-6 text-right">
                                     <i class="flaticon-money"></i>
                                 </div>
                             </div>
                             <div class="progress br-30 mb-0 mt-5">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
@@ -66,15 +69,15 @@
                         <div class="widget-content widget-content-area br-4 accounts-expenses">
                             <div class="row">
                                 <div class="col-md-6 col-6">
-                                    <h6 class="value">$ 45,141</h6>
-                                    <p class="mt-2">Expenses</p>
+                                    <h6 class="value"><?= $batch_count?></h6>
+                                    <p class="mt-2">Batches</p>
                                 </div>
                                 <div class="col-md-6 col-6 text-right">
                                     <i class="flaticon-wallet"></i>
                                 </div>
                             </div>
                             <div class="progress br-30 mb-0 mt-5">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 37%" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
@@ -89,16 +92,6 @@
                                         <div class="col-md-5 col-sm-5 col-6 mb-4 mb-sm-0">
                                             <h5 class="mb-0">Product Sales</h5>
                                         </div>
-                                        <div class="col-md-7 col-sm-7 col-6 text-sm-right">
-                                            <ul class="nav justify-content-end product-sales nav-pills" id="product-sales" role="tablist">
-                                                <li class="nav-item">
-                                                    <a class="nav-link active" id="product-sales-monthly-tab" data-toggle="pill" href="#product-sales-monthly" role="tab" aria-controls="product-sales-monthly" aria-selected="true">Monthly</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" id="product-sales-yearly-tab" data-toggle="pill" href="#product-sales-yearly" role="tab" aria-controls="product-sales-yearly" aria-selected="false">Yearly</a>
-                                                </li>
-                                            </ul>
-                                        </div>
                                     </div>
                                 </div>
 
@@ -111,78 +104,30 @@
                                                 <table class="table">
                                                     <thead>
                                                         <tr>
-                                                            <th>Product</th>
-                                                            <th class="text-right">Amount</th>
+                                                            <th>Subject ID</th>
+                                                            <th>Subject Name</th>
+                                                            <th>Subject code</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <div class="align-self-center">
-                                                                        <div class="d-m-pro-name-1 data-marker"></div>
-                                                                    </div>
-                                                                    <div class="pro-name pro-name-1">Apple</div>
-                                                                </div>
-                                                            </td>
-                                                            <td class="action text-right">
-                                                                <div class="d-flex justify-content-between">
-                                                                    <div class="pchart">
-                                                                        <span id="ps1">Loading...</span>
-                                                                    </div>
-                                                                    <div class="pcontent">
-                                                                        <p class="p-l-tooltip montly-price mb-0"  data-placement="top" title="14%">4976.5 $</p>
-                                                                        <p class="montly-inc-1">+265</p>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <div class="align-self-center">
-                                                                        <div class="d-m-pro-name-2 data-marker"></div>
-                                                                    </div>
-                                                                    <div class="pro-name pro-name-2">HP-Laptop</div>
-                                                                </div>
-                                                            </td>
-                                                            <td class="action text-right">
-
-                                                                <div class="d-flex justify-content-between">
-                                                                    <div class="pchart">
-                                                                        <span id="ps2">Loading...</span>
-                                                                    </div>
-                                                                    <div class="pcontent">
-                                                                        <p class="p-l-tooltip montly-price mb-0"  data-placement="top" title="9%">3081.2 $</p>
-                                                                        <p class="montly-inc-2">+127</p>
-                                                                    </div>
-                                                                </div>
-
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>
-                                                                <div class="d-flex">
-                                                                    <div class="align-self-center">
-                                                                        <div class="d-m-pro-name-3 data-marker"></div>
-                                                                    </div>
-                                                                    <div class="pro-name pro-name-3">Samsung Monitor</div>
-                                                                </div>
-                                                            </td>
-                                                            <td class="action text-right">
-                                                                <div class="d-flex justify-content-between">
-                                                                    <div class="pchart">
-                                                                        <span id="ps3">Loading...</span>
-                                                                    </div>
-                                                                    <div class="pcontent">
-                                                                        <p class="p-l-tooltip montly-price mb-0"  data-placement="top" title="2%">7376.5 $</p>
-                                                                        <p class="montly-inc-3">+80</p>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
+                                                        <?php foreach($thisMonthPayments as $pay): ?>
+                                                            <tr>
+                                                                <td><?= $pay['course_payment']?></td>
+                                                                <td><?= $pay['course_payment']?></td>
+                                                                <td><?= $pay['payment_year_month']?></td>
+                                                            </tr>
+                                                        <?php endforeach; ?>       
                                                     </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <th>Subject ID</th>
+                                                            <th>Subject Name</th>
+                                                            <th>Subject code</th>
+                                                            <th>Edit</th>
+                                                            <th>Delete</th>
+                                                            <!-- <th class="invisible"></th> -->
+                                                        </tr>
+                                                    </tfoot>
                                                 </table>
                                             </div>
                                         </div>

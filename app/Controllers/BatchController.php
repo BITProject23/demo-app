@@ -59,6 +59,8 @@ class BatchController extends BaseController
         echo json_encode($data);
     }
 
+    
+
 
     public function getCourseCode()
     {
@@ -138,7 +140,7 @@ class BatchController extends BaseController
             'batch_end_date'=>$this->request->getPost('batch_end_date'),
             'course_id'=>$this->request->getPost('courses')
         ];
-
+        
         
         $batchModel = new BatchModel();
 
@@ -162,6 +164,12 @@ class BatchController extends BaseController
         $data['batchTimes'] = $batchTimeframeModel
         ->join('tbl_batch', 'tbl_batch.batch_id = tbl_batch_timeframe.batch_id')
         ->where('tbl_batch.batch_id', $batchId)->findAll();
+
+        $data['subjects'] = $batchModel->select('tbl_subject.subject_id, tbl_subject.subject_name, tbl_batch.batch_id')
+            ->join('tbl_course','tbl_course.course_id = tbl_batch.course_id')
+            ->join('tbl_course_subject','tbl_course.course_id = tbl_course_subject.course_id')
+            ->join('tbl_subject','tbl_course_subject.subject_id = tbl_subject.subject_id')
+            ->where('tbl_batch.batch_id', $batchId)->findAll();
 
         return view('batch/batchTimetableView',$data);
 

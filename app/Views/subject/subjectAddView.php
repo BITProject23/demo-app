@@ -52,15 +52,15 @@
                             <div class="widget-content widget-content-area">
 
 
-                                <?php echo form_open('Subject_create') ?>
-                                    <!-- <form> -->
+                                <!-- < ?php echo form_open('Subject_create') ?> -->
+                                <form name="subjectForm" data-toggle="validator" action='<?php echo base_url();?>/Subject_create' id="subjectForm" method ="post">
 
 
                                         <div class="form-group row mb-4">
                                             <label for="subject_name" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Subject Name </label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
-                                            <input type="text" class="form-control-rounded form-control" name="subject_name" id="subject_name" placeholder="" required>
-                                            <lable id="subject_n"></lable>
+                                            <input type="text" class="form-control-rounded form-control" name="subject_name" id="subject_name" data-required-error="Please enter subject name" required>
+                                            <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
 
@@ -69,8 +69,8 @@
                                         <div class="form-group row mb-4">
                                             <label for="subject_code" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Subject code </label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
-                                            <input type="text" class="form-control-rounded form-control" name="subject_code" id="subject_code" placeholder="" required>
-                                            <lable id="subject_c"></lable>
+                                            <input type="text" class="form-control-rounded form-control" name="subject_code" id="subject_code" data-required-error="Please enter subject code" required>
+                                            <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
 
@@ -85,8 +85,8 @@
                                                 <button type="submit" onclick="subCheck()" value="Submit" class="btn-material btn-material-primary  mb-4 mr-3">Submit</button>
                                             </div>
                                         </div>
-                                    <!-- </form> -->
-                                <?php echo form_close()?>
+                                    </form>
+                                <!-- < ?php echo form_close()?> -->
                             </div>
                         </div>
                     </div>
@@ -95,21 +95,7 @@
             </div>
         </div>
 
-        <script src="public/assets_1/assets/js/libs/jquery-3.1.1.min.js"></script>
-        <script> 
-            function subCheck(){
-                if(document.getElementById("subject_name").value==""){
-                    document.getElementById("subject_n").innerHTML="Subject name is required ";
-                    document.getElementById("subject_n").style.color="red";
-                    return false;
-                } else if(document.getElementById("subject_code").value==""){
-                    document.getElementById("subject_c").innerHTML="Subject code is required ";
-                    document.getElementById("subject_c").style.color="red";
-                    return false;
-                } 
-            }
-
-        </script>
+      
     
 
        

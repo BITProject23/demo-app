@@ -5,7 +5,6 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('content') ?>
-    
 
         <div id="content" class="main-content">
             <div class="container">
@@ -36,6 +35,8 @@
                                     </div>                                                                        
                                 </div>
 
+                                
+
                                 <?php if(session()->has('success')) : ?>
 
                                     <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -62,7 +63,8 @@
                                         <div class="form-group row mb-4">
                                             <label for="student_no" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Student No </label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <input type="text" class="form-control-rounded form-control"  name="student_no" id="student_no" minlength="3" placeholder="" data-required-error="Please enter student number" required>
+                                                <input type="text" class="form-control-rounded form-control"  name="student_no" id="student_no" minlength="7" maxlength="7" placeholder="" data-required-error="Please enter student number" required
+                                                value="<?= $stu_no?>" readonly>
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
@@ -70,15 +72,15 @@
                                         <div class="form-group row mb-4">
                                             <label for="student_first_name" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">First Name </label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <input type="text" class="form-control-rounded form-control"  name="student_first_name" id="student_first_name" placeholder="" data-required-error="Please enter a first name" required>
+                                                <input type="text" class="form-control-rounded form-control"  name="student_first_name" id="student_first_name" minlength="3" maxlength="20" placeholder="" data-required-error="Please enter a first name" required>
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
 
-                                        <div class="form-group row mb-2">
+                                        <div class="form-group row mb-4">
                                             <label for="student_last_name" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Last Name </label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <input type="text" class="form-control-rounded form-control"  name="student_last_name" id="student_last_name" placeholder="" data-required-error="Please enter a last name" required >
+                                                <input type="text" class="form-control-rounded form-control"  name="student_last_name" id="student_last_name" minlength="3" maxlength="20" placeholder="" data-required-error="Please enter a last name" required >
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
@@ -86,7 +88,7 @@
                                         <div class="form-group row mb-4">
                                             <label for="student_nic" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">NIC </label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <input type="text" class="form-control-rounded form-control"  name="student_nic" id="student_nic" placeholder="" data-required-error="Please enter a valid NIC number" required>
+                                                <input type="text" class="form-control-rounded form-control"  name="student_nic" id="student_nic" minlength="10" maxlength="12" placeholder="" data-required-error="Please enter a valid NIC number" required>
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
@@ -97,7 +99,7 @@
                                             <label for="student_email" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Email</label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
                                                 <input type="email" class="form-control-rounded form-control"  name="student_email" id="student_email" placeholder="" data-required-error="Please enter a valid email address" required >
-                                                <lable id="email_error"></lable>
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
 
@@ -108,13 +110,13 @@
                                                 <div class="col-xl-10 col-lg-9 col-sm-10">
                                                     <div class="form-check mb-2">
                                                         <div class="custom-control custom-radio classic-radio-info">
-                                                            <input type="radio" id="hRadio1" name="student_gender" value="Male" class="custom-control-input">
+                                                            <input type="radio" id="hRadio1" name="student_gender" value="Male" class="custom-control-input" selected>
                                                             <label class="custom-control-label" for="hRadio1">Male</label>
                                                         </div>
                                                     </div>
                                                     <div class="form-check mb-2">
                                                         <div class="custom-control custom-radio classic-radio-info">
-                                                            <input type="radio" id="hRadio2" name="student_gender" value="Femal" class="custom-control-input">
+                                                            <input type="radio" id="hRadio2" name="student_gender" value="Female" class="custom-control-input">
                                                             <label class="custom-control-label" for="hRadio2">Female</label>
                                                         </div>
                                                     </div>
@@ -136,7 +138,7 @@
                                         <div class="form-group row mb-4">
                                             <label for="student_contact_no" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Contact Number</label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <input type="number" class="form-control-rounded form-control" name="student_contact_no" id="student_contact_no" min="10" max="10" data-required-error="Please enter a valid 10-digit phone number" required >
+                                                <input type="text" class="form-control-rounded form-control" name="student_contact_no" id="student_contact_no" minlength="10" maxlength="10" data-required-error="Please enter a valid 10-digit phone number" required >
                                                 <label id="phone_error"></lable>
                                             </div>
                                         </div>
@@ -146,6 +148,13 @@
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
                                                 <input type="text" class="form-control-rounded form-control" name="student_address" id="student_address" placeholder="" >
                                                 <label id="address_error"></label>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row mb-4"> 
+                                            <label for="student_registration_date" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Registration Date</label>
+                                            <div class="col-xl-3 col-lg-9 col-sm-3">
+                                                <input type="date" class="form-control-rounded form-control" name="student_registration_date" id="student_registration_date" placeholder="">
                                             </div>
                                         </div>
 
@@ -281,6 +290,19 @@
             }
 
         </script>
+
+        <script>
+            $(document).ready(function() {
+                var now = new Date();
+
+                var day = ("0" + now.getDate()).slice(-2);
+                var month = ("0" + (now.getMonth() + 1)).slice(-2);
+
+                var today = now.getFullYear()+"-"+(month)+"-"+(day) ;
+
+                $('#student_registration_date').val(today);
+            });
+       </script>
 
 
        

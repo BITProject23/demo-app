@@ -50,33 +50,34 @@
                                     <div class="widget-content widget-content-area">
                                         <div class="table-responsive mb-4">
                                             <form method="get">
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Student No:</td>
-                                                        <td>
-                                                            <input type="text" id="student_id" class="form-control-rounded form-control" name="student_id">
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Batch:</td>
-                                                        <td>
-                                                            <!-- <input type="text" id="batch_no" class="form-control" name="batch_no"> -->
-                                                            <select class="form-control-rounded form-control" name="batches" id="batches" placeholder="">
-                                                                <option value="">Select the batch</option>
-                                                                <?php foreach($batches as $batch): ?>
-                                                                    <option value="<?= $batch['batch_id']?>">
-                                                                        <?=$batch['batch_no'] ?>
-                                                                    </option>
-                                                                <?php endforeach; ?>   
-                                            </select>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><button type="submit">Search</button></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Student No:</td>
+                                                            <td>
+                                                                <input type="text" id="student_no" class="form-control-rounded form-control" name="student_no">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Batch:</td>
+                                                            <td>
+                                                                <!-- <input type="text" id="batch_no" class="form-control" name="batch_no"> -->
+                                                                <select class="form-control-rounded form-control" name="batches" id="batches" placeholder="">
+                                                                    <option value="">Select the batch</option>
+                                                                    <?php foreach($batches as $batch): ?>
+                                                                        <option value="<?= $batch['batch_id']?>">
+                                                                            <?=$batch['batch_no'] ?>
+                                                                        </option>
+                                                                    <?php endforeach; ?>   
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><button type="submit" value="Submit" class="btn btn-primary">Search</button></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
                                             </form>
                                             <table id="range-search" class="display table table-striped table-bordered table-hover" style="width:100%">
                                                 <thead>

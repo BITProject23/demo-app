@@ -151,9 +151,7 @@
 
                                         <div class="form-group row ">
                                         
-                                            <div class=" col-sm-10">
-                                            
-                                            
+                                            <div class=" col-sm-10">                                         
                                                 <button type="reset" value="Reset" class="btn-material btn-material-default  mb-4 mr-3">Reset</button>
                                                 <button type="submit" value="Submit" id="submit" class="btn-material btn-material-primary  mb-4 mr-3">Submit</button>
                                             </div>

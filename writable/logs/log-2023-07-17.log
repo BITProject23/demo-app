@@ -1,0 +1,445 @@
+CRITICAL - 2023-07-17 05:04:57 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 47.
+ 1 APPPATH\Controllers\BatchController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 05:05:15 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 47.
+ 1 APPPATH\Controllers\BatchController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 05:05:58 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 47.
+ 1 APPPATH\Controllers\BatchController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 05:06:01 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 47.
+ 1 APPPATH\Controllers\BatchController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 05:06:04 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 47.
+ 1 APPPATH\Controllers\BatchController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 05:07:21 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 47.
+ 1 APPPATH\Controllers\BatchController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 05:07:34 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 47.
+ 1 APPPATH\Controllers\BatchController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 05:07:41 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 47.
+ 1 APPPATH\Controllers\BatchController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 06:16:51 --> Invalid file: "lecturerPortal/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('lecturerPortal/home.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('lecturerPortal/home', [], true)
+ 3 APPPATH\Controllers\LecturerPortalController.php(14): view('lecturerPortal/home')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 07:44:33 --> Undefined variable $batches
+in APPPATH\Views\enrollment\studentEnrollmentTableView.php on line 67.
+ 1 APPPATH\Views\enrollment\studentEnrollmentTableView.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $batches', 'APPPATH\\Views\\enrollment\\studentEnrollmentTableView.php', 67)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\enrollment\\studentEnrollmentTableView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('enrollment/studentEnrollmentTableView', [], true)
+ 5 APPPATH\Controllers\EnrollmentController.php(84): view('enrollment/studentEnrollmentTableView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\EnrollmentController->showdata()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnrollmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 07:45:03 --> Undefined array key "student_no"
+in APPPATH\Views\enrollment\studentEnrollmentTable.php on line 76.
+ 1 APPPATH\Views\enrollment\studentEnrollmentTable.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "student_no"', 'APPPATH\\Views\\enrollment\\studentEnrollmentTable.php', 76)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\enrollment\\studentEnrollmentTable.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('enrollment/studentEnrollmentTable', [], true)
+ 5 APPPATH\Controllers\EnrollmentController.php(84): view('enrollment/studentEnrollmentTable', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\EnrollmentController->showdata()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnrollmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 07:45:06 --> Undefined array key "student_no"
+in APPPATH\Views\enrollment\studentEnrollmentTable.php on line 76.
+ 1 APPPATH\Views\enrollment\studentEnrollmentTable.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "student_no"', 'APPPATH\\Views\\enrollment\\studentEnrollmentTable.php', 76)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\enrollment\\studentEnrollmentTable.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('enrollment/studentEnrollmentTable', [], true)
+ 5 APPPATH\Controllers\EnrollmentController.php(84): view('enrollment/studentEnrollmentTable', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\EnrollmentController->showdata()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnrollmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 08:18:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 47.
+ 1 APPPATH\Controllers\BatchController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 08:18:43 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 47.
+ 1 APPPATH\Controllers\BatchController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 08:26:18 --> Invalid file: "user/userAddView.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/userAddView.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('user/userAddView', [], true)
+ 3 APPPATH\Controllers\UserController.php(14): view('user/userAddView')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-17 10:15:58 --> mysqli_sql_exception: Unknown column 'tbl_payment.student_id' in 'on clause' in C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_bat...', 0)
+#1 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_bat...')
+#2 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_bat...')
+#3 C:\xampp\htdocs\demo_app\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_bat...', Array, false)
+#4 C:\xampp\htdocs\demo_app\app\Controllers\ReportController.php(207): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(934): App\Controllers\ReportController->enrollmentview()
+#6 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#7 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\demo_app\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-17 10:15:59 --> Unknown column 'tbl_payment.student_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_batch`.`batch_no`, `tbl_course`.`course_name`, `tbl_student`.`student_no`, `tbl_student`.`student_first_name`, `tbl_student`.`student_last_name`, `tbl_student`.`student_nic`, `tbl_enrollment`.`en_date`
+FROM `tbl_enrollment`
+JOIN `tbl_batch` ON `tbl_batch`.`batch_id` = `tbl_enrollment`.`batch_id`
+JOIN `tbl_course` ON `tbl_course`.`course_id` = `tbl_enrollment`.`course_id`
+JOIN `tbl_student` ON `tbl_student`.`student_id` = `tbl_payment`.`student_id`
+WHERE `tbl_enrollment`.`batch_id` = :tbl_enrollment.batch_id:', [...], false)
+ 2 APPPATH\Controllers\ReportController.php(207): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ReportController->enrollmentview()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 11:22:50 --> Undefined variable $lec
+in APPPATH\Views\user\userTableView.php on line 78.
+ 1 APPPATH\Views\user\userTableView.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lec', 'APPPATH\\Views\\user\\userTableView.php', 78)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\userTableView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('user/userTableView', [], true)
+ 5 APPPATH\Controllers\UserController.php(73): view('user/userTableView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->showdata()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 11:23:15 --> Undefined variable $lec
+in APPPATH\Views\user\userTableView.php on line 78.
+ 1 APPPATH\Views\user\userTableView.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lec', 'APPPATH\\Views\\user\\userTableView.php', 78)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\userTableView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('user/userTableView', [], true)
+ 5 APPPATH\Controllers\UserController.php(73): view('user/userTableView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->showdata()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 11:23:16 --> Undefined variable $lec
+in APPPATH\Views\user\userTableView.php on line 78.
+ 1 APPPATH\Views\user\userTableView.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lec', 'APPPATH\\Views\\user\\userTableView.php', 78)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\userTableView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('user/userTableView', [], true)
+ 5 APPPATH\Controllers\UserController.php(73): view('user/userTableView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->showdata()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 11:49:51 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(755): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\BatchController.php(147): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->updatedata()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 11:50:59 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(755): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\BatchController.php(147): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->updatedata()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 12:02:25 --> Undefined variable $user
+in APPPATH\Views\user\userUpdateView.php on line 73.
+ 1 APPPATH\Views\user\userUpdateView.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'APPPATH\\Views\\user\\userUpdateView.php', 73)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\userUpdateView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('user/userUpdateView', [], true)
+ 5 APPPATH\Controllers\UserController.php(83): view('user/userUpdateView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->editdata('9')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 12:02:48 --> Undefined variable $user
+in APPPATH\Views\user\userUpdateView.php on line 73.
+ 1 APPPATH\Views\user\userUpdateView.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'APPPATH\\Views\\user\\userUpdateView.php', 73)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\userUpdateView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('user/userUpdateView', [], true)
+ 5 APPPATH\Controllers\UserController.php(83): view('user/userUpdateView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->editdata('9')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 12:02:50 --> Undefined variable $user
+in APPPATH\Views\user\userUpdateView.php on line 73.
+ 1 APPPATH\Views\user\userUpdateView.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'APPPATH\\Views\\user\\userUpdateView.php', 73)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\userUpdateView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('user/userUpdateView', [], true)
+ 5 APPPATH\Controllers\UserController.php(83): view('user/userUpdateView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->editdata('9')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 12:04:31 --> Undefined variable $user
+in APPPATH\Views\user\userUpdateView.php on line 73.
+ 1 APPPATH\Views\user\userUpdateView.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'APPPATH\\Views\\user\\userUpdateView.php', 73)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\userUpdateView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('user/userUpdateView', [], true)
+ 5 APPPATH\Controllers\UserController.php(83): view('user/userUpdateView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->editdata('9')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 12:04:33 --> Undefined variable $user
+in APPPATH\Views\user\userUpdateView.php on line 73.
+ 1 APPPATH\Views\user\userUpdateView.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'APPPATH\\Views\\user\\userUpdateView.php', 73)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\userUpdateView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('user/userUpdateView', [], true)
+ 5 APPPATH\Controllers\UserController.php(83): view('user/userUpdateView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->editdata('9')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 12:55:42 --> Undefined variable $session
+in APPPATH\Views\layouts\main_layout.php on line 232.
+ 1 APPPATH\Views\layouts\main_layout.php(232): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Views\\layouts\\main_layout.php', 232)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\main_layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/main_layout.php', [], true)
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('user/userAddView', [], true)
+ 6 APPPATH\Controllers\UserController.php(14): view('user/userAddView')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 12:55:57 --> Undefined constant "session"
+in APPPATH\Views\layouts\main_layout.php on line 232.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/main_layout.php', [], true)
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('user/userAddView', [], true)
+ 5 APPPATH\Controllers\UserController.php(14): view('user/userAddView')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 12:59:17 --> Undefined variable $config
+in APPPATH\Views\layouts\main_layout.php on line 232.
+ 1 APPPATH\Views\layouts\main_layout.php(232): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $config', 'APPPATH\\Views\\layouts\\main_layout.php', 232)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\main_layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/main_layout.php', [], true)
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('user/userAddView', [], true)
+ 6 APPPATH\Controllers\UserController.php(14): view('user/userAddView')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 13:00:17 --> Undefined property: CodeIgniter\View\View::$session
+in APPPATH\Views\layouts\main_layout.php on line 233.
+ 1 APPPATH\Views\layouts\main_layout.php(233): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'APPPATH\\Views\\layouts\\main_layout.php', 233)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\main_layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/main_layout.php', [], true)
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('user/userAddView', [], true)
+ 6 APPPATH\Controllers\UserController.php(14): view('user/userAddView')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 13:00:47 --> Undefined property: CodeIgniter\View\View::$session
+in APPPATH\Views\layouts\main_layout.php on line 233.
+ 1 APPPATH\Views\layouts\main_layout.php(233): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'APPPATH\\Views\\layouts\\main_layout.php', 233)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\main_layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/main_layout.php', [], true)
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('user/userAddView', [], true)
+ 6 APPPATH\Controllers\UserController.php(14): view('user/userAddView')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 13:01:10 --> Invalid file: "layouts/side_bar_Adimin.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/side_bar_Adimin.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layouts/side_bar_Adimin', null, true)
+ 3 APPPATH\Views\layouts\main_layout.php(234): CodeIgniter\View\View->include('layouts/side_bar_Adimin')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\main_layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/main_layout.php', [], true)
+ 7 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('user/userAddView', [], true)
+ 8 APPPATH\Controllers\UserController.php(14): view('user/userAddView')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 13:01:35 --> Invalid file: "layouts/side_bar_Adimin.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/side_bar_Adimin.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layouts/side_bar_Adimin', null, true)
+ 3 APPPATH\Views\layouts\main_layout.php(234): CodeIgniter\View\View->include('layouts/side_bar_Adimin')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\main_layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/main_layout.php', [], true)
+ 7 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('user/userAddView', [], true)
+ 8 APPPATH\Controllers\UserController.php(14): view('user/userAddView')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 13:07:32 --> Call to undefined method CodeIgniter\View\View::view()
+in APPPATH\Views\layouts\main_layout.php on line 235.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/main_layout', [], true)
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('dashboard/dashboardView', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(50): view('dashboard/dashboardView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 13:10:51 --> Undefined property: CodeIgniter\View\View::$load
+in APPPATH\Views\layouts\main_layout.php on line 235.
+ 1 APPPATH\Views\layouts\main_layout.php(235): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$load', 'APPPATH\\Views\\layouts\\main_layout.php', 235)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\main_layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/main_layout', [], true)
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('dashboard/dashboardView', [], true)
+ 6 APPPATH\Controllers\DashboardController.php(50): view('dashboard/dashboardView', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DashboardController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 13:22:25 --> Invalid file: "lecturerPortal/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('lecturerPortal/home.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('lecturerPortal/home', [], true)
+ 3 APPPATH\Controllers\LecturerPortalController.php(14): view('lecturerPortal/home')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 13:24:48 --> foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\LecturerPortalController.php on line 31.
+ 1 APPPATH\Controllers\LecturerPortalController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Controllers\\LecturerPortalController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->store_marks()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 13:25:07 --> Invalid file: "layouts/side_bar_lecture.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/side_bar_lecture.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layouts/side_bar_lecture', null, true)
+ 3 APPPATH\Views\layouts\main_layout.php(237): CodeIgniter\View\View->include('layouts/side_bar_lecture')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\main_layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/main_layout.php', [], true)
+ 7 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('lecturerPortal/createMarks', [], true)
+ 8 APPPATH\Controllers\LecturerPortalController.php(23): view('lecturerPortal/createMarks', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->create_marks()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 13:56:26 --> foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\LecturerPortalController.php on line 28.
+ 1 APPPATH\Controllers\LecturerPortalController.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Controllers\\LecturerPortalController.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->store_marks()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 14:09:19 --> Undefined variable $students
+in APPPATH\Views\user\userAddView.php on line 93.
+ 1 APPPATH\Views\user\userAddView.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $students', 'APPPATH\\Views\\user\\userAddView.php', 93)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\userAddView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('user/userAddView', [], true)
+ 5 APPPATH\Controllers\UserController.php(19): view('user/userAddView')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 14:13:03 --> Undefined variable $students
+in APPPATH\Views\user\userAddView.php on line 93.
+ 1 APPPATH\Views\user\userAddView.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $students', 'APPPATH\\Views\\user\\userAddView.php', 93)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\userAddView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('user/userAddView', [], true)
+ 5 APPPATH\Controllers\UserController.php(19): view('user/userAddView')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 14:13:52 --> Undefined variable $students
+in APPPATH\Views\user\userAddView.php on line 93.
+ 1 APPPATH\Views\user\userAddView.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $students', 'APPPATH\\Views\\user\\userAddView.php', 93)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\userAddView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('user/userAddView', [], true)
+ 5 APPPATH\Controllers\UserController.php(19): view('user/userAddView')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-17 14:59:45 --> Undefined array key "subject_no"
+in APPPATH\Views\studentPortal\getMarks.php on line 78.
+ 1 APPPATH\Views\studentPortal\getMarks.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "subject_no"', 'APPPATH\\Views\\studentPortal\\getMarks.php', 78)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\studentPortal\\getMarks.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('studentPortal/getMarks', [], true)
+ 5 APPPATH\Controllers\StudentPortalController.php(28): view('studentPortal/getMarks', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\StudentPortalController->get_marks()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentPortalController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

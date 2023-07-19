@@ -3,17 +3,41 @@
 namespace App\Controllers;
 
 use App\Models\StudentModel;
+use App\Models\BatchModel;
 
 class StudentContoller extends BaseController
 {
     public function index()
     {
-        //return view('welcome_message');
-        return view('student/studentFormView');
+        
+        $studentModel = new StudentModel; //make new object from model that use in this controller
+
+        $stu_no_count = $studentModel->countAll() + 1;
+        $stu_count = str_pad($stu_no_count, 4, 0, STR_PAD_LEFT);
+        $prefix = "STD";
+        $stu_no = $prefix.$stu_count;
+        $data['stu_no'] = $stu_no;
+        return view('student/studentFormView', $data);
+            
+
+        // if(session()->has('user_id')){
+        //     if(session('user_type') == 'abc'){
+        // return view('student/studentFormView');
+        //     }else{
+        //         return view('invalid_auth');
+        //     }
+        // }else{
+        //     return redirect()->to('Login');
+        // }
       
     }
 
     public function create(){ //take the form data to pass it to DB | ex: which we filled in course_form (data) pass it-> course table col names
+
+        $validation = \Config\Services::validation(); //load validation lib.
+        $validation->setRules([
+            'student_nic'=>['label'=>'NIC','rules'=>'required|is_unique[tbl_student.student_nic]'],
+        ]);
 
         $data =[
             'student_no'=>$this->request->getPost('student_no'),
@@ -25,9 +49,13 @@ class StudentContoller extends BaseController
             'student_bod'=>$this->request->getPost('student_bod'),
             'student_contact_no'=>$this->request->getPost('student_contact_no'),
             'student_address'=>$this->request->getPost('student_address'),
-            
-
+            'student_registration_date'=>$this->request->getPost('student_registration_date'),
+        
         ];
+
+        if(!$validation->run($data)){ //Not Validated
+            return redirect()->back()->withInput()->with('errors',$validation->getErrors());
+        }
 
         $studentModel = new StudentModel; //make new object from model that use in this controller
 
@@ -84,6 +112,7 @@ class StudentContoller extends BaseController
             'student_bod'=>$this->request->getPost('student_bod'),
             'student_contact_no'=>$this->request->getPost('student_contact_no'),
             'student_address'=>$this->request->getPost('student_address'),
+            'student_registration_date'=>$this->request->getPost('student_registration_date'),
             
         ];
 
@@ -106,9 +135,24 @@ class StudentContoller extends BaseController
             // return redirect()->to('Student_add')->with('success','Student has been added Successfully!');
             return redirect()->to('Student_View')->with('success','Student deteled Successfully!');
         }else{
-            return redirect()->back()->withInput()->with('errors','Update Failed');
+            return redirect()->back()->withInput()->with('errors','Student delete Failed');
         }
 
+    }
+
+    public function studentBybatch() 
+    {
+        $batchModel = new BatchModel();
+        
+        // Access the selected value from the request data
+        $selectedValue = $this->request->getPost('selectedValue');
+
+        $data['students'] = $batchModel->select('tbl_student.student_id,tbl_student.student_first_name,tbl_student.student_last_name')
+        ->join('tbl_enrollment','tbl_enrollment.batch_id  = tbl_batch.batch_id')
+        ->join('tbl_student','tbl_student.student_id  = tbl_enrollment.student_id')
+        ->where('tbl_batch.batch_id', $selectedValue)->findAll();
+
+        return view('student/ajaxStudentByBatch',$data);
     }
 
 

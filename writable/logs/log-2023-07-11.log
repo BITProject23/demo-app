@@ -1,0 +1,91 @@
+CRITICAL - 2023-07-11 11:10:31 --> Invalid file: "appoint/appointAddView.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('appoint/appointAddView.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('appoint/appointAddView', [], true)
+ 3 APPPATH\Controllers\AppointController.php(19): view('appoint/appointAddView', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AppointController->index('8')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 13:03:01 --> Invalid file: "appoint/appointAddView.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('appoint/appointAddView.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('appoint/appointAddView', [], true)
+ 3 APPPATH\Controllers\AppointController.php(19): view('appoint/appointAddView', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AppointController->index('14')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 13:03:40 --> Invalid file: "appoint/appointAddView.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('appoint/appointAddView.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('appoint/appointAddView', [], true)
+ 3 APPPATH\Controllers\AppointController.php(19): view('appoint/appointAddView', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AppointController->index('14')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 13:07:22 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 47.
+ 1 APPPATH\Controllers\BatchController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 13:10:29 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 47.
+ 1 APPPATH\Controllers\BatchController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 13:10:54 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 47.
+ 1 APPPATH\Controllers\BatchController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 13:45:29 --> Cannot access offset of type string on string
+in APPPATH\Views\batch\batchTimetableView.php on line 101.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('batch/batchTimetableView', [], true)
+ 4 APPPATH\Controllers\BatchController.php(172): view('batch/batchTimetableView', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->timetable('2')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 13:59:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `tbl_batch`.`batch_id`
+FROM `tbl_batch`
+JOIN `tbl_course` ON `tbl_course`.`c...' at line 1 in C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_sub...', 0)
+#1 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sub...')
+#2 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sub...')
+#3 C:\xampp\htdocs\demo_app\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sub...', Array, false)
+#4 C:\xampp\htdocs\demo_app\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\demo_app\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\demo_app\app\Controllers\BatchController.php(170): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(934): App\Controllers\BatchController->timetable('2')
+#8 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+#9 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\demo_app\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-11 13:59:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `tbl_batch`.`batch_id`
+FROM `tbl_batch`
+JOIN `tbl_course` ON `tbl_course`.`c...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_subject`.`subject_id`, `tbl_subject`., `tbl_batch`.`batch_id`
+FROM `tbl_batch`
+JOIN `tbl_course` ON `tbl_course`.`course_id` = `tbl_batch`.`course_id`
+JOIN `tbl_course_subject` ON `tbl_course`.`course_id` = `tbl_course_subject`.`course_id`
+JOIN `tbl_subject` ON `tbl_course_subject`.`subject_id` = `tbl_subject`.`subject_id`
+WHERE `tbl_batch`.`batch_id` = :tbl_batch.batch_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\BatchController.php(170): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->timetable('2')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

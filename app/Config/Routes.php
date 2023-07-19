@@ -34,18 +34,40 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
-
+// $routes->get('/', 'Home::index');
 
 
 $menu_items = [];
 
-$menu_items ['Register'] = 'SigninController::index'; //ex : [url pattern] = 'Controller_name :: method(index)'
-$menu_items ['Regcreate'] = 'SigninController::create';
-
 $menu_items ['login'] = 'LoginController::index';
 $menu_items ['login/auth'] = 'LoginController::authenticate';
 $menu_items ['logout'] = 'LoginController::logout';
+
+if(session('login_status')==true){
+
+$routes->get('/', 'DashboardController::index');
+
+
+
+$menu_items ['Dashboard_View'] = 'DashboardController::index';
+
+$menu_items ['Register'] = 'SigninController::index'; //ex : [url pattern] = 'Controller_name :: method(index)'
+$menu_items ['Regcreate'] = 'SigninController::create';
+
+if(session('user_type') == "ADMIN") {
+
+$menu_items ['User_add'] = 'UserController::index';
+$menu_items ['User_create'] = 'UserController::create';
+$menu_items ['User_View'] = 'UserController::showdata';
+$routes->get('User_Edit/(:num)', 'UserController::editdata/$1');
+$routes->get('User_Delete/(:num)', 'UserController::deleteData/$1');
+
+}
+
+$menu_items ['User_PasswordReset'] = 'LoginController::passwordReset';
+$menu_items ['User_PasswordResetAction'] = 'LoginController::passwordResetAction';
+
+
 
 $menu_items ['Course_add'] = 'CourseController::index';
 $menu_items ['Course_create'] = 'CourseController::create';
@@ -61,6 +83,7 @@ $menu_items ['Subject_create'] = 'SubjectController::create';
 $menu_items ['Subject_View'] = 'SubjectController::showdata';
 $routes->get('Subject_Edit/(:num)', 'SubjectController::editdata/$1');
 $routes->post('Subject_Update', 'SubjectController::updatedata');
+$menu_items ['Subject_By_Batch'] = 'SubjectController::subjectByBatch';
 
 $menu_items ['Subject_assign'] = 'CourseSubjectController::index';
 $menu_items ['Subject_save'] = 'CourseSubjectController::create';
@@ -73,7 +96,11 @@ $menu_items ['Lecturer_View'] = 'LecturerController::showdata';
 $routes->get('Lecturer_Edit/(:num)', 'LecturerController::editdata/$1');
 $routes->post('Lecturer_Update', 'LecturerController::updatedata');
 
-$menu_items ['CourseLecturer_assign'] = 'CourseLecturerController::index';
+$menu_items ['Appointment_add/(:num)'] = 'AppointController::index/$1';
+$menu_items ['Appointment_create'] = 'AppointController::create';
+$menu_items ['Appointment_View'] = 'AppointController::showdata';
+
+$menu_items ['Subject_By_Course'] = 'CourseSubjectController::subjectByCourse';
 $menu_items ['CourseLecturer_save'] = 'CourseLecturerController::save';
 $menu_items ['CourseLecturer_View'] = 'CourseLecturerController::courseLecturerJoin';
 
@@ -89,10 +116,12 @@ $routes->post('Batch_Timetable_create' , 'BatchTimeFrameController::create');
 
 $menu_items ['Batch_By_Course'] = 'BatchController::batchByCourse';
 
-
+$menu_items ['Batch_By_Enrollment'] = 'EnrollmentController::batchByEnrollment';
 $menu_items ['Enroll_Student/(:num)'] = 'EnrollmentController::index/$1';
 $menu_items ['Enrollment_create'] = 'EnrollmentController::create';
-$menu_items ['Enrollment_search'] = 'EnrollmentController::searchdata';
+$menu_items ['Enrollment_View'] = 'EnrollmentController::showdata';
+
+// $menu_items ['Enrollment_data_search'] = 'EnrollmentController::searchdata';
 
 
 $menu_items ['Student_add'] = 'StudentContoller::index';
@@ -101,12 +130,41 @@ $menu_items ['Student_View'] = 'StudentContoller::showdata';
 $routes->get('Student_Edit/(:num)', 'StudentContoller::editdata/$1');
 $routes->get('Student_Delete/(:num)', 'StudentContoller::deleteData/$1');
 $routes->post('Student_Update', 'StudentContoller::updatedata');
+$menu_items ['Student_By_Batch'] = 'StudentContoller::studentBybatch';
 
 
+$menu_items ['Payment_add'] = 'PaymentController::index';
+$menu_items ['Payment_create'] = 'PaymentController::create';
+$menu_items ['Payment_View'] = 'PaymentController::showdata';
+
+
+$menu_items ['Payment_Search'] = 'ReportController::paymentsearch';
+$menu_items ['Payment_Search_View'] = 'ReportController::paymentview';
+$menu_items ['Enrollment_search'] = 'ReportController::enrollmentsearch';
+$menu_items ['Enrollment_Search_View'] = 'ReportController::enrollmentview';
+$menu_items ['Timetable_Search'] = 'ReportController::timetableSearch';
+$menu_items ['Timetable_Search_View'] = 'ReportController::timetableview';
+
+$menu_items ['Logout'] = 'LogoutController::index';
 
 
 $menu_items ['Timetable'] = 'TimetableController::index';
-$menu_items ['Payment'] = 'PaymentController::index';
+
+$menu_items ['Lecturer_Portal'] = 'LecturerPortalController::index';
+$menu_items ['Assign_Marks'] = 'LecturerPortalController::create_marks';
+$menu_items ['Store_Marks'] = 'LecturerPortalController::store_marks';
+$menu_items ['View_Marks'] = 'LecturerPortalController::view_marks';
+
+$menu_items ['Student_Portal'] = 'StudentPortalController::index';
+$menu_items ['Get_Marks'] = 'StudentPortalController::get_marks';
+
+$menu_items ['Receptionist_Portal'] = 'ReceptionistPortalContoller::index';
+$menu_items ['View_Students'] = 'ReceptionistPortalContoller::view_students';
+
+
+
+
+
 
 $menu_items ['lo'] = 'MenuController::login';
 $menu_items ['coutab'] = 'MenuController::courseTable';
@@ -118,7 +176,7 @@ $menu_items ['online-registration'] = 'MenuController::register';*/
 
 $menu_items ['test-db'] = 'DbTestController::index';
 
-$routes->map($menu_items);
+
 
 // $routes->get('Course_UpdateView','CourseController::singleCourse');
 $routes->get('Course_Edit/(:num)','CourseController::editdata/$1');
@@ -135,6 +193,11 @@ $routes->post('load_data','BatchController::load_data');
 
 
 
+}else{
+    //return redirect()->to('/logout');
+}
+
+$routes->map($menu_items);
 /*
  * --------------------------------------------------------------------
  * Additional Routing

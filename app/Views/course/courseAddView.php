@@ -55,24 +55,24 @@
                             </div>
                             <div class="widget-content widget-content-area">
                                 
-                                <?php echo form_open('Course_create') ?>
+                                
 
-                                    <!-- <form name="form1" action="create" method ="post"> -->
+                                    <form name="form1" action="<?php echo base_url();?>/Course_create" data-toggle="validator" method ="post">
                                 
 
                                         <div class="form-group row mb-4">
                                             <label for="course_name" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Course Name </label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
-                                            <input type="text" class="form-control-rounded form-control" name="course_name" id="course_name" placeholder="" required>
-                                            <lable id="coures_n"></lable>
+                                            <input type="text" class="form-control-rounded form-control" name="course_name" id="course_name" data-required-error="Please enter course name" placeholder="" required>
+                                            <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
 
                                         <div class="form-group row mb-4">
                                             <label for="course_code" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Course code </label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
-                                            <input type="text" class="form-control-rounded form-control" name="course_code" id="course_code" placeholder="" required>
-                                            <lable id="coures_c"></lable>
+                                            <input type="text" class="form-control-rounded form-control" name="course_code" id="course_code" data-required-error="Please enter course code" placeholder="" required>
+                                            <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
 
@@ -80,8 +80,8 @@
                                         <div class="form-group row mb-4">
                                             <label for="course_fee" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Course Fee </label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
-                                            <input type="text" class="form-control-rounded form-control" name="course_fee" id="course_fee" placeholder="" required>
-                                            <lable id="coures_e"></lable>
+                                            <input type="number" class="form-control-rounded form-control" name="course_fee" id="course_fee" min="0" max="100000" data-required-error="Please enter course fee" placeholder="" required>
+                                            <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
 
@@ -94,35 +94,13 @@
                                                 <button type="submit" value="Submit" onclick="check01()" class="btn-material btn-material-primary  mb-2 mr-3">Submit</button>
                                             </div>
                                         </div>
-                                    <!-- </form> -->
-                                <?php echo form_close()?>
+                                    </form>
+                                
                             </div>
                         </div>
                     </div>
                 </div>                         
             </div>
         </div>
-
-        <script src="public/assets_1/assets/js/libs/jquery-3.1.1.min.js"></script>
-        <script> 
-            function check01(){
-                if(document.getElementById("course_name").value==""){
-                    //document.getElementById("course_name").style.backgroundColor="red";
-                    document.getElementById("coures_n").innerHTML="Course name is required ";
-                    document.getElementById("coures_n").style.color="red";
-                    //document.getElementById("coures_l").placeholder = "Course name is required ";
-                    return false;
-                } else if(document.getElementById("course_code").value==""){
-                    document.getElementById("coures_c").innerHTML="Course code is required ";
-                    document.getElementById("coures_c").style.color="red";
-                    return false;
-                } else if(document.getElementById("course_fee").value==""){
-                    document.getElementById("coures_e").innerHTML="Course fee is required ";
-                    document.getElementById("coures_e").style.color="red";
-                    return false;
-                }
-            }
-
-        </script>
        
 <?= $this->endSection() ?>

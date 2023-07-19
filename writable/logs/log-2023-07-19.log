@@ -1,0 +1,66 @@
+CRITICAL - 2023-07-19 03:42:39 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 47.
+ 1 APPPATH\Controllers\BatchController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 03:44:06 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 47.
+ 1 APPPATH\Controllers\BatchController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 14:40:37 --> Call to undefined method App\Models\StudentModel::count
+in SYSTEMPATH\Model.php on line 841.
+ 1 APPPATH\Controllers\StudentContoller.php(13): CodeIgniter\Model->__call('count', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\StudentContoller->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentContoller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 15:13:33 --> Call to undefined method App\Models\PaymentModel::count
+in SYSTEMPATH\Model.php on line 841.
+ 1 APPPATH\Controllers\PaymentController.php(36): CodeIgniter\Model->__call('count', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PaymentController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 15:14:04 --> Call to undefined method App\Models\PaymentModel::countGet
+in SYSTEMPATH\Model.php on line 841.
+ 1 APPPATH\Controllers\PaymentController.php(36): CodeIgniter\Model->__call('countGet', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PaymentController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 15:26:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\LoginController.php on line 103.
+ 1 APPPATH\Controllers\LoginController.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\LoginController.php', 103)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->passwordReset()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 15:55:02 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(755): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\BatchController.php(147): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->updatedata()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 19:16:26 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 47.
+ 1 APPPATH\Controllers\BatchController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 20:26:40 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 47.
+ 1 APPPATH\Controllers\BatchController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

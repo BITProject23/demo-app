@@ -5,11 +5,14 @@ namespace App\Controllers;
 use App\Models\BatchTimeFrameModel;
 use App\Models\BatchModel;
 use App\Models\CourseModel;
+use App\Models\BatchSubjectTimeTableModel;
+
 
 class BatchTimeFrameController extends BaseController
 {
     public function index()
     {
+
         
         return view('batch/batchTimetableView');
     }
@@ -26,8 +29,28 @@ class BatchTimeFrameController extends BaseController
         ];
 
         $batchTimeframeModel = new BatchTimeFrameModel();
+        $batchTimeframeModel->insert($data); 
+        $batch_timeframe_id = $batchTimeframeModel->getInsertID();
 
-        if($batchTimeframeModel->save($data)){
+        $subject_id = $this->request->getPost('subject_id');
+        $subject_time_from = $this->request->getPost('subject_time_from');
+        $subject_time_to = $this->request->getPost('subject_time_to');
+
+        foreach ($subject_id as $idx=>$name) :
+
+            $data = ['batch_timeframe_id' => $batch_timeframe_id,
+                    'subject_id' => $subject_id[$idx], 
+                    'batch_id' => $batchId,  
+                    'subject_time_from' => $subject_time_from[$idx],
+                    'subject_time_to' => $subject_time_to[$idx]
+                ];
+           
+           $batchSubjectTimeTableModel = new BatchSubjectTimeTableModel();
+        
+            $result = $batchSubjectTimeTableModel->save($data);
+           endforeach;
+
+        if($result){
             return redirect()->to('Batch_Timetable/'.$batchId)->with('success','Enroll Student Successfully!');
         }else{
             return redirect()->back()->withInput()->with('errors',$batchTimeframeModel->errors());

@@ -54,7 +54,7 @@
                                 
                                     <!-- < ?php echo form_open('Course_update') ?> -->
 
-                                        <form name="form1" action='<?php echo base_url();?>/Course_Update' method ="post">
+                                        <form name="form1" action='<?php echo base_url();?>/Course_Update' data-toggle="validator" method ="post">
 
                                         
                                             <input type="hidden" name="course_id" value="<?=$course_single['course_id']?>">
@@ -63,7 +63,8 @@
                                                 <label for="course_name" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Course Name </label>
                                                 <div class="col-xl-10 col-lg-9 col-sm-10">
                                                 <input type="text" class="form-control-rounded form-control" value="<?= $course_single['course_name']?>"
-                                                 name="course_name" id="course_name" placeholder="" required>
+                                                 name="course_name" id="course_name" data-required-error="Please enter course name" required>
+                                                 <div class="help-block with-errors"></div>
                                                 </div>
                                             </div>
 
@@ -71,7 +72,8 @@
                                                 <label for="course_code" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Course code </label>
                                                 <div class="col-xl-10 col-lg-9 col-sm-10">
                                                 <input type="text" class="form-control-rounded form-control" value="<?= $course_single['course_code']?>"
-                                                name="course_code" id="course_code"  placeholder="" required>
+                                                name="course_code" id="course_code" data-required-error="Please enter course code" placeholder="" required>
+                                                <div class="help-block with-errors"></div>
                                                 </div>
                                             </div>
 
@@ -80,7 +82,8 @@
                                                 <label for="course_fee" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Course Fee </label>
                                                 <div class="col-xl-10 col-lg-9 col-sm-10">
                                                 <input type="text" class="form-control-rounded form-control" value="<?= $course_single['course_fee']?>" 
-                                                name="course_fee" id="course_fee"  placeholder="" required>
+                                                name="course_fee" id="course_fee" data-required-error="Please enter course fee" placeholder="" required>
+                                                <div class="help-block with-errors"></div>
                                                 </div>
                                             </div>
 

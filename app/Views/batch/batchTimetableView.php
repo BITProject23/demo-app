@@ -59,14 +59,14 @@
                                         <label for="batch_day" class="col-xl-2 col-sm-4 col-sm-2 col-form-label">Day </label>
                                         <div class="col-xl-3 col-lg-4 col-sm-3">
                                             <select class="form-control-rounded form-control" name="batch_day" id="batch_day" placeholder="">
-                                                <option>Select the day</option>
-                                                <option>Monday</option>
-                                                <option>Tuesday</option>
-                                                <option>Wednesday</option>
-                                                <option>Thursday</option>
-                                                <option>Friday</option>
-                                                <option>Saturday</option>
-                                                <option>Sunday</option>
+                                                <option value="">Select the day</option>
+                                                <option value="Monday">Monday</option>
+                                                <option value="Tuesday">Tuesday</option>
+                                                <option value="Wednesday">Wednesday</option>
+                                                <option value="Thursday">Thursday</option>
+                                                <option value="Friday">Friday</option>
+                                                <option value="Saturday">Saturday</option>
+                                                <option value="Sunday">Sunday</option>
                                             </select>
                                         </div>  
                                     </div>
@@ -84,6 +84,33 @@
                                                 <input type="time" class="form-control-rounded form-control" name="batch_time_to" id="batch_time_to" placeholder="">
                                         </div>
                                     </div>
+
+                                    <div class="table-responsive mb-4">
+                                    <table id="default-ordering" class="table table-striped table-bordered table-hover" style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th>Subject</th>
+                                                <th>Time From</th>
+                                                <th>Time To</th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <?php foreach($subjects as $subject): ?>
+                                                <tr>
+                                                    <td><input type="hidden" name="subject_id[]" value="<?=$subject['subject_id']?>"> <!--multiple insert of data put as name with array ex:- name="subject_id[]" || from [] it identify as array -->
+                                                    <?= $subject['subject_name']?></td>
+                                                    <td><input type="time" name="subject_time_from[]" id="subject_time_from"></td>
+                                                    <td><input type="time" name="subject_time_to[]" id="subject_time_to"></td>
+                                                    
+                                                </tr>
+                                            <?php endforeach; ?> 
+                                            
+                                        </tbody>  
+                                    </table>
+
+                                </div>
 
 
                                     <div class="form-group row ">
@@ -104,7 +131,7 @@
                                                 <th>Time From</th>
                                                 <th>Time To</th>
                                                 <th>Edit</th>
-                                                <!-- <th>Delete</th> -->
+                                                <th>Details</th>
                                                 <!-- <th class="invisible"></th> -->
                                             </tr>
                                         </thead>
@@ -118,9 +145,9 @@
                                                     <td class="text-center">
                                                         <a href="" data-toggle="tooltip" data-placement="top" target="_blank"><i class="flaticon-edit  bg-success p-1 text-white br-6 mb-1"></i></a>
                                                     </td>
-                                                    <!-- <td class="text-center">
-                                                        <a href="< ?=base_url()?>" data-toggle="tooltip" data-placement="top"><i class="flaticon-edit  bg-success p-1 text-white br-6 mb-1"></i></a>
-                                                    </td> -->
+                                                    <td class="text-center">
+                                                        <a href="#" onclick="showDetails(<?= $batchTime['batch_timeframe_id']?>)"><i class="flaticon-edit  bg-primary p-1 text-white br-6 mb-1"></i></a>
+                                                    </td>
                                                     <!-- <td class="text-center"><a href="" data-toggle="tooltip" data-placement="top" title="Delete"><i class="flaticon-delete  bg-danger p-1 text-white br-6 mb-1"></i></a></td> -->
                                                 </tr>
                                             <?php endforeach; ?> 
@@ -133,7 +160,7 @@
                                                 <th>Time From</th>
                                                 <th>Time To</th>
                                                 <th>Edit</th>
-                                                <!-- <th>Delete</th> -->
+                                                <th>Details</th>
                                                 <!-- <th class="invisible"></th> -->
                                             </tr>
                                         </tfoot>
@@ -150,5 +177,11 @@
         <!--  END CONTENT PART  -->
     </div>
     <!-- END MAIN CONTAINER -->
+
+    <script>
+        function showDetails(batch_timeframe_id){ 
+                $('#data_modal').modal('show');
+ }
+    </script>
     
 <?= $this->endSection() ?>

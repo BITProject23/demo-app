@@ -56,12 +56,12 @@
                             </div>
                             <div class="widget-content widget-content-area">
 
-                                <form name="formbatch" action='<?php echo base_url();?>/Batch_create' method ="post">
+                                <form name="formbatch" action='<?php echo base_url();?>/Batch_create' data-toggle="validator" method ="post">
                                     
                                     <div class="form-group row mb-4">
                                         <label for="courses" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Course</label>
                                         <div class="col-xl-10 col-lg-9 col-sm-10">
-                                            <select class="form-control-rounded form-control" name="courses" id="courses" placeholder="">
+                                            <select class="form-control-rounded form-control" name="courses" id="courses" placeholder="" required>
                                                 <option value="">Select the Course</option>
                                                 <?php foreach($courses as $course): ?>
                                                     <option value="<?= $course['course_id']?>">
@@ -77,7 +77,8 @@
                                     <div class="form-group row mb-4">
                                         <label for="batch_no" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Batch No </label>
                                         <div class="col-xl-10 col-lg-9 col-sm-10">
-                                          <input type="text" class="form-control-rounded form-control" name="batch_no" id="batch_no" placeholder="">
+                                          <input type="text" class="form-control-rounded form-control" name="batch_no" id="batch_no" data-required-error="Please enter batch number" required>
+                                          <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
 
@@ -85,14 +86,14 @@
                                     <div class="form-group row mb-4">
                                         <label for="batch_start_date" class="col-xl-2 col-sm-3 col-sm-2 col-form-label"> Start Date</label>
                                         <div class="col-xl-3 col-lg-9 col-sm-3">
-                                            <input type="date" class="form-control-rounded form-control" name="batch_start_date" id="batch_start_date" placeholder="">
+                                            <input type="date" class="form-control-rounded form-control" name="batch_start_date" id="batch_start_date" placeholder="" required>
                                         </div>
                                     </div>
 
                                     <div class="form-group row mb-4">
                                         <label for="batch_end_date" class="col-xl-2 col-sm-3 col-sm-2 col-form-label"> End Date</label>
                                         <div class="col-xl-3 col-lg-9 col-sm-3">
-                                            <input type="date" class="form-control-rounded form-control" name="batch_end_date" id="batch_end_date" placeholder="">
+                                            <input type="date" class="form-control-rounded form-control" name="batch_end_date" id="batch_end_date" placeholder="" required>
                                         </div>
                                     </div>
 

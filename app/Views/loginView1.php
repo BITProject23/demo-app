@@ -31,7 +31,7 @@
 
         <div class="row"> 
             <div class="col-md-12 text-center mb-4">
-                <img alt="logo" src="public/assets_1/assets/img/was_logo1.jpeg" class="theme-logo">
+                <!-- <img alt="logo" src="public/assets_1/assets/img/was_logo1.jpeg" class="theme-logo"> -->
             </div>
 
             <?php if(session()->has('error')) : ?>
@@ -65,17 +65,17 @@
 
                 <button class="btn btn-lg btn-gradient-warning btn-block btn-rounded mb-4 mt-5" type="submit">Login</button>
 
-                <div class="forgot-pass text-center">
+                <!-- <div class="forgot-pass text-center">
                     <a href="user_pass_recovery_2.html">Forgot Password ?</a>
-                </div>
+                </div> -->
 
             </div>
 
-            <div class="col-md-12">
+            <!-- <div class="col-md-12">
                 <div class="login-text text-center">
                     <p class="mt-3 text-white">New Here? <a href="<?=base_url()?>/Register" class="">Register </a> a new user !</p>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </form>  

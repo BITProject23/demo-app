@@ -1,0 +1,615 @@
+CRITICAL - 2023-07-18 04:10:57 --> Invalid file: "lecturerPortal/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('lecturerPortal/home.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('lecturerPortal/home', [], true)
+ 3 APPPATH\Controllers\LecturerPortalController.php(34): view('lecturerPortal/home')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 04:12:00 --> Undefined variable $today_reg_student
+in APPPATH\Views\lecturerPortal\lecturerDashboard.php on line 22.
+ 1 APPPATH\Views\lecturerPortal\lecturerDashboard.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $today_reg_student', 'APPPATH\\Views\\lecturerPortal\\lecturerDashboard.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\lecturerPortal\\lecturerDashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('lecturerPortal/lecturerDashboard', [], true)
+ 5 APPPATH\Controllers\LecturerPortalController.php(34): view('lecturerPortal/lecturerDashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 04:12:03 --> Undefined variable $today_reg_student
+in APPPATH\Views\lecturerPortal\lecturerDashboard.php on line 22.
+ 1 APPPATH\Views\lecturerPortal\lecturerDashboard.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $today_reg_student', 'APPPATH\\Views\\lecturerPortal\\lecturerDashboard.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\lecturerPortal\\lecturerDashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('lecturerPortal/lecturerDashboard', [], true)
+ 5 APPPATH\Controllers\LecturerPortalController.php(34): view('lecturerPortal/lecturerDashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 04:12:49 --> Undefined variable $today_reg_student
+in APPPATH\Views\lecturerPortal\lecturerDashboard.php on line 22.
+ 1 APPPATH\Views\lecturerPortal\lecturerDashboard.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $today_reg_student', 'APPPATH\\Views\\lecturerPortal\\lecturerDashboard.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\lecturerPortal\\lecturerDashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('lecturerPortal/lecturerDashboard', [], true)
+ 5 APPPATH\Controllers\LecturerPortalController.php(34): view('lecturerPortal/lecturerDashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 04:12:51 --> Undefined variable $today_reg_student
+in APPPATH\Views\lecturerPortal\lecturerDashboard.php on line 22.
+ 1 APPPATH\Views\lecturerPortal\lecturerDashboard.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $today_reg_student', 'APPPATH\\Views\\lecturerPortal\\lecturerDashboard.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\lecturerPortal\\lecturerDashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('lecturerPortal/lecturerDashboard', [], true)
+ 5 APPPATH\Controllers\LecturerPortalController.php(34): view('lecturerPortal/lecturerDashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 05:04:30 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 47.
+ 1 APPPATH\Controllers\BatchController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 05:25:33 --> foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\LecturerPortalController.php on line 50.
+ 1 APPPATH\Controllers\LecturerPortalController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Controllers\\LecturerPortalController.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->store_marks()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 05:25:56 --> foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\LecturerPortalController.php on line 50.
+ 1 APPPATH\Controllers\LecturerPortalController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Controllers\\LecturerPortalController.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->store_marks()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 06:12:11 --> Invalid file: "studentPortal/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('studentPortal/home.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('studentPortal/home', [], true)
+ 3 APPPATH\Controllers\StudentPortalController.php(11): view('studentPortal/home')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\StudentPortalController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentPortalController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 07:31:55 --> Undefined variable $total_students
+in APPPATH\Views\dashboard\dashboardView.php on line 81.
+ 1 APPPATH\Views\dashboard\dashboardView.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_students', 'APPPATH\\Views\\dashboard\\dashboardView.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\dashboardView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('dashboard/dashboardView', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(51): view('dashboard/dashboardView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 07:32:06 --> Undefined array key "total"
+in APPPATH\Views\dashboard\dashboardView.php on line 81.
+ 1 APPPATH\Views\dashboard\dashboardView.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "total"', 'APPPATH\\Views\\dashboard\\dashboardView.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\dashboardView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('dashboard/dashboardView', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(53): view('dashboard/dashboardView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 07:32:08 --> Undefined array key "total"
+in APPPATH\Views\dashboard\dashboardView.php on line 81.
+ 1 APPPATH\Views\dashboard\dashboardView.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "total"', 'APPPATH\\Views\\dashboard\\dashboardView.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\dashboardView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('dashboard/dashboardView', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(53): view('dashboard/dashboardView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 07:32:09 --> Undefined array key "total"
+in APPPATH\Views\dashboard\dashboardView.php on line 81.
+ 1 APPPATH\Views\dashboard\dashboardView.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "total"', 'APPPATH\\Views\\dashboard\\dashboardView.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\dashboardView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('dashboard/dashboardView', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(53): view('dashboard/dashboardView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 07:36:02 --> Undefined variable $total_lecturers
+in APPPATH\Views\dashboard\dashboardView.php on line 96.
+ 1 APPPATH\Views\dashboard\dashboardView.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_lecturers', 'APPPATH\\Views\\dashboard\\dashboardView.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\dashboardView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('dashboard/dashboardView', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(53): view('dashboard/dashboardView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 11:19:55 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\LoginController.php on line 103.
+ 1 APPPATH\Controllers\LoginController.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\LoginController.php', 103)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->passwordReset()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 13:18:59 --> Call to a member function get() on string
+in APPPATH\Views\layouts\main_layout.php on line 146.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/main_layout', [], true)
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('dashboard/dashboardView', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(60): view('dashboard/dashboardView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 13:24:16 --> Call to a member function get() on string
+in APPPATH\Views\layouts\main_layout.php on line 146.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/main_layout', [], true)
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('lecturerPortal/lecturerDashboard', [], true)
+ 5 APPPATH\Controllers\LecturerPortalController.php(34): view('lecturerPortal/lecturerDashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 13:34:35 --> Undefined variable $total_students
+in APPPATH\Views\lecturerPortal\lecturerDashboard.php on line 22.
+ 1 APPPATH\Views\lecturerPortal\lecturerDashboard.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_students', 'APPPATH\\Views\\lecturerPortal\\lecturerDashboard.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\lecturerPortal\\lecturerDashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('lecturerPortal/lecturerDashboard', [], true)
+ 5 APPPATH\Controllers\LecturerPortalController.php(36): view('lecturerPortal/lecturerDashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 13:35:45 --> Undefined variable $total_students
+in APPPATH\Views\lecturerPortal\lecturerDashboard.php on line 22.
+ 1 APPPATH\Views\lecturerPortal\lecturerDashboard.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_students', 'APPPATH\\Views\\lecturerPortal\\lecturerDashboard.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\lecturerPortal\\lecturerDashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('lecturerPortal/lecturerDashboard', [], true)
+ 5 APPPATH\Controllers\LecturerPortalController.php(36): view('lecturerPortal/lecturerDashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-18 13:41:53 --> mysqli_sql_exception: Not unique table/alias: 'tbl_enrollment' in C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT count(*)...', 0)
+#1 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 C:\xampp\htdocs\demo_app\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...', Array, false)
+#4 C:\xampp\htdocs\demo_app\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\demo_app\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\demo_app\app\Controllers\LecturerPortalController.php(19): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(934): App\Controllers\LecturerPortalController->index()
+#8 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+#9 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\demo_app\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-18 13:41:53 --> Not unique table/alias: 'tbl_enrollment'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT count(*) AS count
+FROM `tbl_enrollment`
+JOIN `tbl_enrollment` ON `tbl_enrollment`.`course_id` = `tbl_appointment`.`course_id`
+WHERE `tbl_appointment`.`lecturer_id` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\LecturerPortalController.php(19): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-18 13:42:19 --> mysqli_sql_exception: Not unique table/alias: 'tbl_enrollment' in C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT count(*)...', 0)
+#1 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 C:\xampp\htdocs\demo_app\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...', Array, false)
+#4 C:\xampp\htdocs\demo_app\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\demo_app\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\demo_app\app\Controllers\LecturerPortalController.php(19): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(934): App\Controllers\LecturerPortalController->index()
+#8 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+#9 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\demo_app\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-18 13:42:19 --> Not unique table/alias: 'tbl_enrollment'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT count(*) AS count
+FROM `tbl_enrollment`
+JOIN `tbl_enrollment` ON `tbl_enrollment`.`course_id` = `tbl_appointment`.`course_id`
+WHERE `tbl_appointment`.`lecturer_id` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\LecturerPortalController.php(19): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-18 13:42:20 --> mysqli_sql_exception: Not unique table/alias: 'tbl_enrollment' in C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT count(*)...', 0)
+#1 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 C:\xampp\htdocs\demo_app\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...', Array, false)
+#4 C:\xampp\htdocs\demo_app\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\demo_app\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\demo_app\app\Controllers\LecturerPortalController.php(19): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(934): App\Controllers\LecturerPortalController->index()
+#8 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+#9 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\demo_app\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-18 13:42:20 --> Not unique table/alias: 'tbl_enrollment'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT count(*) AS count
+FROM `tbl_enrollment`
+JOIN `tbl_enrollment` ON `tbl_enrollment`.`course_id` = `tbl_appointment`.`course_id`
+WHERE `tbl_appointment`.`lecturer_id` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\LecturerPortalController.php(19): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-18 13:43:48 --> mysqli_sql_exception: Not unique table/alias: 'tbl_enrollment' in C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT count(*)...', 0)
+#1 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 C:\xampp\htdocs\demo_app\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...', Array, false)
+#4 C:\xampp\htdocs\demo_app\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\demo_app\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\demo_app\app\Controllers\LecturerPortalController.php(19): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(934): App\Controllers\LecturerPortalController->index()
+#8 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+#9 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\demo_app\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-18 13:43:48 --> Not unique table/alias: 'tbl_enrollment'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT count(*) AS count
+FROM `tbl_enrollment`
+JOIN `tbl_enrollment` ON `tbl_enrollment`.`course_id` = `tbl_appointment`.`course_id` AND `tbl_enrollment`.`batch_id` = `tbl_appointment`.`batch_id`
+WHERE `tbl_appointment`.`lecturer_id` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\LecturerPortalController.php(19): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-18 13:43:49 --> mysqli_sql_exception: Not unique table/alias: 'tbl_enrollment' in C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT count(*)...', 0)
+#1 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 C:\xampp\htdocs\demo_app\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...', Array, false)
+#4 C:\xampp\htdocs\demo_app\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\demo_app\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\demo_app\app\Controllers\LecturerPortalController.php(19): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(934): App\Controllers\LecturerPortalController->index()
+#8 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+#9 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\demo_app\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-18 13:43:49 --> Not unique table/alias: 'tbl_enrollment'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT count(*) AS count
+FROM `tbl_enrollment`
+JOIN `tbl_enrollment` ON `tbl_enrollment`.`course_id` = `tbl_appointment`.`course_id` AND `tbl_enrollment`.`batch_id` = `tbl_appointment`.`batch_id`
+WHERE `tbl_appointment`.`lecturer_id` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\LecturerPortalController.php(19): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-18 13:46:14 --> mysqli_sql_exception: Not unique table/alias: 'tbl_enrollment' in C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT count(*)...', 0)
+#1 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 C:\xampp\htdocs\demo_app\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...', Array, false)
+#4 C:\xampp\htdocs\demo_app\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\demo_app\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\demo_app\app\Controllers\LecturerPortalController.php(19): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(934): App\Controllers\LecturerPortalController->index()
+#8 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+#9 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\demo_app\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-18 13:46:14 --> Not unique table/alias: 'tbl_enrollment'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT count(*) AS count
+FROM `tbl_enrollment`
+JOIN `tbl_enrollment` ON `tbl_enrollment`.`course_id` = `tbl_appointment`.`course_id` AND `tbl_enrollment`.`batch_id` = `tbl_appointment`.`batch_id`
+WHERE `tbl_appointment`.`lecturer_id` = :tbl_appointment.lecturer_id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\LecturerPortalController.php(19): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 13:58:25 --> Undefined variable $total_batches
+in APPPATH\Views\lecturerPortal\lecturerDashboard.php on line 38.
+ 1 APPPATH\Views\lecturerPortal\lecturerDashboard.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_batches', 'APPPATH\\Views\\lecturerPortal\\lecturerDashboard.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\lecturerPortal\\lecturerDashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('lecturerPortal/lecturerDashboard', [], true)
+ 5 APPPATH\Controllers\LecturerPortalController.php(44): view('lecturerPortal/lecturerDashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 14:07:43 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 47.
+ 1 APPPATH\Controllers\BatchController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 14:08:37 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 47.
+ 1 APPPATH\Controllers\BatchController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 14:09:16 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\BatchController.php on line 47.
+ 1 APPPATH\Controllers\BatchController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\BatchController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BatchController->load_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BatchController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-18 14:30:43 --> mysqli_sql_exception: Unknown column 'tbl_batch.batch_name' in 'field list' in C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_bat...', 0)
+#1 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_bat...')
+#2 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_bat...')
+#3 C:\xampp\htdocs\demo_app\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_bat...', Array, false)
+#4 C:\xampp\htdocs\demo_app\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\demo_app\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\demo_app\app\Controllers\LecturerPortalController.php(46): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(934): App\Controllers\LecturerPortalController->create_marks()
+#8 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+#9 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\demo_app\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-18 14:30:43 --> Unknown column 'tbl_batch.batch_name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_batch`.`batch_id`, `tbl_batch`.`batch_name`
+FROM `tbl_batch`
+JOIN `tbl_appointment` ON `tbl_appointment`.`batch_id`  = `tbl_batch`.`batch_id`
+WHERE `tbl_appointment`.`lecturer_id` = :tbl_appointment.lecturer_id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\LecturerPortalController.php(46): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->create_marks()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 14:30:58 --> Cannot access offset of type string on string
+in APPPATH\Views\lecturerPortal\createMarks.php on line 68.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('lecturerPortal/createMarks', [], true)
+ 4 APPPATH\Controllers\LecturerPortalController.php(48): view('lecturerPortal/createMarks', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->create_marks()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 14:32:29 --> Cannot access offset of type string on string
+in APPPATH\Views\lecturerPortal\createMarks.php on line 68.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('lecturerPortal/createMarks', [], true)
+ 4 APPPATH\Controllers\LecturerPortalController.php(48): view('lecturerPortal/createMarks', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->create_marks()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-18 14:36:54 --> mysqli_sql_exception: Column 'batch_id' in where clause is ambiguous in C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_sub...', 0)
+#1 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sub...')
+#2 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sub...')
+#3 C:\xampp\htdocs\demo_app\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sub...', Array, false)
+#4 C:\xampp\htdocs\demo_app\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\demo_app\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\demo_app\app\Controllers\SubjectController.php(84): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(934): App\Controllers\SubjectController->subjectByBatch()
+#8 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubjectController))
+#9 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\demo_app\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-18 14:36:54 --> Column 'batch_id' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_subject`.`subject_id`, `tbl_subject`.`subject_name`
+FROM `tbl_batch`
+JOIN `tbl_course_subject` ON `tbl_course_subject`.`course_id`  = `tbl_batch`.`course_id`
+JOIN `tbl_subject` ON `tbl_subject`.`subject_id`   = `tbl_course_subject`.`subject_id`
+JOIN `tbl_appointment` ON `tbl_appointment`.`batch_id`  = `tbl_batch`.`batch_id`
+WHERE `batch_id` = :batch_id:
+AND `tbl_appointment`.`lecturer_id` = :tbl_appointment.lecturer_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\SubjectController.php(84): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SubjectController->subjectByBatch()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubjectController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-18 14:37:54 --> mysqli_sql_exception: Column 'batch_id' in where clause is ambiguous in C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_sub...', 0)
+#1 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sub...')
+#2 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sub...')
+#3 C:\xampp\htdocs\demo_app\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sub...', Array, false)
+#4 C:\xampp\htdocs\demo_app\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\demo_app\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\demo_app\app\Controllers\SubjectController.php(84): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(934): App\Controllers\SubjectController->subjectByBatch()
+#8 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubjectController))
+#9 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\demo_app\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-18 14:37:54 --> Column 'batch_id' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_subject`.`subject_id`, `tbl_subject`.`subject_name`
+FROM `tbl_batch`
+JOIN `tbl_course_subject` ON `tbl_course_subject`.`course_id` = `tbl_batch`.`course_id`
+JOIN `tbl_subject` ON `tbl_subject`.`subject_id` = `tbl_course_subject`.`subject_id`
+JOIN `tbl_appointment` ON `tbl_appointment`.`batch_id`  = `tbl_batch`.`batch_id`
+WHERE `batch_id` = :batch_id:
+AND `tbl_appointment`.`lecturer_id` = :tbl_appointment.lecturer_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\SubjectController.php(84): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SubjectController->subjectByBatch()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubjectController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-18 14:38:05 --> mysqli_sql_exception: Column 'batch_id' in where clause is ambiguous in C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_sub...', 0)
+#1 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sub...')
+#2 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sub...')
+#3 C:\xampp\htdocs\demo_app\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sub...', Array, false)
+#4 C:\xampp\htdocs\demo_app\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\demo_app\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\demo_app\app\Controllers\SubjectController.php(84): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(934): App\Controllers\SubjectController->subjectByBatch()
+#8 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubjectController))
+#9 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\demo_app\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-18 14:38:05 --> Column 'batch_id' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_subject`.`subject_id`, `tbl_subject`.`subject_name`
+FROM `tbl_batch`
+JOIN `tbl_course_subject` ON `tbl_course_subject`.`course_id` = `tbl_batch`.`course_id`
+JOIN `tbl_subject` ON `tbl_subject`.`subject_id` = `tbl_course_subject`.`subject_id`
+JOIN `tbl_appointment` ON `tbl_appointment`.`batch_id`  = `tbl_batch`.`batch_id`
+WHERE `batch_id` = :batch_id:
+AND `tbl_appointment`.`lecturer_id` = :tbl_appointment.lecturer_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\SubjectController.php(84): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SubjectController->subjectByBatch()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubjectController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-18 14:38:08 --> mysqli_sql_exception: Column 'batch_id' in where clause is ambiguous in C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_sub...', 0)
+#1 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sub...')
+#2 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sub...')
+#3 C:\xampp\htdocs\demo_app\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sub...', Array, false)
+#4 C:\xampp\htdocs\demo_app\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\demo_app\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\demo_app\app\Controllers\SubjectController.php(84): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(934): App\Controllers\SubjectController->subjectByBatch()
+#8 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubjectController))
+#9 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\demo_app\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-18 14:38:08 --> Column 'batch_id' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_subject`.`subject_id`, `tbl_subject`.`subject_name`
+FROM `tbl_batch`
+JOIN `tbl_course_subject` ON `tbl_course_subject`.`course_id` = `tbl_batch`.`course_id`
+JOIN `tbl_subject` ON `tbl_subject`.`subject_id` = `tbl_course_subject`.`subject_id`
+JOIN `tbl_appointment` ON `tbl_appointment`.`batch_id`  = `tbl_batch`.`batch_id`
+WHERE `batch_id` = :batch_id:
+AND `tbl_appointment`.`lecturer_id` = :tbl_appointment.lecturer_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\SubjectController.php(84): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SubjectController->subjectByBatch()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubjectController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 15:26:34 --> Object of type App\Models\StudentMarksModel is not callable
+in APPPATH\Controllers\LecturerPortalController.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->view_marks()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 15:28:30 --> Object of type App\Models\StudentMarksModel is not callable
+in APPPATH\Controllers\LecturerPortalController.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->view_marks()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 15:29:45 --> Object of type App\Models\StudentMarksModel is not callable
+in APPPATH\Controllers\LecturerPortalController.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->view_marks()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 15:31:39 --> Array to string conversion
+in APPPATH\Controllers\LecturerPortalController.php on line 97.
+ 1 APPPATH\Controllers\LecturerPortalController.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\LecturerPortalController.php', 97)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->store_marks()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 18:15:00 --> Undefined variable $user
+in APPPATH\Views\user\userUpdateView.php on line 73.
+ 1 APPPATH\Views\user\userUpdateView.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'APPPATH\\Views\\user\\userUpdateView.php', 73)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\userUpdateView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('user/userUpdateView', [], true)
+ 5 APPPATH\Controllers\UserController.php(106): view('user/userUpdateView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->editdata('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 18:23:03 --> Undefined variable $today_reg_student
+in APPPATH\Views\studentPortal\studentDashboard.php on line 22.
+ 1 APPPATH\Views\studentPortal\studentDashboard.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $today_reg_student', 'APPPATH\\Views\\studentPortal\\studentDashboard.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\studentPortal\\studentDashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('studentPortal/studentDashboard', [], true)
+ 5 APPPATH\Controllers\StudentPortalController.php(30): view('studentPortal/studentDashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\StudentPortalController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentPortalController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 18:24:25 --> Undefined variable $bar_assignment_grade
+in APPPATH\Views\studentPortal\studentDashboard.php on line 128.
+ 1 APPPATH\Views\studentPortal\studentDashboard.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bar_assignment_grade', 'APPPATH\\Views\\studentPortal\\studentDashboard.php', 128)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\studentPortal\\studentDashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('studentPortal/studentDashboard', [], true)
+ 5 APPPATH\Controllers\StudentPortalController.php(30): view('studentPortal/studentDashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\StudentPortalController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentPortalController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

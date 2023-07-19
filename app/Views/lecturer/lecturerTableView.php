@@ -71,6 +71,7 @@
                                                 <th>Contact Number</th>
                                                 <th>Address</th>
                                                 <th>Edit</th>
+                                                <th>Appoint</th>
                                                 <th>Delete</th>
                                                 <!-- <th class="invisible"></th> -->
                                             </tr>
@@ -89,6 +90,7 @@
                                                     <td><?= $lec['lecturer_contact_no']?></td>
                                                     <td><?= $lec['lecturer_address']?></td>
                                                     <td class="text-center"><a href="<?=base_url()?>/Lecturer_Edit/<?= $lec['lecturer_id']?>" data-toggle="tooltip" data-placement="top"><i class="flaticon-edit  bg-success p-1 text-white br-6 mb-1"></i></a></td>
+                                                    <td class="text-center"><a href="<?=base_url()?>/Appointment_add/<?= $lec['lecturer_id']?>" data-toggle="tooltip" data-placement="top"><i class="flaticon-user-6 bg-primary p-1 text-white br-6 mb-1"></i></a></td>
                                                     <td class="text-center"><a href="" data-toggle="tooltip" data-placement="top" title="Delete"><i class="flaticon-delete  bg-danger p-1 text-white br-6 mb-1"></i></a></td>
                                                     
                                                 </tr>
@@ -108,6 +110,7 @@
                                                 <th>Contact Number</th>
                                                 <th>Address</th>
                                                 <th>Edit</th>
+                                                <th>Appoint</th>
                                                 <th>Delete</th>
                                                 <!-- <th class="invisible"></th> -->
                                             </tr>

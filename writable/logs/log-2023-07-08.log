@@ -1,0 +1,315 @@
+ERROR - 2023-07-08 09:05:29 --> mysqli_sql_exception: Not unique table/alias: 'tbl_batch' in C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_bat...', 0)
+#1 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_bat...')
+#2 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_bat...')
+#3 C:\xampp\htdocs\demo_app\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_bat...', Array, false)
+#4 C:\xampp\htdocs\demo_app\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\demo_app\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\demo_app\app\Controllers\PaymentController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(934): App\Controllers\PaymentController->index()
+#8 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+#9 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\demo_app\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-08 09:05:29 --> Not unique table/alias: 'tbl_batch'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_batch`.`batch_id`, `tbl_batch`.`batch_no`
+FROM `tbl_batch`
+JOIN `tbl_batch` ON `tbl_batch`.`batch_id` = `tbl_payment`.`batch_id`', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PaymentController.php(16): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PaymentController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-08 09:06:35 --> mysqli_sql_exception: Not unique table/alias: 'tbl_batch' in C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_bat...', 0)
+#1 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_bat...')
+#2 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_bat...')
+#3 C:\xampp\htdocs\demo_app\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_bat...', Array, false)
+#4 C:\xampp\htdocs\demo_app\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\demo_app\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\demo_app\app\Controllers\PaymentController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(934): App\Controllers\PaymentController->index()
+#8 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+#9 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\demo_app\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-08 09:06:35 --> Not unique table/alias: 'tbl_batch'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_batch`.`batch_id`, `tbl_batch`.`batch_no`
+FROM `tbl_batch`
+JOIN `tbl_batch` ON `tbl_batch`.`batch_id` = `tbl_payment`.`batch_id`', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PaymentController.php(16): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PaymentController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-08 09:06:37 --> mysqli_sql_exception: Not unique table/alias: 'tbl_batch' in C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_bat...', 0)
+#1 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_bat...')
+#2 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_bat...')
+#3 C:\xampp\htdocs\demo_app\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_bat...', Array, false)
+#4 C:\xampp\htdocs\demo_app\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\demo_app\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\demo_app\app\Controllers\PaymentController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(934): App\Controllers\PaymentController->index()
+#8 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+#9 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\demo_app\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-08 09:06:37 --> Not unique table/alias: 'tbl_batch'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_batch`.`batch_id`, `tbl_batch`.`batch_no`
+FROM `tbl_batch`
+JOIN `tbl_batch` ON `tbl_batch`.`batch_id` = `tbl_payment`.`batch_id`', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PaymentController.php(16): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PaymentController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-08 09:07:49 --> mysqli_sql_exception: Not unique table/alias: 'tbl_batch' in C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_bat...', 0)
+#1 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_bat...')
+#2 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_bat...')
+#3 C:\xampp\htdocs\demo_app\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_bat...', Array, false)
+#4 C:\xampp\htdocs\demo_app\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\demo_app\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\demo_app\app\Controllers\PaymentController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(934): App\Controllers\PaymentController->index()
+#8 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+#9 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\demo_app\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-08 09:07:49 --> Not unique table/alias: 'tbl_batch'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_batch`.`batch_id`, `tbl_batch`.`batch_no`
+FROM `tbl_batch`
+JOIN `tbl_batch` ON `tbl_batch`.`batch_id` = `tbl_payment`.`batch_id`', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PaymentController.php(16): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PaymentController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-08 09:07:50 --> mysqli_sql_exception: Not unique table/alias: 'tbl_batch' in C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_bat...', 0)
+#1 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_bat...')
+#2 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_bat...')
+#3 C:\xampp\htdocs\demo_app\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_bat...', Array, false)
+#4 C:\xampp\htdocs\demo_app\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\demo_app\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\demo_app\app\Controllers\PaymentController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(934): App\Controllers\PaymentController->index()
+#8 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+#9 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\demo_app\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-08 09:07:50 --> Not unique table/alias: 'tbl_batch'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_batch`.`batch_id`, `tbl_batch`.`batch_no`
+FROM `tbl_batch`
+JOIN `tbl_batch` ON `tbl_batch`.`batch_id` = `tbl_payment`.`batch_id`', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PaymentController.php(16): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PaymentController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 09:08:35 --> Undefined variable $batches
+in APPPATH\Views\payment\paymentView.php on line 57.
+ 1 APPPATH\Views\payment\paymentView.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $batches', 'APPPATH\\Views\\payment\\paymentView.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\payment\\paymentView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('payment/paymentView', [], true)
+ 5 APPPATH\Controllers\PaymentController.php(18): view('payment/paymentView')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PaymentController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-08 09:10:17 --> mysqli_sql_exception: Not unique table/alias: 'tbl_batch' in C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_bat...', 0)
+#1 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_bat...')
+#2 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_bat...')
+#3 C:\xampp\htdocs\demo_app\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_bat...', Array, false)
+#4 C:\xampp\htdocs\demo_app\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\demo_app\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\demo_app\app\Controllers\PaymentController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(934): App\Controllers\PaymentController->index()
+#8 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+#9 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\demo_app\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-08 09:10:17 --> Not unique table/alias: 'tbl_batch'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_batch`.`batch_id`, `tbl_batch`.`batch_no`
+FROM `tbl_batch`
+JOIN `tbl_batch` ON `tbl_batch`.`batch_id` = `tbl_payment`.`batch_id`', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PaymentController.php(16): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PaymentController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-08 10:35:20 --> mysqli_sql_exception: Unknown column 'tbl.student.student_no' in 'field list' in C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_bat...', 0)
+#1 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_bat...')
+#2 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_bat...')
+#3 C:\xampp\htdocs\demo_app\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_bat...', Array, false)
+#4 C:\xampp\htdocs\demo_app\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\demo_app\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\demo_app\app\Controllers\PaymentController.php(54): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(934): App\Controllers\PaymentController->showdata()
+#8 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+#9 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\demo_app\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-08 10:35:20 --> Unknown column 'tbl.student.student_no' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_batch`.`batch_id`, `tbl_course`.`course_name`, `tbl_batch`.`batch_no`, `tbl`.`student`.`student_no`, `tbl_student`.`student_first_name`, `tbl_student`.`student_last_name`, `tbl_payment`.`course_payment`, `tbl_payment`.`payment_year_month`, `tbl_payment`.`payment_remark`
+FROM `tbl_payment`
+JOIN `tbl_batch` ON `tbl_batch`.`batch_id` = `tbl_payment`.`batch_id`
+JOIN `tbl_course` ON `tbl_course`.`course_id` = `tbl_batch`.`course_id`
+JOIN `tbl_student` ON `tbl_student`.`student_id` = `tbl_payment`.`student_id`', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PaymentController.php(54): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PaymentController->showdata()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 11:05:25 --> Undefined variable $batches
+in APPPATH\Views\report\paymentSearchView.php on line 57.
+ 1 APPPATH\Views\report\paymentSearchView.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $batches', 'APPPATH\\Views\\report\\paymentSearchView.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\paymentSearchView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('report/paymentSearchView', [], true)
+ 5 APPPATH\Controllers\ReportController.php(28): view('report/paymentSearchView')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ReportController->paymentsearch()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 11:05:44 --> Undefined variable $batches
+in APPPATH\Views\report\paymentSearchView.php on line 57.
+ 1 APPPATH\Views\report\paymentSearchView.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $batches', 'APPPATH\\Views\\report\\paymentSearchView.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\paymentSearchView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('report/paymentSearchView', [], true)
+ 5 APPPATH\Controllers\ReportController.php(28): view('report/paymentSearchView')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ReportController->paymentsearch()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 11:05:46 --> Undefined variable $batches
+in APPPATH\Views\report\paymentSearchView.php on line 57.
+ 1 APPPATH\Views\report\paymentSearchView.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $batches', 'APPPATH\\Views\\report\\paymentSearchView.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\paymentSearchView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('report/paymentSearchView', [], true)
+ 5 APPPATH\Controllers\ReportController.php(28): view('report/paymentSearchView')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ReportController->paymentsearch()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 11:06:17 --> Undefined array key "course_id"
+in APPPATH\Views\report\paymentSearchView.php on line 72.
+ 1 APPPATH\Views\report\paymentSearchView.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "course_id"', 'APPPATH\\Views\\report\\paymentSearchView.php', 72)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\report\\paymentSearchView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('report/paymentSearchView', [], true)
+ 5 APPPATH\Controllers\ReportController.php(28): view('report/paymentSearchView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ReportController->paymentsearch()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 11:59:16 --> Class "App\Controllers\PaymentModel" not found
+in APPPATH\Controllers\ReportController.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ReportController->paymentview()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 11:59:59 --> Undefined variable $db
+in APPPATH\Controllers\ReportController.php on line 44.
+ 1 APPPATH\Controllers\ReportController.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH\\Controllers\\ReportController.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ReportController->paymentview()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 12:00:00 --> Undefined variable $db
+in APPPATH\Controllers\ReportController.php on line 44.
+ 1 APPPATH\Controllers\ReportController.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH\\Controllers\\ReportController.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ReportController->paymentview()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 12:02:52 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::findAll()
+in APPPATH\Controllers\ReportController.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ReportController->paymentview()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 12:03:16 --> Cannot use object of type mysqli as array
+in APPPATH\Views\report\paymentReportView.php on line 116.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('report/paymentReportView', [], true)
+ 4 APPPATH\Controllers\ReportController.php(72): view('report/paymentReportView', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ReportController->paymentview()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 12:03:38 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+in APPPATH\Controllers\ReportController.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ReportController->paymentview()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 12:04:24 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\ReportController.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ReportController->paymentview()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-08 12:14:47 --> mysqli_sql_exception: Column 'batch_id' cannot be null in C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\demo_app\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\demo_app\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\demo_app\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\demo_app\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\demo_app\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\demo_app\app\Controllers\PaymentController.php(34): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(934): App\Controllers\PaymentController->create()
+#10 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+#11 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\demo_app\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-07-08 12:14:47 --> Column 'batch_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_payment` (`batch_id`, `student_id`, `course_payment`, `payment_year_month`, `payment_remark`) VALUES (:batch_id:, :student_id:, :course_payment:, :payment_year_month:, :payment_remark:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\PaymentController.php(34): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PaymentController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

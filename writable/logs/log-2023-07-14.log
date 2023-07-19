@@ -1,0 +1,11 @@
+CRITICAL - 2023-07-14 13:06:00 --> Undefined variable $timetables
+in APPPATH\Views\timetable\timetableView.php on line 64.
+ 1 APPPATH\Views\timetable\timetableView.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $timetables', 'APPPATH\\Views\\timetable\\timetableView.php', 64)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timetable\\timetableView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('timetable/timetableView', [], true)
+ 5 APPPATH\Controllers\TimetableController.php(21): view('timetable/timetableView')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TimetableController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TimetableController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

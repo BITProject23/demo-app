@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\AppointModel;
+use App\Models\BatchModel;
 use App\Models\SubjectModel;
 
 class SubjectController extends BaseController
@@ -67,6 +69,20 @@ class SubjectController extends BaseController
             return redirect()->back()->withInput()->with('errors',$subjectModel->errors());
         }
             
+    }
+
+    public function subjectByBatch() 
+    {
+        $appointModel = new AppointModel();
+        
+        // Access the selected value from the request data
+        $selectedValue = $this->request->getPost('selectedValue');
+
+        $data = $appointModel->select('tbl_subject.subject_id,tbl_subject.subject_name')
+        ->join('tbl_subject','tbl_subject.subject_id = tbl_appointment.subject_id')
+        ->where('tbl_appointment.batch_id', $selectedValue)->where('tbl_appointment.lecturer_id',session('lecturer_id'))->findAll();
+
+        echo json_encode($data);
     }
 
 }

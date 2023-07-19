@@ -134,5 +134,19 @@ class CourseSubjectController extends BaseController
         return redirect()->to('Course_join')->with('success','CourseSubject Details Updated!');
     }
 
+    public function subjectByCourse() 
+    {
+        $courseSubjectModel = new CourseSubjectModel();
+        
+        // Access the selected value from the request data
+        $selectedValue = $this->request->getPost('selectedValue');
+
+        $data = $courseSubjectModel->select('tbl_subject.subject_id,tbl_subject.subject_name')
+        ->join('tbl_subject','tbl_subject.subject_id = tbl_course_subject.subject_id')
+        ->where('course_id', $selectedValue)->findAll();
+
+        echo json_encode($data);
+    }
+
 }
 ?>

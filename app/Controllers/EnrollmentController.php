@@ -35,9 +35,9 @@ class EnrollmentController extends BaseController
         $enrollmentModel = new EnrollmentModel();
 
         if($enrollmentModel->save($data)){
-            return redirect()->to('Enrollment_search')->with('success','Enroll Student Successfully!');
+            return redirect()->to('Enrollment_View')->with('success','Enroll Student Successfully!');
         }else{
-            return redirect()->back()->withInput()->with('errors',$batchModel->errors());
+            return redirect()->back()->withInput()->with('errors',$enrollmentModel->errors());
         }
 
     }
@@ -61,7 +61,7 @@ class EnrollmentController extends BaseController
         ->join('tbl_course','tbl_course.course_id = tbl_enrollment.course_id')
         ->join('tbl_batch','tbl_batch.batch_id = tbl_enrollment.batch_id');
 
-        if(isset($studentNumber) && $studentNumber != ""){
+        if(isset($studentNumber) && $studentNumber != ""){ 
             $enrollmentModel = $enrollmentModel->where('tbl_student.student_no', $studentNumber);
         }
         if(isset($batchId) && $batchId != ""){
@@ -72,6 +72,37 @@ class EnrollmentController extends BaseController
         
         return view('enrollment/studentEnrollmentTableView',$data);
 
+    }
+
+    public function showdata()
+    {
+
+        $enrollmentModel = new EnrollmentModel();
+        $enrollmentModel =  $enrollmentModel->select('tbl_enrollment.en_id, tbl_enrollment.en_date, tbl_student.student_no, 
+        tbl_student.student_first_name, tbl_student.student_last_name, tbl_student.student_nic, tbl_course.course_name,
+        tbl_batch.batch_no')
+        ->join('tbl_student','tbl_student.student_id = tbl_enrollment.student_id')
+        ->join('tbl_course','tbl_course.course_id = tbl_enrollment.course_id')
+        ->join('tbl_batch','tbl_batch.batch_id = tbl_enrollment.batch_id');
+        
+        $data['enrollements'] = $enrollmentModel->findAll();
+        
+        return view('enrollment/studentEnrollmentTable',$data);
+
+    }
+
+    public function batchByEnrollment() 
+    {
+        $enrollmentModel = new EnrollmentModel();
+        
+        // Access the selected value from the request data
+        $selectedValue = $this->request->getPost('selectedValue');
+
+        $data = $enrollmentModel->select('tbl_student.student_id,tbl_student.student_first_name,tbl_student.student_last_name')
+        ->join('tbl_student','tbl_student.student_id = tbl_enrollment.student_id')
+        ->where('batch_id', $selectedValue)->findAll();
+
+        echo json_encode($data);
     }
 
     // public function delete($id){

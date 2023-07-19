@@ -36,6 +36,9 @@
                 <?php if(session()->has('success')) : ?>
                     <div class="alert alert-success mb-4"><?=session('success')?></div>
                 <?php endif; ?> 
+                <?php if(session()->has('errors')) : ?>
+                    <div class="alert alert-danger mb-4"><?=session('errors')?></div>
+                <?php endif; ?> 
 
                 <div class="col-md-12">
 
@@ -64,11 +67,14 @@
                         <input type="password" id="user_password" name="user_password" class="form-control" placeholder="Password" aria-describedby="inputPassword" required >
                     </div>
                     
+                    <label for="user_email" class="sr-only">User Type</label>
                     <div class="checkbox d-flex justify-content-center mt-3">
-                        <div class="custom-control custom-checkbox mr-3">
-                            <input type="checkbox" class="custom-control-input" id="customCheck1" value="remember-me">
-                            <label class="custom-control-label" for="customCheck1">Remember me</label>
-                        </div>                    
+                        <select name="user_type" id="user_type">
+                            <option value="RECEPTION">Receptionist</option>
+                            <option value="STUDENT">Student</option>
+                            <option value="LECTURE">Lecturer</option>
+                            <option value="ADMIN">Admin</option>
+                        </select>                 
                     </div>
                     
                     <button class="btn btn-lg btn-gradient-warning btn-block btn-rounded mb-4 mt-5" type="submit">Register</button>

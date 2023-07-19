@@ -1,0 +1,163 @@
+CRITICAL - 2023-07-15 08:44:03 --> Undefined variable $weekData
+in APPPATH\Views\timetable\timetableView.php on line 65.
+ 1 APPPATH\Views\timetable\timetableView.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $weekData', 'APPPATH\\Views\\timetable\\timetableView.php', 65)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timetable\\timetableView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('timetable/timetableView', [], true)
+ 5 APPPATH\Controllers\TimetableController.php(21): view('timetable/timetableView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TimetableController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TimetableController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-15 11:16:54 --> Undefined variable $batches
+in APPPATH\Views\lecturerPortal\home.php on line 67.
+ 1 APPPATH\Views\lecturerPortal\home.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $batches', 'APPPATH\\Views\\lecturerPortal\\home.php', 67)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\lecturerPortal\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('lecturerPortal/home', [], true)
+ 5 APPPATH\Controllers\LecturerPortalController.php(22): view('lecturerPortal/home')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->create_marks()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-15 11:17:44 --> Undefined array key ""
+in APPPATH\Views\lecturerPortal\home.php on line 68.
+ 1 APPPATH\Views\lecturerPortal\home.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'APPPATH\\Views\\lecturerPortal\\home.php', 68)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\lecturerPortal\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('lecturerPortal/home', [], true)
+ 5 APPPATH\Controllers\LecturerPortalController.php(22): view('lecturerPortal/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->create_marks()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-15 11:33:12 --> Invalid file: "lecturerPortal/createMarks.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('lecturerPortal/createMarks.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('lecturerPortal/createMarks', [], true)
+ 3 APPPATH\Controllers\LecturerPortalController.php(22): view('lecturerPortal/createMarks', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->create_marks()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-15 11:43:33 --> mysqli_sql_exception: Column 'batch_id' in where clause is ambiguous in C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_stu...', 0)
+#1 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_stu...')
+#2 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_stu...')
+#3 C:\xampp\htdocs\demo_app\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_stu...', Array, false)
+#4 C:\xampp\htdocs\demo_app\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\demo_app\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\demo_app\app\Controllers\StudentContoller.php(137): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(934): App\Controllers\StudentContoller->studentBybatch()
+#8 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentContoller))
+#9 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\demo_app\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-15 11:43:34 --> Column 'batch_id' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_student`.`student_first_name`, `tbl_student`.`student_last_name`
+FROM `tbl_batch`
+JOIN `tbl_enrollment` ON `tbl_enrollment`.`batch_id`  = `tbl_batch`.`batch_id`
+JOIN `tbl_student` ON `tbl_student`.`student_id`  = `tbl_enrollment`.`student_id`
+WHERE `batch_id` = :batch_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\StudentContoller.php(137): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\StudentContoller->studentBybatch()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentContoller))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-15 11:45:46 --> mysqli_sql_exception: Column 'batch_id' in where clause is ambiguous in C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\demo_app\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_stu...', 0)
+#1 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_stu...')
+#2 C:\xampp\htdocs\demo_app\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_stu...')
+#3 C:\xampp\htdocs\demo_app\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_stu...', Array, false)
+#4 C:\xampp\htdocs\demo_app\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\demo_app\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\demo_app\app\Controllers\StudentContoller.php(137): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(934): App\Controllers\StudentContoller->studentBybatch()
+#8 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentContoller))
+#9 C:\xampp\htdocs\demo_app\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\demo_app\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-15 11:45:46 --> Column 'batch_id' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_student`.`student_first_name`, `tbl_student`.`student_last_name`
+FROM `tbl_batch`
+JOIN `tbl_enrollment` ON `tbl_enrollment`.`batch_id`  = `tbl_batch`.`batch_id`
+JOIN `tbl_student` ON `tbl_student`.`student_id`  = `tbl_enrollment`.`student_id`
+WHERE `batch_id` = :batch_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\StudentContoller.php(137): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\StudentContoller->studentBybatch()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentContoller))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-15 12:01:02 --> Undefined variable $students
+in APPPATH\Views\student\ajaxStudentByBatch.php on line 15.
+ 1 APPPATH\Views\student\ajaxStudentByBatch.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $students', 'APPPATH\\Views\\student\\ajaxStudentByBatch.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\student\\ajaxStudentByBatch.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('student/ajaxStudentByBatch', [], true)
+ 5 APPPATH\Controllers\StudentContoller.php(139): view('student/ajaxStudentByBatch', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\StudentContoller->studentBybatch()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentContoller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-15 12:01:04 --> Undefined variable $students
+in APPPATH\Views\student\ajaxStudentByBatch.php on line 15.
+ 1 APPPATH\Views\student\ajaxStudentByBatch.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $students', 'APPPATH\\Views\\student\\ajaxStudentByBatch.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\student\\ajaxStudentByBatch.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('student/ajaxStudentByBatch', [], true)
+ 5 APPPATH\Controllers\StudentContoller.php(139): view('student/ajaxStudentByBatch', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\StudentContoller->studentBybatch()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentContoller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-15 12:03:04 --> Undefined array key "student_id"
+in APPPATH\Views\student\ajaxStudentByBatch.php on line 17.
+ 1 APPPATH\Views\student\ajaxStudentByBatch.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "student_id"', 'APPPATH\\Views\\student\\ajaxStudentByBatch.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\student\\ajaxStudentByBatch.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('student/ajaxStudentByBatch', [], true)
+ 5 APPPATH\Controllers\StudentContoller.php(139): view('student/ajaxStudentByBatch', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\StudentContoller->studentBybatch()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentContoller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-15 12:03:17 --> Undefined array key "student_id"
+in APPPATH\Views\student\ajaxStudentByBatch.php on line 17.
+ 1 APPPATH\Views\student\ajaxStudentByBatch.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "student_id"', 'APPPATH\\Views\\student\\ajaxStudentByBatch.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\student\\ajaxStudentByBatch.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('student/ajaxStudentByBatch', [], true)
+ 5 APPPATH\Controllers\StudentContoller.php(139): view('student/ajaxStudentByBatch', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\StudentContoller->studentBybatch()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentContoller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-15 12:36:18 --> foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\LecturerPortalController.php on line 35.
+ 1 APPPATH\Controllers\LecturerPortalController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Controllers\\LecturerPortalController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->store_marks()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-15 12:37:36 --> Array to string conversion
+in APPPATH\Controllers\LecturerPortalController.php on line 53.
+ 1 APPPATH\Controllers\LecturerPortalController.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\LecturerPortalController.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->store_marks()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-15 12:49:45 --> Array to string conversion
+in APPPATH\Controllers\LecturerPortalController.php on line 53.
+ 1 APPPATH\Controllers\LecturerPortalController.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\LecturerPortalController.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LecturerPortalController->store_marks()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LecturerPortalController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
