@@ -31,7 +31,7 @@
                                     <div class="statbox widget box box-shadow">
                                         <div class="widget-content widget-content-area event-calendar">
                                             <div class="js-fc-header">
-                                                <h2 class="js-fc-header-title">Events</h2>
+                                                <h2 class="js-fc-header-title">Timetable</h2>
                                             </div>
                                             <div id="calendar"></div>
                                         </div>
