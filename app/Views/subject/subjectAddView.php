@@ -36,11 +36,27 @@
                                     </div>                                                                        
                                 </div>
 
-                                <?php if(session()->has('success')) : ?>
+                                <?php if(session()->has('success')):?>
 
-                                    <div class="alert alert-success mb-4"><?=session('success')?></div>
+                                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                        <?= session()->getFlashdata('success');?>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
 
                                 <?php endif ?>
+
+
+                                <?php if(session()->has('errors')) : ?>
+
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        <?= session()->getFlashdata('errors');?>
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                    </div>
+                                <?php endif; ?> 
 
 
                                 <div class="row">
@@ -70,6 +86,14 @@
                                             <label for="subject_code" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Subject code </label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
                                             <input type="text" class="form-control-rounded form-control" name="subject_code" id="subject_code" data-required-error="Please enter subject code" required>
+                                            <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row mb-4">
+                                            <label for="subject_status" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Subject status </label>
+                                            <div class="col-xl-10 col-lg-9 col-sm-10">
+                                            <input type="text" class="form-control-rounded form-control" name="subject_status" id="subject_status" data-required-error="Please enter subject code" required>
                                             <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
