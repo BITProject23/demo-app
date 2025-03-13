@@ -67,35 +67,35 @@
                             <div class="widget-content widget-content-area">
 
                                 <!-- < ?php echo form_open('stuCreate') ?> -->
-                                    <form name="studentForm" action='<?php echo base_url();?>/Student_Update' onsubmit="return studentValidateForm()" method ="post">
+                                    <form name="studentForm" action='<?php echo base_url();?>/Student_Update' data-toggle="validator" method ="post">
 
                                         <input type="hidden" value="<?=$student['student_id']?>" name="student_id">
 
-                                        <div class="form-group row mb-2">
+                                        <div class="form-group row mb-4">
                                             <label for="student_no" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Student No </label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
                                                 <input type="text" class="form-control-rounded form-control" value="<?=$student['student_no']?>"
-                                                name="student_no" id="student_no" placeholder="" >
-                                                <label id="first_name_error"></label>
+                                                name="student_no" id="student_no" placeholder="" readonly>
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
 
 
-                                        <div class="form-group row mb-2">
+                                        <div class="form-group row mb-4">
                                             <label for="student_first_name" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">First Name </label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
                                                 <input type="text" class="form-control-rounded form-control" value="<?=$student['student_first_name']?>"
-                                                name="student_first_name" id="student_first_name" placeholder="" >
-                                                <label id="first_name_error"></label>
+                                                name="student_first_name" id="student_first_name" minlength="3" maxlength="20" placeholder="" data-required-error="Please enter a first name" required >
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
 
-                                        <div class="form-group row mb-2">
+                                        <div class="form-group row mb-4">
                                             <label for="student_last_name" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Last Name </label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
                                                 <input type="text" class="form-control-rounded form-control"  value="<?=$student['student_last_name']?>"
-                                                name="student_last_name" id="student_last_name" placeholder="" >
-                                                <label id="last_name_error"></label>
+                                                name="student_last_name" id="student_last_name" data-required-error="Please enter a last name" required >
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
 
@@ -103,8 +103,8 @@
                                             <label for="student_nic" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">NIC </label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
                                                 <input type="text" class="form-control-rounded form-control"  value="<?=$student['student_nic']?>"
-                                                name="student_nic" id="student_nic" placeholder="">
-                                                <lable id="nic_error"></lable>
+                                                name="student_nic" id="student_nic" minlength="10" maxlength="12" placeholder="" data-required-error="Please enter a valid NIC number" required>
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
 
@@ -114,8 +114,8 @@
                                             <label for="student_email" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Email</label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
                                                 <input type="email" class="form-control-rounded form-control"  value="<?=$student['student_email']?>"
-                                                name="student_email" id="student_email" placeholder="">
-                                                <lable id="email_error"></lable>
+                                                name="student_email" id="student_email" data-required-error="Please enter a valid email address" required>
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
 
@@ -140,11 +140,11 @@
                                                         <div class="custom-control custom-radio classic-radio-info">
                                                             <input type="radio" id="hRadio2" name="student_gender"
                                                             <?php
-                                                                if($student['student_gender'] == "Femal"){
+                                                                if($student['student_gender'] == "Female"){
                                                                     echo "checked";
                                                                 }
                                                             ?>
-                                                            value="Femal" class="custom-control-input">
+                                                            value="Female" class="custom-control-input">
                                                             <label class="custom-control-label" for="hRadio2">Female</label>
                                                         </div>
                                                     </div>
@@ -158,8 +158,8 @@
                                             <label for="student_bod" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Date of Birth</label>
                                             <div class="col-xl-3 col-lg-4 col-sm-3">
                                                 <input type="date" class="form-control-rounded form-control"  value="<?=$student['student_bod']?>"
-                                                name="student_bod" id="student_bod" placeholder="">
-                                                <lable id="dob_error"></lable>   
+                                                name="student_bod" id="student_bod" required>
+                                                <div class="help-block with-errors"></div>   
                                             </div>
                                         </div>
 
@@ -168,8 +168,8 @@
                                             <label for="student_contact_no" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Contact Number</label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
                                                 <input type="tel" class="form-control-rounded form-control" value="<?=$student['student_contact_no']?>"
-                                                name="student_contact_no" id="student_contact_no" pattern="[0-9]{10}" >
-                                                <lable id="phone_error"></lable>
+                                                name="student_contact_no" id="student_contact_no"minlength="10" maxlength="10" data-required-error="Please enter a valid 10-digit phone number" required >
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
 
@@ -177,8 +177,16 @@
                                             <label for="student_address" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Address</label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
                                                 <input type="text" class="form-control-rounded form-control" value="<?=$student['student_address']?>"
-                                                name="student_address" id="student_address" placeholder="" >
-                                                <label id="address_error"></label>
+                                                name="student_address" id="student_address" data-required-error="Please enter a address" required>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row mb-4"> 
+                                            <label for="student_registration_date" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Registration Date</label>
+                                            <div class="col-xl-3 col-lg-9 col-sm-3">
+                                                <input type="date" class="form-control-rounded form-control" value="<?=$student['student_registration_date']?>"
+                                                name="student_registration_date" id="student_registration_date" placeholder="" required>
                                             </div>
                                         </div>
 
@@ -204,105 +212,6 @@
             </div>
         </div>
 
-        <script src="public/assets_1/assets/js/libs/jquery-3.1.1.min.js"></script>
-        <!-- <script src="public/assets_1/assets/js/validation.js"></script> -->
-
-        <script> 
-            function studentValidateForm(){
-
-                // First Name validation
-                var firstName = document.getElementById("student_first_name").value;
-                if (firstName === "") {
-                    // document.getElementById("first_name_error").empty();
-                    document.getElementById("first_name_error").innerHTML = "Please enter a first name.";
-                    document.getElementById("first_name_error").style.color = "red";
-                    return false;
-                } else {
-                    document.getElementById("first_name_error").innerHTML = "";
-                }
-
-                // Last Name validation
-                var lastName = document.getElementById("student_last_name").value;
-                if (lastName === "") {
-                    document.getElementById("last_name_error").innerHTML = "Please enter a last name.";
-                    document.getElementById("last_name_error").style.color = "red";
-                    return false;
-                } else {
-                    document.getElementById("last_name_error").innerHTML = "";
-                }
-
-                // NIC validation
-                var nic = document.getElementById("student_nic").value;
-                var nicRegex = /^[0-9]{9}[vVxX]$/;
-                if (nic === "" || !nicRegex.test(nic)) {
-                    document.getElementById("nic_error").innerHTML = "Please enter a valid NIC number.";
-                    document.getElementById("nic_error").style.color = "red";
-                    return false;
-                } else {
-                    document.getElementById("nic_error").innerHTML = "";
-                }
-
-                // Email validation
-                var email = document.getElementById("student_email").value;
-                var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (email === "" || !emailRegex.test(email)) {
-                    document.getElementById("email_error").innerHTML = "Please enter a valid email address.";
-                    document.getElementById("email_error").style.color = "red";
-                    return false;
-                } else {
-                    document.getElementById("email_error").innerHTML = "";
-                }
-
-                // Gender validation
-                var gender = document.querySelector('input[name="student_gender"]:checked');
-                if (!gender) {
-                    document.getElementById("gender_error").innerHTML = "Please select a gender.";
-                    document.getElementById("gender_error").style.color = "red";
-                    return false;
-                } else {
-                    document.getElementById("gender_error").innerHTML = "";
-                }
-
-                // Date of Birth validation
-                var dob = document.getElementById("student_bod").value;
-                if (dob === "") {
-                    document.getElementById("dob_error").innerHTML = "Please select a date of birth.";
-                    document.getElementById("dob_error").style.color = "red";
-                    return false;
-                } else {
-                    document.getElementById("dob_error").innerHTML = "";
-                }
-
-
-                // Phone number validation
-                var phoneNumber = document.getElementById("student_contact_no").value;
-                var phoneNumberRegex = /^[0-9]{10}$/;
-                if (phoneNumber === "" || !phoneNumberRegex.test(phoneNumber)) {
-                    document.getElementById("phone_error").innerHTML = "Please enter a valid 10-digit phone number.";
-                    document.getElementById("phone_error").style.color = "red";
-                    return false;
-                } else {
-                    document.getElementById("phone_error").innerHTML = "";
-                }
-
-                // Address validation
-                var address = document.getElementById("student_address").value;
-                if (address === "") {
-                    document.getElementById("address_error").innerHTML = "Please enter an address.";
-                    document.getElementById("address_error").style.color = "red";
-                    return false;
-                } else {
-                    document.getElementById("address_error").innerHTML = "";
-                }
-
-                // Rest of the validation code
-
-                return true;
-
-
-            }
-
-        </script>
 
 
        
