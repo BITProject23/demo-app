@@ -52,6 +52,16 @@
                             
                             <?php endif; ?>
 
+                            <?php if(session()->has('errors')) : ?>
+                                    
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        <?= session()->getFlashdata('errors');?>
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                    </div>
+                            <?php endif; ?> 
+
 
 
                             <div class="widget-content widget-content-area">
@@ -69,9 +79,11 @@
                                                 <th>Date of Birth</th>
                                                 <th>Contact Number</th>
                                                 <th>Address</th>
+                                                <th>Qualification</th>
+                                                <th>Registration Date</th>
                                                 <th>Edit</th>
                                                 <th>Enrollment</th>
-                                                <th>Status</th>
+                                                <th>Delete</th>
                                                 <!-- <th class="invisible"></th> -->
                                             </tr>
                                         </thead>
@@ -88,10 +100,11 @@
                                                     <td><?= $stu['student_bod']?></td>
                                                     <td><?= $stu['student_contact_no']?></td>
                                                     <td><?= $stu['student_address']?></td>
+                                                    <td><?= $stu['student_qulify']?></td>
+                                                    <td><?= $stu['student_registration_date']?></td>
                                                     <td class="text-center"><a href="<?=base_url()?>/Student_Edit/<?= $stu['student_id']?>" data-toggle="tooltip" data-placement="top"><i class="flaticon-edit  bg-success p-1 text-white br-6 mb-1"></i></a></td>
                                                     <td class="text-center"><a href="<?=base_url()?>/Enroll_Student/<?= $stu['student_id']?>" data-toggle="tooltip" data-placement="top"><i class="flaticon-user-6 bg-primary p-1 text-white br-6 mb-1"></i></a></td>
                                                     <td class="text-center"><a href="#" onclick="deleteData('<?=base_url()?>/Student_Delete/<?= $stu['student_id']?>')" data-toggle="tooltip" data-placement="top" title="Delete"><i class="flaticon-delete  bg-danger p-1 text-white br-6 mb-1"></i></a></td>
-                                                    <td><?=$stu['student_status']?></td>
                                                     <!-- <td class="text-center"><a href="" data-toggle="tooltip" data-placement="top" title="Delete"><i class="flaticon-delete  bg-danger p-1 text-white br-6 mb-1"></i></a></td> -->
                                                     
                                                 </tr>
@@ -110,9 +123,11 @@
                                                 <th>Date of Birth</th>
                                                 <th>Contact Number</th>
                                                 <th>Address</th>
+                                                <th>Qualification</th>
+                                                <th>Registration Date</th>
                                                 <th>Edit</th>
                                                 <th>Enrollment</th>
-                                                <th>Status</th>
+                                                <th>Delete</th>
                                                 <!-- <th class="invisible"></th> -->
                                             </tr>
                                         </tfoot>
