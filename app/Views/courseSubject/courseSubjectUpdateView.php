@@ -12,14 +12,12 @@
                 <div class="page-header">
                     <div class="page-title">
                         <h3> Course-Subject
-                            <!-- <small>Rounded</small> -->
                         </h3>
                         <div class="crumbs">
                             <ul id="breadcrumbs" class="breadcrumb">
                                 <li><a href="index-2.html"><i class="flaticon-home-fill"></i></a></li>
                                 <li><a href="#">Course-Subject</a></li>
                                 <li><a href="#">Course-Subject Update</a></li>
-                                <!-- <li class="active"><a href="#">Rounded</a> </li> -->
                             </ul>
                         </div>
                     </div>
@@ -35,24 +33,39 @@
                                     </div>                                                                        
                                 </div>
 
-                                <?php if(session()->has('success')):?>
+                                <?php if(session()->getFlashdata('success')): ?>
+                            
+                                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                        <?= session()->getFlashdata('success');?>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                
+                                <?php endif; ?>
 
-                                    <div class="alert alert-success mb-4"><?=session('success')?></div>
+                                <?php if(session()->has('errors')) : ?>
+
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        <?=session()->getFlashdata('errors');?>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
 
                                 <?php endif ?>
 
                                     
                                 <div class="row">
                                     <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <a href="<?=base_url()?>/Course_join" class="btn btn-dark btn-rounded mb-2 mr-2"><span>Back to previous</span></a>
+                                        <a href="<?=base_url()?>/courseSubject_View" class="btn btn-dark btn-rounded mb-2 mr-2"><span>Back to previous</span></a>
                                     </div>                                                                        
                                 </div>
                             </div>
                             <div class="widget-content widget-content-area">
                                 
-                                <!-- < ?php echo form_open('create') ?> -->
 
-                                    <form name="form1" action='<?php echo base_url();?>/courseSubjectUpdate' method ="post">
+                                    <form name="form1" action='<?php echo base_url();?>/courseSubjectUpdate' data-toggle="validator" method ="post">
 
                                     <input type="hidden" name="course_subjects_id_ref" value="<?=$courseSubject['course_subject_id']?>">
 
@@ -63,8 +76,10 @@
                                         <div class="form-group row mb-4">
                                             <label for="courses" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Course Name </label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
+                                            <input type="text" class="form-control-rounded form-control" value="<?=$courses['course_name']?>"
+                                                name="student_no" id="student_no" placeholder="" readonly>
 
-                                            <?=$courses['course_name']?>  
+                                            <!-- < ?=$courses['course_name']?>   -->
                                                 <!-- <select class="form-control-rounded form-control" name="courses" id="courses" placeholder="">
                                                     <option value="">Select the Course</option>
                                                     < ?php foreach($courses as $course): ?>
@@ -77,7 +92,7 @@
                                         <div class="form-group row mb-4">
                                             <label for="subjects" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Subjects</label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <select class="form-control-rounded form-control" name="course_subject" id="subjects" placeholder="">
+                                                <select class="form-control-rounded form-control" name="course_subject" id="subjects" data-toggle="validator" required>
                                                     <option value="">Select the Subject</option>
                                                     <?php foreach ($subjects as $subject): ?>
                                                         <option value="<?= $subject['subject_id']?>"><?=$subject['subject_name'] ?></option>
@@ -92,12 +107,10 @@
                                             <div class=" col-sm-10">
                                             
                                             
-                                                <button type="reset" value="Reset" class="btn-material btn-material-default  mb-2 mr-2">Reset</button>
                                                 <button type="submit" value="Submit" class="btn-material btn-material-primary  mb-2 mr-3">Update</button>
                                             </div>
                                         </div>
                                     </form>
-                                <!-- < ?php echo form_close()?> -->
                             </div>
                         </div>
                     </div>
