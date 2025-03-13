@@ -18,7 +18,6 @@
                                 <li><a href="index-2.html"><i class="flaticon-home-fill"></i></a></li>
                                 <li><a href="#">Enrollment</a></li>
                                 <li><a href="#">Enrollment Table</a> </li>
-                                <!-- <li class="active"><a href="#">Order Sorting</a> </li> -->
                             </ul>
                         </div>
                     </div>
@@ -43,15 +42,25 @@
                             </div>
 
                             <?php if(session()->getFlashdata('success')): ?>
-
+                            
                                 <div class="alert alert-success alert-dismissible fade show" role="alert">
                                     <?= session()->getFlashdata('success');?>
                                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
-                            
+                        
                             <?php endif; ?>
+
+                        <?php if(session()->has('errors')) : ?>
+                                
+                                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                    <?= session()->getFlashdata('errors');?>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                </div>
+                        <?php endif; ?> 
 
 
 
@@ -67,6 +76,7 @@
                                                 <th>Course</th>
                                                 <th>Batch</th>
                                                 <th>Enrollment Date</th>
+                                                <th>Delete</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -79,6 +89,7 @@
                                                             <td><?= $enrollement['course_name']?></td>
                                                             <td><?= $enrollement['batch_no']?></td>
                                                             <td><?= $enrollement['en_date']?></td>
+                                                            <td class="text-center"><a href="#" onclick="deleteData('<?=base_url()?>/Enrollment_Delete/<?= $enrollement['en_id']?>')" data-toggle="tooltip" data-placement="top" title="Delete"><i class="flaticon-delete  bg-danger p-1 text-white br-6 mb-1"></i></a></td>
                                                         </tr>
                                                     <?php endforeach; ?>   
                                             
@@ -92,6 +103,7 @@
                                                 <th>Course</th>
                                                 <th>Batch</th>
                                                 <th>Enrollment Date</th>
+                                                <th>Delete</th>
                                             </tr>
                                         </tfoot>
                                     </table>
