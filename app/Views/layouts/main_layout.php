@@ -155,12 +155,9 @@
                 </a>
                 <div class="dropdown-menu  position-absolute" aria-labelledby="userProfileDropdown">
 
-                    <a class="dropdown-item" href="user_profile.html">
-                        <i class="mr-1 flaticon-user-6"></i> <span>My Profile</span>
-                    </a>
                     
                     <a class="dropdown-item" href="<?=base_url()?>/User_PasswordReset">
-                        <i class="mr-1 flaticon-email-fill-1"></i> <span>Change Password</span>
+                        <i class="mr-1 flaticon-key-2"></i> <span>Change Password</span>
                     </a>
                     
                     <div class="dropdown-divider"></div>
@@ -197,8 +194,8 @@
                         <p class="border-underline"></p>
                     </li> -->
                     <li class="nav-item theme-text">
-                        <!-- <a href="index-2.html" class="nav-link"> Wide Awake Solutions </a> -->
-                        <a href="index-2.html" class="nav-link"> Demo-app</a>
+                        <a href="index-2.html" class="nav-link"> Wide Awake Solutions </a>
+                        <!-- <a href="index-2.html" class="nav-link"> Demo-app</a> -->
                     </li>
                 </ul>
 
@@ -244,21 +241,9 @@
         <div class="footer-section-2 container-fluid">
             <div class="row">
                 <div id="toggle-grid" class="col-xl-7 col-md-6 col-sm-6 col-12 text-sm-left text-center">
-                    <ul class="list-inline links ml-sm-5">
-                        <li class="list-inline-item mr-3">
-                            <a href="javascript:void(0);">Home</a>
-                        </li>
-                        <li class="list-inline-item mr-3">
-                            <a href="javascript:void(0);">Blog</a>
-                        </li>
-                        <li class="list-inline-item mr-3">
-                            <a href="javascript:void(0);">About</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="javascript:void(0);">Buy</a>
-                        </li>
-                    </ul>
+                    
                 </div>
+
                 <div class="col-xl-5 col-md-6 col-sm-6 col-12">
                     <ul class="list-inline mb-0 d-flex justify-content-sm-end justify-content-center mr-sm-3 ml-sm-0 mx-3">
                         <li class="list-inline-item  mr-3">
@@ -278,19 +263,17 @@
                                     <div class="modal-dialog modal-lg" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="myLargeModalLabel">Modal title</h5>
+                                                <h5 class="modal-title" id="myLargeModalLabel"></h5>
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true">×</span>
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <h4 class="modal-heading mt-2 mb-4">Why We Use Electoral College, Not Popular Vote</h4>
-                                                <p class="modal-text mb-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-primary btn-rounded mt-3 mb-3">Save changes</button>
+                                                
+                                            </div>
+                                            <div class="modal-footer">
                                                     <button type="button" class="btn btn-dark btn-rounded mt-3 mb-3" data-dismiss="modal">Close</button>
                                                 </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
