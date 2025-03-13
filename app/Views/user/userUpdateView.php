@@ -11,15 +11,13 @@
             <div class="container">
                 <div class="page-header">
                     <div class="page-title">
-                        <h3> User Management 
-                            <!-- <small>Rounded</small> -->
+                        <h3> User Management
                         </h3>
                         <div class="crumbs">
                             <ul id="breadcrumbs" class="breadcrumb">
                                 <li><a href="index-2.html"><i class="flaticon-home-fill"></i></a></li>
                                 <li><a href="#">User Management</a></li>
-                                <li><a href="#">Edit User</a></li>
-                                <!-- <li class="active"><a href="#">Rounded</a> </li> -->
+                                <li><a href="#">Update User</a></li>
                             </ul>
                         </div>
                     </div>
@@ -68,7 +66,7 @@
                                 
                                 
 
-                                    <form name="userform" action="<?php echo base_url();?>/" data-toggle="validator" method ="post">
+                                    <form name="userform" action="<?php echo base_url();?>/User_Update" data-toggle="validator" method ="post">
                                 
                                     <input type="hidden" value="<?=$user['user_id']?>" name="user_id">
 
@@ -76,7 +74,7 @@
                                             <label for="user_name" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">User  name </label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
                                             <input type="text" class="form-control-rounded form-control" value="<?=$user['user_name']?>"
-                                             name="user_name" id="user_name" data-required-error="Please enter user name" placeholder="" required>
+                                             name="user_name" id="user_name" data-required-error="Please enter user name" required>
                                             <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
@@ -85,44 +83,17 @@
                                             <label for="user_email" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">User Email </label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
                                             <input type="email" class="form-control-rounded form-control" value="<?=$user['user_email']?>"
-                                             name="user_email" id="user_email" data-required-error="Please enter user email"  placeholder="" required>
+                                             name="user_email" id="user_email" data-required-error="Please enter user email"  required>
                                             <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
 
-
-
-                                        <div class="form-group row mb-4">
-                                            <label for="user_password" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Password </label>
-                                            <div class="col-xl-10 col-lg-9 col-sm-10">
-                                            <input type="password" class="form-control-rounded form-control" value="<?=$user['user_password']?>"
-                                             name="user_password" id="user_password" placeholder="" data-required-error="Please enter user password"  aria-describedby="inputPassword" required>
-                                            <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="form-group row mb-4">
-                                            <label for="course_fee" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">User Type </label>
-                                            <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <select class="form-control-rounded form-control" name="user_type" id="user_type" data-required-error="Please select user type" required>
-                                                    <div class="help-block with-errors"></div>
-                                                    <option value="">Select the User Type</option>
-                                                    <option value="RECEPTIONIST">Receptionist</option>
-                                                    <option value="STUDENT">Student</option>
-                                                    <option value="LECTURE">Lecturer</option>
-                                                    <option value="ADMIN">Admin</option>
-                                                </select> 
-                                            </div>
-                                        </div>
 
                                         <div class="form-group row ">
                                         
                                             <div class=" col-sm-10">
                                             
-                                            
-                                                <button type="reset" value="Reset" class="btn-material btn-material-default  mb-2 mr-2">Reset</button>
-                                                <button type="submit" value="Submit"  class="btn-material btn-material-primary  mb-2 mr-3">Submit</button>
+                                                <button type="submit" value="Submit"  class="btn-material btn-material-primary  mb-2 mr-3">Update</button>
                                             </div>
                                         </div>
                                     </form>
