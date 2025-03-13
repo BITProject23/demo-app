@@ -18,7 +18,6 @@
                                 <li><a href="index-2.html"><i class="flaticon-home-fill"></i></a></li>
                                 <li><a href="#">Lecturer Appointment</a></li>
                                 <li><a href="#">Appoint</a></li>
-                                <!-- <li class="active"><a href="#">Rounded</a> </li> -->
                             </ul>
                         </div>
                     </div>
@@ -44,6 +43,17 @@
                                     </div>
 
                                 <?php endif ?>
+
+                                <?php if(session()->has('errors')) : ?>
+
+                                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                            <?= session()->getFlashdata('errors');?>
+                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                        </div>
+
+                                <?php endif; ?> 
                                     
 
                                 <div class="row">
@@ -55,14 +65,14 @@
                             <div class="widget-content widget-content-area">
                                 
                                 
-                                    <form name="lecturerAppointform" action='<?php echo base_url();?>/Appointment_create' method ="post">
+                                    <form name="lecturerAppointform" action='<?php echo base_url();?>/Appointment_create' data-toggle="validator" method ="post">
                                 
                                         <input type="hidden" name="lecturer_id" value="<?=$lecturerId?>">
 
                                         <div class="form-group row mb-4">
                                             <label for="courses" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Course</label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <select class="form-control-rounded form-control" name="courses" id="courses" placeholder="">
+                                                <select class="form-control-rounded form-control" name="courses" id="courses" required>
                                                     <option value="">Select the Course</option>
                                                     <?php foreach($courses as $course): ?>
                                                         <option value="<?= $course['course_id']?>">
@@ -78,7 +88,7 @@
                                         <div class="form-group row mb-4">
                                             <label for="batches" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Batch No </label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <select class="form-control-rounded form-control" name="batches" id="batches" placeholder="">
+                                                <select class="form-control-rounded form-control" name="batches" id="batches" required>
                                                     <option value="">Select the Batch</option>
                                                 </select>
                                             </div>
@@ -87,7 +97,7 @@
                                         <div class="form-group row mb-4">
                                             <label for="subjects" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Subject </label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <select class="form-control-rounded form-control" name="subjects" id="subjects" placeholder="">
+                                                <select class="form-control-rounded form-control" name="subjects" id="subjects" required>
                                                     <option value="">Select the Subject</option>
                                                 </select>
                                             </div>
@@ -97,7 +107,7 @@
                                         <div class="form-group row mb-4"> 
                                             <label for="appoint_data" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Appoint Date</label>
                                             <div class="col-xl-3 col-lg-9 col-sm-3">
-                                                <input type="date" class="form-control-rounded form-control" name="appoint_data" id="appoint_data" placeholder="">
+                                                <input type="date" class="form-control-rounded form-control" name="appoint_data" id="appoint_data" required>
                                             </div>
                                         </div>
 
