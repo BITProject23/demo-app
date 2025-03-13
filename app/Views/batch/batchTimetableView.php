@@ -44,11 +44,28 @@
                                 </div>
                             </div>
 
-                            <!-- < ?php if(session()->getFlashdata('success')): ?>
-                            
-                            < ?php echo session()->getFlashdata('success'); ?>
-                            
-                            < ?php endif; ?> -->
+                            <?php if(session()->has('success')):?>
+
+                                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                    <?= session()->getFlashdata('success');?>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                            <?php endif ?>
+
+
+                            <?php if(session()->has('errors')) : ?>
+
+                                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                    <?= session()->getFlashdata('errors');?>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                </div>
+
+                            <?php endif; ?> 
                             <div class="widget-content widget-content-area">
 
                                 <form name="formbatch" action='<?php echo base_url();?>/Batch_Timetable_create' method ="post">
@@ -59,7 +76,6 @@
                                         <label for="batch_day" class="col-xl-2 col-sm-4 col-sm-2 col-form-label">Day </label>
                                         <div class="col-xl-3 col-lg-4 col-sm-3">
                                             <select class="form-control-rounded form-control" name="batch_day" id="batch_day" placeholder="">
-                                                <option value="">Select the day</option>
                                                 <option value="Monday">Monday</option>
                                                 <option value="Tuesday">Tuesday</option>
                                                 <option value="Wednesday">Wednesday</option>
@@ -130,9 +146,8 @@
                                                 <th>Day </th>
                                                 <th>Time From</th>
                                                 <th>Time To</th>
-                                                <th>Edit</th>
+                                                <!-- <th>Edit</th> -->
                                                 <th>Details</th>
-                                                <!-- <th class="invisible"></th> -->
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -142,13 +157,12 @@
                                                     <td><?= $batchTime['batch_day']?></td>
                                                     <td><?= $batchTime['batch_time_from']?></td>
                                                     <td><?= $batchTime['batch_time_to']?></td>
-                                                    <td class="text-center">
+                                                    <!-- <td class="text-center">
                                                         <a href="" data-toggle="tooltip" data-placement="top" target="_blank"><i class="flaticon-edit  bg-success p-1 text-white br-6 mb-1"></i></a>
-                                                    </td>
+                                                    </td> -->
                                                     <td class="text-center">
-                                                        <a href="#" onclick="showDetails(<?= $batchTime['batch_timeframe_id']?>)"><i class="flaticon-edit  bg-primary p-1 text-white br-6 mb-1"></i></a>
+                                                        <a href="#" onclick="showDetails(<?= $batchTime['batch_timeframe_id']?>)"><i class="flaticon-search-1  bg-primary p-1 text-white br-6 mb-1"></i></a>
                                                     </td>
-                                                    <!-- <td class="text-center"><a href="" data-toggle="tooltip" data-placement="top" title="Delete"><i class="flaticon-delete  bg-danger p-1 text-white br-6 mb-1"></i></a></td> -->
                                                 </tr>
                                             <?php endforeach; ?> 
                                             
@@ -159,9 +173,8 @@
                                                 <th>Day </th>
                                                 <th>Time From</th>
                                                 <th>Time To</th>
-                                                <th>Edit</th>
+                                                <!-- <th>Edit</th> -->
                                                 <th>Details</th>
-                                                <!-- <th class="invisible"></th> -->
                                             </tr>
                                         </tfoot>
                                     </table>
@@ -180,7 +193,23 @@
 
     <script>
         function showDetails(batch_timeframe_id){ 
+
+            $.ajax({
+                url: "<?php echo base_url(); ?>" + "/load_subjectTime",
+                method: "POST",
+                data: { 
+                    selectedValue: batch_timeframe_id  //key:value
+                },
+                dataType: "html",
+                success: function(response) {  //
+                $('.modal-body').html(response);
                 $('#data_modal').modal('show');
+                },
+                error: function(xhr, status, error) {
+                console.log(xhr.responseText);
+                }
+            });
+                
  }
     </script>
     
