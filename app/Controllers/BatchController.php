@@ -93,8 +93,14 @@ class BatchController extends BaseController
             'course_id'=>$this->request->getPost('courses')
         ];
 
-        
         $batchModel = new BatchModel();
+
+        $check = $batchModel->where('course_id', $this->request->getPost('courses'))
+        ->where('batch_no', $this->request->getPost('batch_no'))->countAllResults();
+
+        if($check > 0){
+            return redirect()->back()->withInput()->with('errors', "This Batch is alredy added to the course");
+        }
 
         if($batchModel->save($data)){
             return redirect()->to('Batch_add')->with('success','Batch has been added Successfully!');
@@ -107,7 +113,6 @@ class BatchController extends BaseController
     public function showCourseBatchdata()
     {
 
-        $courseModel = new CourseModel();
         $batchModel = new BatchModel();
 
         
@@ -133,6 +138,7 @@ class BatchController extends BaseController
 
     public function updatedata()
     {
+        $batchId = $this->request->getPost('batch_id');
 
         $data = [
             'batch_no'=>$this->request->getPost('batch_no'),
@@ -144,8 +150,9 @@ class BatchController extends BaseController
         
         $batchModel = new BatchModel();
 
-        if($batchModel->update($data)){
-            return redirect()->to('Batch')->with('success','Batch updated Successfully!');
+
+        if($batchModel->update($batchId,$data)){
+            return redirect()->to('Batch_View')->with('success','Batch updated Successfully!');
         }else{
             return redirect()->back()->withInput()->with('errors','Update Failed'());
         }
