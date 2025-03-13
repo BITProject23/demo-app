@@ -75,7 +75,7 @@
                                     <div class="form-group row mb-4">
                                         <label for="exampleFormControlSelect1" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Batch</label>
                                         <div class="col-xl-10 col-lg-9 col-sm-10">
-                                            <select class="form-control-rounded form-control" name="batches" id="batches" placeholder="">
+                                            <select class="form-control-rounded form-control" name="batches" id="batches" placeholder="" required>
                                             <option value="">Select the Batch</option>
                                                 <?php foreach($batches as $batch): ?>
                                                     <option value="<?= $batch['batch_id']?>">
@@ -100,13 +100,14 @@
                                         <label for="course_payment" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Paid Amount</label>
                                         <div class="col-xl-10 col-lg-9 col-sm-10">
                                           <input type="number" class="form-control-rounded form-control" min="1" max="100000" name="course_payment" id="course_payment" data-required-error="Please enter paid amount " placeholder="" required>
+                                          <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
 
                                     <div class="form-group row mb-4">
                                         <label for="payment_year_month" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Payment Date</label>
                                         <div class="col-xl-3 col-lg-9 col-sm-10">
-                                          <input type="date" class="form-control-rounded form-control" name="payment_year_month" id="payment_year_month" placeholder="">
+                                          <input type="date" class="form-control-rounded form-control" name="payment_year_month" id="payment_year_month" placeholder="" required>
                                         </div>
                                     </div>
                                                
