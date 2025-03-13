@@ -12,12 +12,12 @@ class StudentContoller extends BaseController
         
         $studentModel = new StudentModel; //make new object from model that use in this controller
 
-        $stu_no_count = $studentModel->countAll() + 1;
-        $stu_count = str_pad($stu_no_count, 4, 0, STR_PAD_LEFT);
+        $stu_no_count = $studentModel->countAll() + 1;             //The str_pad() function is a built-in function in PHP
+        $stu_count = str_pad($stu_no_count, 4, 0, STR_PAD_LEFT); //string str_pad($string, $length, $pad_string, $pad_type)
         $prefix = "STD";
         $stu_no = $prefix.$stu_count;
         $data['stu_no'] = $stu_no;
-        return view('student/studentFormView', $data);
+        return view('student/studentFormView', $data); 
             
 
         // if(session()->has('user_id')){
@@ -37,6 +37,7 @@ class StudentContoller extends BaseController
         $validation = \Config\Services::validation(); //load validation lib.
         $validation->setRules([
             'student_nic'=>['label'=>'NIC','rules'=>'required|is_unique[tbl_student.student_nic]'],
+            'student_email'=>['label'=>'EMAIL','rules'=>'required|is_unique[tbl_student.student_email]'],
         ]);
 
         $data =[
@@ -49,12 +50,14 @@ class StudentContoller extends BaseController
             'student_bod'=>$this->request->getPost('student_bod'),
             'student_contact_no'=>$this->request->getPost('student_contact_no'),
             'student_address'=>$this->request->getPost('student_address'),
+            'student_qulify'=>$this->request->getPost('student_qulify'),
             'student_registration_date'=>$this->request->getPost('student_registration_date'),
         
         ];
 
         if(!$validation->run($data)){ //Not Validated
-            return redirect()->back()->withInput()->with('errors',$validation->getErrors());
+            // return redirect()->back()->withInput()->with('errors',$validation->getErrors());
+            return redirect()->back()->withInput()->with('errors','NIC already add');
         }
 
         $studentModel = new StudentModel; //make new object from model that use in this controller
@@ -127,7 +130,7 @@ class StudentContoller extends BaseController
 
     }
 
-    public function deletedata($id){
+    public function deleteData($id){
 
         $studentModel = new StudentModel();
 
@@ -153,6 +156,19 @@ class StudentContoller extends BaseController
         ->where('tbl_batch.batch_id', $selectedValue)->findAll();
 
         return view('student/ajaxStudentByBatch',$data);
+    }
+
+    public function paymentBystudents(){
+
+        $studentModel = new StudentModel();
+
+        $data['students'] = $studentModel->select('tbl_student.student_first_name,tbl_student.student_last_name')
+        ->join('tbl_payment','tbl_payment.student_id  = tbl_student.student_id','left')
+        ->where('tbl_payment.payment_id',null)
+        ->findAll();
+
+        return view('student/studentPaymentReport',$data);
+
     }
 
 
