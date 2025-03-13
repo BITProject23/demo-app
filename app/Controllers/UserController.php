@@ -101,7 +101,7 @@ class UserController extends BaseController
 
         $userModel = new UserModel();
 
-        $data['student'] = $userModel->find($id);
+        $data['user'] = $userModel->find($id);
 
         return view('user/userUpdateView',$data);
 
@@ -114,18 +114,15 @@ class UserController extends BaseController
         $userId = $this->request->getPost('user_id');
 
         $data = [
-            'student_no'=>$this->request->getPost('student_no'),
-            'student_first_name'=>$this->request->getPost('student_first_name'), //'table col name' => $this->request->getPost 'form name' | from getPost we can capture which will came by post method
-            'student_last_name'=>$this->request->getPost('student_last_name'),
-            'student_nic'=>$this->request->getPost('student_nic'),
-            'student_email'=>$this->request->getPost('student_email'),
+            'user_name'=>$this->request->getPost('user_name'),
+            'user_email'=>$this->request->getPost('user_email'), //'table col name' => $this->request->getPost 'form name' | from getPost we can capture which will came by post method
+
             
         ];
 
         $userModel = new UserModel(); //make new object from model that use in this controller
 
         if($userModel->update($userId, $data)){
-            // return redirect()->to('Student_add')->with('success','Student has been added Successfully!');
             return redirect()->to('User_View')->with('success','User updated Successfully!');
         }else{
             return redirect()->back()->withInput()->with('errors','Update Failed');
