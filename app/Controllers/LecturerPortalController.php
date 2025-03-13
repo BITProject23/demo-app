@@ -5,6 +5,8 @@ namespace App\Controllers;
 use App\Models\AppointModel;
 use App\Models\BatchModel;
 use App\Models\StudentMarksModel;
+use App\Models\BatchSubjectTimeTableModel;
+use App\Models\LecturerModel;
 
 use App\Models\StudentModel;
 use App\Models\PaymentModel;
@@ -37,7 +39,7 @@ class LecturerPortalController extends BaseController
         $data['today_class'] = $batchModel->select('count(*) AS count')
         ->join('tbl_batch_timeframe','tbl_batch_timeframe.batch_id  = tbl_batch.batch_id') 
         ->join('tbl_appointment','tbl_appointment.batch_id  = tbl_batch.batch_id')
-        ->where('batch_start_date <=',date('Y-m-d'))->where('batch_end_date >=',date('Y-m-d'))->where('batch_day',date('l')) ->where('tbl_appointment.lecturer_id',session('lecturer_id'))->first();
+        ->where('batch_start_date <=',date('Y-m-d'))->where('batch_end_date >=',date('Y-m-d'))->where('tbl_appointment.lecturer_id',session('lecturer_id'))->first();
         
 
         return view('lecturerPortal/lecturerDashboard',$data);
@@ -124,10 +126,43 @@ class LecturerPortalController extends BaseController
         ->join('tbl_subject','tbl_subject.subject_id  = tbl_student_marks.subject_id')
         ->where('tbl_appointment.lecturer_id',session('lecturer_id'))->findAll();
 
-        
-        
 
         return view('lecturerPortal/viewMarks',$data);
+    }
+
+    public function view_timetable()
+    {
+        $batchSubjectTimeTableModel = new BatchSubjectTimeTableModel();
+
+        $data['timetables'] = $batchSubjectTimeTableModel->select('tbl_batch_subject_timetable.batch_subject_timetable_id,tbl_batch_timeframe.batch_day, 
+        tbl_batch_subject_timetable.subject_time_from, tbl_batch_subject_timetable.subject_time_to ,tbl_batch.batch_no , tbl_lecturer.lecturer_first_name,
+         tbl_lecturer.lecturer_last_name, tbl_course.course_name, tbl_subject.subject_name')
+        ->join('tbl_batch_timeframe','tbl_batch_timeframe.batch_timeframe_id = tbl_batch_subject_timetable.batch_timeframe_id')
+        ->join('tbl_batch','tbl_batch.batch_id = tbl_batch_timeframe.batch_id')
+        ->join('tbl_appointment','tbl_appointment.subject_id = tbl_batch_subject_timetable.subject_id AND tbl_appointment.batch_id = tbl_batch_subject_timetable.batch_id')
+        ->join('tbl_lecturer','tbl_lecturer.lecturer_id = tbl_appointment.lecturer_id')
+        ->join('tbl_course','tbl_course.course_id  = tbl_batch.course_id')
+        ->join('tbl_subject','tbl_subject.subject_id  = tbl_batch_subject_timetable.subject_id')
+        ->where('tbl_appointment.lecturer_id',session('lecturer_id'))->findAll();
+
+
+        return view('lecturerPortal/viewTimetable',$data);
+      
+    }
+
+    public function showAppointData(){
+
+        $lecturerModel = new LecturerModel();
+
+        $data['lecturers'] = $lecturerModel->select('*')
+        ->join('tbl_appointment','tbl_appointment.lecturer_id  = tbl_lecturer.lecturer_id')
+        ->join('tbl_batch','tbl_batch.batch_id   = tbl_appointment.batch_id')
+        ->join('tbl_course','tbl_course.course_id  = tbl_appointment.course_id')
+        ->join('tbl_subject','tbl_subject.subject_id  = tbl_appointment.subject_id')
+        ->where('tbl_appointment.lecturer_id',session('lecturer_id'))->findAll();
+
+        return view('lecturerPortal/viewAppointment',$data);
+
     }
 
 
