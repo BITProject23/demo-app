@@ -42,15 +42,26 @@
                                 </div>
                             </div>
 
-                            <?php if(session()->getFlashdata('success')): ?>
-                            
+                            <?php if(session()->has('success')):?>
+
                                 <div class="alert alert-success alert-dismissible fade show" role="alert">
                                     <?= session()->getFlashdata('success');?>
                                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
-                        
+
+                            <?php endif ?>
+
+                            <?php if(session()->has('errors')) : ?>
+
+                                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                    <?= session()->getFlashdata('errors');?>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                </div>
+
                             <?php endif; ?>
 
 
@@ -77,7 +88,7 @@
                                                     <td><?= $course['course_code']?></td>
                                                     <td><?= $course['course_fee']?></td>
                                                     <td class="text-center"><a href="<?=base_url()?>/Course_Edit/<?= $course['course_id']?>" data-toggle="tooltip" data-placement="top"><i class="flaticon-edit  bg-success p-1 text-white br-6 mb-1"></i></a></td>
-                                                    <td class="text-center"><a href="" data-toggle="tooltip" data-placement="top" title="Delete"><i class="flaticon-delete  bg-danger p-1 text-white br-6 mb-1"></i></a></td>
+                                                    <td class="text-center"><a href="#" onclick="deleteData('<?=base_url()?>/Course_Delete/<?= $course['course_id']?>')" data-toggle="tooltip" data-placement="top" title="Delete"><i class="flaticon-delete  bg-danger p-1 text-white br-6 mb-1"></i></a></td>
                                                     
                                                 </tr>
                                             <?php endforeach; ?>    
