@@ -47,6 +47,16 @@
 
                                 <?php endif ?>
 
+                                <?php if(session()->has('errors')) : ?>
+
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        <?= session()->getFlashdata('errors');?>
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                    </div>
+                                <?php endif; ?>
+
 
                                 <div class="row">
                                     <div class="col-xl-12 col-md-12 col-sm-12 col-12">
@@ -58,7 +68,7 @@
 
 
                                 <!-- < ?php echo form_open('Subject_create') ?> -->
-                                    <form name="studentForm" action='<?php echo base_url();?>/Subject_Update' method ="post">
+                                    <form name="studentForm" action='<?php echo base_url();?>/Subject_Update' data-toggle="validator" method ="post">
                                     
                                         <input type="hidden" value="<?=$subjects['subject_id']?>" name="subject_id">
 
@@ -66,8 +76,8 @@
                                             <label for="subject_name" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Subject Name </label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10"> 
                                                 <input type="text" class="form-control-rounded form-control" value="<?=$subjects['subject_name']?>"
-                                                name="subject_name" id="subject_name" placeholder="" required>
-                                                <lable id="subject_n"></lable>
+                                                name="subject_name" id="subject_name" data-required-error="Subject name is required" required>
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
 
@@ -77,8 +87,8 @@
                                             <label for="subject_code" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Subject code </label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">  
                                                 <input type="text" class="form-control-rounded form-control" value = "<?=$subjects['subject_code']?>"
-                                                name="subject_code" id="subject_code" placeholder="" required>
-                                                <lable id="subject_c"></lable>
+                                                name="subject_code" id="subject_code" data-required-error="Subject code is required" required>
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
 
@@ -87,7 +97,7 @@
                                         <div class="form-group row ">
                                         
                                             <div class=" col-sm-10">
-                                                <button type="submit" onclick="subCheck()" value="Submit" class="btn-material btn-material-primary  mb-4 mr-3">Update</button>
+                                                <button type="submit"  value="Submit" class="btn-material btn-material-primary  mb-4 mr-3">Update</button>
                                             </div>
 
                                         </div>
@@ -101,21 +111,6 @@
             </div>
         </div>
 
-        <script src="public/assets_1/assets/js/libs/jquery-3.1.1.min.js"></script>
-        <script> 
-            function subCheck(){
-                if(document.getElementById("subject_name").value==""){
-                    document.getElementById("subject_n").innerHTML="Subject name is required ";
-                    document.getElementById("subject_n").style.color="red";
-                    return false;
-                } else if(document.getElementById("subject_code").value==""){
-                    document.getElementById("subject_c").innerHTML="Subject code is required ";
-                    document.getElementById("subject_c").style.color="red";
-                    return false;
-                } 
-            }
-
-        </script>
     
 
        
