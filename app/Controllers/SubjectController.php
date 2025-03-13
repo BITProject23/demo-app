@@ -17,9 +17,12 @@ class SubjectController extends BaseController
 
     public function create(){
 
+        
+
         $data =[
             'subject_name'=>$this->request->getPost('subject_name'),
             'subject_code'=>$this->request->getPost('subject_code'),
+            'subject_status'=>$this->request->getPost('subject_status'),
         ];
 
         $subjectModel = new SubjectModel; //make new object from model that use in this controller
@@ -69,6 +72,19 @@ class SubjectController extends BaseController
             return redirect()->back()->withInput()->with('errors',$subjectModel->errors());
         }
             
+    }
+
+    public function deleteData($id){
+
+        $subjectModel = new SubjectModel();
+
+        if($subjectModel->where('subject_id',$id)->delete()){
+            // return redirect()->to('Student_add')->with('success','Student has been added Successfully!');
+            return redirect()->to('Subject_View')->with('success','Subject deteled Successfully!');
+        }else{
+            return redirect()->back()->withInput()->with('errors','Subject delete Failed');
+        }
+
     }
 
     public function subjectByBatch() 
