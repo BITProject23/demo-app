@@ -45,6 +45,17 @@
                                     </div>
 
                                 <?php endif ?>
+
+                                <?php if(session()->has('errors')) : ?>
+
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        <?= session()->getFlashdata('errors');?>
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                    </div>
+
+                                <?php endif; ?> 
                                     
 
                                 <div class="row">
@@ -56,14 +67,14 @@
                             <div class="widget-content widget-content-area">
                                 
                                 
-                                    <form name="studentEnrollmentform" action='<?php echo base_url();?>/Enrollment_create' method ="post">
+                                    <form name="studentEnrollmentform" action='<?php echo base_url();?>/Enrollment_create' data-toggle="validator" method ="post">
                                 
                                         <input type="hidden" name="student_id" value="<?=$studentId?>">
 
                                         <div class="form-group row mb-4">
                                             <label for="courses" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Course</label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <select class="form-control-rounded form-control" name="courses" id="courses" placeholder="">
+                                                <select class="form-control-rounded form-control" name="courses" id="courses" data-required-error="Please select the course" required>
                                                     <option value="">Select the Course</option>
                                                     <?php foreach($courses as $course): ?>
                                                         <option value="<?= $course['course_id']?>">
@@ -79,7 +90,7 @@
                                         <div class="form-group row mb-4">
                                             <label for="batch_no" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Batch No </label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <select class="form-control-rounded form-control" name="batches" id="batches" placeholder="">
+                                                <select class="form-control-rounded form-control" name="batches" id="batches" data-required-error="Please select the Batch" required>
                                                     <option value="">Select the Batch</option>
                                                     <!-- < ?php foreach($batches as $batch): ?>
                                                         <option value="< ?= $batch['batch_id']?>">< ?=$batch['batch_no'] ?></option>
@@ -92,7 +103,7 @@
                                         <div class="form-group row mb-4"> 
                                             <label for="en_date" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Enrollment Date</label>
                                             <div class="col-xl-3 col-lg-9 col-sm-3">
-                                                <input type="date" class="form-control-rounded form-control" name="en_date" id="en_date" placeholder="">
+                                                <input type="date" class="form-control-rounded form-control" name="en_date" id="en_date" required>
                                             </div>
                                         </div>
 
