@@ -34,6 +34,15 @@ class EnrollmentController extends BaseController
 
         $enrollmentModel = new EnrollmentModel();
 
+
+        $check = $enrollmentModel->where('student_id', $studentId)
+        ->where('batch_id', $this->request->getPost('batches'))
+        ->where('course_id', $this->request->getPost('courses'))->countAllResults();
+
+        if($check > 0){
+            return redirect()->back()->withInput()->with('errors', "Student alredy enrolled");
+        }
+
         if($enrollmentModel->save($data)){
             return redirect()->to('Enrollment_View')->with('success','Enroll Student Successfully!');
         }else{
@@ -88,6 +97,18 @@ class EnrollmentController extends BaseController
         $data['enrollements'] = $enrollmentModel->findAll();
         
         return view('enrollment/studentEnrollmentTable',$data);
+
+    }
+
+    public function deleteData($id){
+
+        $enrollmentModel = new EnrollmentModel();
+
+        if($enrollmentModel->where('en_id',$id)->delete()){
+            return redirect()->to('Enrollment_View')->with('success','Enrollment deteled Successfully!');
+        }else{
+            return redirect()->back()->withInput()->with('errors','Enrollment delete Failed');
+        }
 
     }
 
