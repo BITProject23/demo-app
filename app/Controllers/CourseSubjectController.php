@@ -33,40 +33,47 @@ class CourseSubjectController extends BaseController
     public function create()
     {
         $course_id = $this->request->getPost('courses');
-
         $subjects = $this->request->getPost('subjects');
 
+
+        //validation
+        foreach ($subjects as $sub) :
+
+            $validation = $this->validatesubjectcourse($course_id,$sub);
+
+        if(!$validation){ //Not Validated
+            return redirect()->back()->withInput()->with('errors',"SUBJECT AND COUSRE SHOULD BE UNIQUE");
+            // echo 'SUBJECT AND COUSRE SHOULD BE UNIQUE';
+            // die;
+           // return redirect()->back()->withInput()->with('errors',array('error'=>'SUBJECT AND COUSRE SHOULD BE UNIQUE');
+        }
+         endforeach;
+
+
+         // insert
         $courseSubjectModel = new CourseSubjectModel();
-
-        // print_r($course_id);
-
-        // print_r($subjects);
-
 
        foreach ($subjects as $sub) :
 
-        $data = ['course_id' => $course_id, 'subject_id' => $sub ];
+        $data = ['course_id' => $course_id, 
+                'subject_id' => $sub ];
        // print_r($data);
         $courseSubjectModel->save($data);
        endforeach;
 
         $courseSubjectModel = new CourseSubjectModel(); //make new object from model that use in this controller
 
-        if($courseSubjectModel->save($data)){
-            return redirect()->to('Subject_assign')->with('success','Subjects have been assigned for the courses successfully!');
-        }else{
-            return redirect()->back()->withInput()->with('errors',$courseSubjectModel->errors());
-        }
+        return redirect()->to('Subject_assign')->with('success','Subjects have been assigned for the courses successfully!');
+
     }
 
-    public function courseSubjectJoin()
+    public function courseSubjectview()
     {
 
-        $courseModel = new CourseModel();
-        $subjectModel = new SubjectModel();
+ 
         $courseSubjectModel = new CourseSubjectModel();
 
-        $query['courses'] = $courseSubjectModel->select('tbl_course_subject.course_subject_id, tbl_course.course_name, tbl_subject.subject_name,tbl_course_subject.status')
+        $query['courses'] = $courseSubjectModel->select('tbl_course_subject.course_subject_id, tbl_course.course_name, tbl_subject.subject_name,')
         ->join('tbl_course','tbl_course.course_id = tbl_course_subject.course_id')
         ->join('tbl_subject','tbl_subject.subject_id = tbl_course_subject.subject_id')
         ->findAll();
@@ -79,23 +86,6 @@ class CourseSubjectController extends BaseController
 
 
     }
-    
-
-
-    // public function assign()
-    // {
-    //     $courseModel = new CourseModel();
-    //     $subjectModel = new SubjectModel();
-
-    //     $course_id = $this->request->getPost('course_id');
-    //     $subjects = $this->request->getPost('subjects');
-
-    //     for($x=0; $x<$subjects.length(); $x++){
-    //         CourseModel.assign('course_id'->$course_id, 'subjects'->$subject[$x]);
-    //     }
-
-    // }
-
 
     public function edit($courseSubjectId)
     {
@@ -131,7 +121,20 @@ class CourseSubjectController extends BaseController
 
         $courseSubjectModel->update($courseSubjectId, ['subject_id' => $subjects]);
 
-        return redirect()->to('Course_join')->with('success','CourseSubject Details Updated!');
+        return redirect()->to('courseSubject_View')->with('success','CourseSubject Details Updated!');
+    }
+
+    public function deleteData($id){
+
+        $courseSubjectModel = new CourseSubjectModel();
+
+        if($courseSubjectModel->where('course_subject_id',$id)->delete()){
+            // return redirect()->to('Student_add')->with('success','Student has been added Successfully!');
+            return redirect()->to('courseSubject_View')->with('success','Subject deteled from Course Successfully!');
+        }else{
+            return redirect()->back()->withInput()->with('errors','Subject deteled from Course Failed');
+        }
+
     }
 
     public function subjectByCourse() 
@@ -146,6 +149,19 @@ class CourseSubjectController extends BaseController
         ->where('course_id', $selectedValue)->findAll();
 
         echo json_encode($data);
+    }
+
+    public function validatesubjectcourse($course_id,$subject_id){
+
+        $courseSubjectModel = new CourseSubjectModel();
+        $data = $courseSubjectModel->select('count(*) AS count')
+        ->where('course_id', $course_id)->where('subject_id', $subject_id)->first();
+
+        if($data['count']==0){
+            return true;
+        }else{
+            return false;
+        }
     }
 
 }
