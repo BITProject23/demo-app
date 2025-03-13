@@ -49,8 +49,18 @@
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
-                            
+                        
                             <?php endif; ?>
+
+                            <?php if(session()->has('errors')) : ?>
+                                    
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        <?= session()->getFlashdata('errors');?>
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                    </div>
+                            <?php endif; ?> 
 
 
 
@@ -66,6 +76,7 @@
                                                 <th>Course</th>
                                                 <th>Subject</th>
                                                 <th>Appoint Date</th>
+                                                <th>Delete</th>
                                                 
                                                 <!-- <th class="invisible"></th> -->
                                             </tr>
@@ -80,6 +91,7 @@
                                                     <td><?= $Lecturer['course_name']?></td>
                                                     <td><?= $Lecturer['subject_name']?></td>
                                                     <td><?= $Lecturer['appoint_data']?></td>
+                                                    <td class="text-center"><a href="#" onclick="deleteData('<?=base_url()?>/Appointment_Delete/<?= $Lecturer['appoint_id']?>')" data-toggle="tooltip" data-placement="top" title="Delete"><i class="flaticon-delete  bg-danger p-1 text-white br-6 mb-1"></i></a></td>
                                                     
                                                     
                                                     
@@ -98,6 +110,7 @@
                                                 <th>Course</th>
                                                 <th>Subject</th>
                                                 <th>Appoint Date</th>
+                                                <th>Delete</th>
                                                 
                                                 <!-- <th class="invisible"></th> -->
                                             </tr>
