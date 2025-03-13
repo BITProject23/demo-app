@@ -82,6 +82,19 @@ class CourseController extends BaseController
             return redirect()->back()->withInput()->with('errors','Update Failed');
         }                    
     }
+
+    public function deleteData($id){
+
+        $courseModel = new CourseModel();
+
+        if($courseModel->where('course_id',$id)->delete()){
+            // return redirect()->to('Student_add')->with('success','Student has been added Successfully!');
+            return redirect()->to('Course_View')->with('success','Course deteled Successfully!');
+        }else{
+            return redirect()->back()->withInput()->with('errors','Course delete Failed');
+        }
+
+    }
     
 
 }
