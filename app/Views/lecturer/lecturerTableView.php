@@ -18,7 +18,6 @@
                                 <li><a href="index-2.html"><i class="flaticon-home-fill"></i></a></li>
                                 <li><a href="#">Lecturer</a></li>
                                 <li><a href="#">View Lecturer</a> </li>
-                                <!-- <li class="active"><a href="#">Order Sorting</a> </li> -->
                             </ul>
                         </div>
                     </div>
@@ -53,6 +52,16 @@
                             
                             <?php endif; ?>
 
+                            <?php if(session()->has('errors')) : ?>
+                                    
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        <?= session()->getFlashdata('errors');?>
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                    </div>
+                            <?php endif; ?>
+
 
 
                             <div class="widget-content widget-content-area">
@@ -70,10 +79,10 @@
                                                 <th>Date of Birth</th>
                                                 <th>Contact Number</th>
                                                 <th>Address</th>
+                                                <!-- <th>Qualification</th> -->
                                                 <th>Edit</th>
                                                 <th>Appoint</th>
                                                 <th>Delete</th>
-                                                <!-- <th class="invisible"></th> -->
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -89,9 +98,10 @@
                                                     <td><?= $lec['lecturer_bod']?></td>
                                                     <td><?= $lec['lecturer_contact_no']?></td>
                                                     <td><?= $lec['lecturer_address']?></td>
+                                                    <!-- <td>< ?= $lec['lec_qulification']?></td> -->
                                                     <td class="text-center"><a href="<?=base_url()?>/Lecturer_Edit/<?= $lec['lecturer_id']?>" data-toggle="tooltip" data-placement="top"><i class="flaticon-edit  bg-success p-1 text-white br-6 mb-1"></i></a></td>
                                                     <td class="text-center"><a href="<?=base_url()?>/Appointment_add/<?= $lec['lecturer_id']?>" data-toggle="tooltip" data-placement="top"><i class="flaticon-user-6 bg-primary p-1 text-white br-6 mb-1"></i></a></td>
-                                                    <td class="text-center"><a href="" data-toggle="tooltip" data-placement="top" title="Delete"><i class="flaticon-delete  bg-danger p-1 text-white br-6 mb-1"></i></a></td>
+                                                    <td class="text-center"><a href="#" onclick="deleteData('<?=base_url()?>/Lecturer_Delete/<?= $lec['lecturer_id']?>')" data-toggle="tooltip" data-placement="top" title="Delete"><i class="flaticon-delete  bg-danger p-1 text-white br-6 mb-1"></i></a></td>
                                                     
                                                 </tr>
                                             <?php endforeach; ?>    
@@ -109,10 +119,10 @@
                                                 <th>Date of Birth</th>
                                                 <th>Contact Number</th>
                                                 <th>Address</th>
+                                                <!-- <th>Qualification</th> -->
                                                 <th>Edit</th>
                                                 <th>Appoint</th>
                                                 <th>Delete</th>
-                                                <!-- <th class="invisible"></th> -->
                                             </tr>
                                         </tfoot>
                                     </table>
