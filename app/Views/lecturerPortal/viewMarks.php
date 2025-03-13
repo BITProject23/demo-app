@@ -36,7 +36,7 @@
 
                                 <div class="row">
                                     <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <a href="<?=base_url()?>/" class="btn btn-primary btn-rounded mb-2 mr-2"><span>Add New Entry</span></a>
+                                        <a href="<?=base_url()?>/Assign_Marks" class="btn btn-primary btn-rounded mb-2 mr-2"><span>Add New Entry</span></a>
                                     </div>                 
                                 </div>
                             </div>
