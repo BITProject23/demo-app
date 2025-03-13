@@ -12,14 +12,12 @@
                 <div class="page-header">
                     <div class="page-title">
                         <h3> Course-Subject
-                            <!-- <small>Rounded</small> -->
                         </h3>
                         <div class="crumbs">
                             <ul id="breadcrumbs" class="breadcrumb">
                                 <li><a href="index-2.html"><i class="flaticon-home-fill"></i></a></li>
                                 <li><a href="#">Course-Subject</a></li>
                                 <li><a href="#">Course-Subject Assign</a></li>
-                                <!-- <li class="active"><a href="#">Rounded</a> </li> -->
                             </ul>
                         </div>
                     </div>
@@ -37,14 +35,31 @@
 
                                 <?php if(session()->has('success')):?>
 
-                                    <div class="alert alert-success mb-4"><?=session('success')?></div>
+                                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                        <?= session()->getFlashdata('success');?>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
 
                                 <?php endif ?>
+
+
+                                <?php if(session()->has('errors')) : ?>
+
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        <?= session()->getFlashdata('errors');?>
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                    </div>
+
+                                <?php endif; ?> 
 
                                     
                                 <div class="row">
                                     <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <a href="<?=base_url()?>/Course_join" class="btn btn-dark btn-rounded mb-2 mr-2"><span>Back to previous</span></a>
+                                        <a href="<?=base_url()?>/courseSubject_View" class="btn btn-dark btn-rounded mb-2 mr-2"><span>Back to previous</span></a>
                                     </div>                                                                        
                                 </div>
                             </div>
@@ -52,13 +67,13 @@
                                 
                                 <!-- < ?php echo form_open('create') ?> -->
 
-                                    <form name="form1" action='<?php echo base_url();?>/Subject_save' method ="post">
+                                    <form name="form1" action='<?php echo base_url();?>/courseSubject_create' data-toggle="validator" method ="post">
                                 
 
                                         <div class="form-group row mb-4">
                                             <label for="courses" class="col-xl-2 col-sm-3 col-sm-2 col-form-label">Course Name </label>
                                             <div class="col-xl-10 col-lg-9 col-sm-10">
-                                                <select class="form-control-rounded form-control" name="courses" id="courses" placeholder="">
+                                                <select class="form-control-rounded form-control" name="courses" id="courses" required>
                                                     <option value="">Select the Course</option>
                                                     <?php foreach($courses as $course): ?>
                                                         <option value="<?= $course['course_id']?>"><?=$course['course_name'] ?></option>
