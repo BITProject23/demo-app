@@ -13,32 +13,11 @@
                         
                     </li>
 
-                        <li class="menu">
-                            <a href="#ecommerce" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                                <div class="">
-                                    <i class="flaticon-avatar"></i>
-                                    <span>Lecturer Management </span>
-                                </div>
-                                <div>
-                                    <i class="flaticon-right-arrow"></i>
-                                </div>
-                            </a>
-                            <ul class="collapse submenu list-unstyled" id="ecommerce" data-parent="#accordionExample">
-                                <li>
-                                    <a href="<?=base_url()?>/Lecturer_add"> Add Lecturer </a>
-                                </li>
-                                <li>
-                                    <a href="<?=base_url()?>/Lecturer_View"> View Lecturer </a>
-                                </li>
-                            </ul>
-                        </li>
-                        
-                    
                     <li class="menu">
                         <a href="#ui-features" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <i class="flaticon-user-group"></i>
-                                <span>Student Management</span>
+                                <span>Students </span>
                             </div>
                             <div>
                                 <i class="flaticon-right-arrow"></i>
@@ -54,12 +33,33 @@
                         </ul>
                     </li>
 
+                    <li class="menu">
+                        <a href="#ecommerce" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                <div class="">
+                                    <i class="flaticon-avatar"></i>
+                                    <span>Lecturers </span>
+                                </div>
+                                <div>
+                                    <i class="flaticon-right-arrow"></i>
+                                </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="ecommerce" data-parent="#accordionExample">
+                                <li>
+                                    <a href="<?=base_url()?>/Lecturer_add"> Add Lecturer </a>
+                                </li>
+                                <li>
+                                    <a href="<?=base_url()?>/Lecturer_View"> View Lecturer </a>
+                                </li>
+                        </ul>
+                    </li>
+                        
+
                     
                     <li class="menu">
                         <a href="#components" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <i class="flaticon-crm-screen"></i>
-                                <span>Course Management</span>
+                                <span>Courses</span>
                             </div>
                             <div>
                                 <i class="flaticon-right-arrow"></i>
@@ -80,7 +80,7 @@
                         <a href="#forms" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <i class="flaticon-copy-line"></i>
-                                <span>Subject Management</span>
+                                <span>Subjects </span>
                             </div>
                             <div>
                                 <i class="flaticon-right-arrow"></i>
@@ -99,31 +99,7 @@
                         </ul>
                     </li>
 
-                    <li class="menu">
-                        <a href="#elements" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <div class="">
-                                <i class="flaticon-layers"></i>
-                                <span>Batch Management</span>
-                            </div>
-                            <div>
-                                <i class="flaticon-right-arrow"></i>
-                            </div>
-                        </a>
-                        <ul class="collapse submenu list-unstyled" id="elements" data-parent="#accordionExample">
-
-                            <li>
-                                <a href="<?=base_url()?>/Batch_add"> Add Batch </a>
-                            </li>
-
-                            <li>
-                                <a href="<?=base_url()?>/Batch_View"> View Batch</a>
-                            </li>
-                            
-                            <!-- <li>
-                                <a href="element_list.html"> View Batch </a>
-                            </li> -->
-                        </ul>
-                    </li>
+                   
 
                     <li class="menu">
                         <a href="#maps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
@@ -140,35 +116,39 @@
                                 <a href="<?=base_url()?>/Subject_assign">Course-Subject Assign</a>
                             </li>
                             <li>
-                                <a href="<?=base_url()?>/Course_join"> View Course-Subject</a>
+                                <a href="<?=base_url()?>/courseSubject_View"> View Course-Subject</a>
                             </li>
                         </ul>
                     </li>
 
-                    
                     <li class="menu">
-                        <a href="#mailing" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <a href="#elements" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
-                                <i class="flaticon-user-group-2"></i>
-                                <span>Enrollment Management</span>
+                                <i class="flaticon-layers"></i>
+                                <span>Batches </span>
                             </div>
                             <div>
                                 <i class="flaticon-right-arrow"></i>
                             </div>
                         </a>
-                        <ul class="collapse submenu list-unstyled" id="mailing"  data-parent="#accordionExample">
+                        <ul class="collapse submenu list-unstyled" id="elements" data-parent="#accordionExample">
+
                             <li>
-                                <a href="<?=base_url()?>/Enrollment_View">View Student Enrollment</a>
+                                <a href="<?=base_url()?>/Batch_add"> Add Batch </a>
                             </li>
+
+                            <li>
+                                <a href="<?=base_url()?>/Batch_View"> View Batch</a>
+                            </li>
+                            
                         </ul>
                     </li>
 
-        
                     <li class="menu">
                         <a href="#modules" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <i class="flaticon-crm-screen-line "></i>
-                                <span>Lecturer Appointment</span>
+                                <span>Appointments</span>
                             </div>
                             <div>
                                 <i class="flaticon-right-arrow"></i>
@@ -181,12 +161,31 @@
                         </ul>
                     </li>
 
+
+                    
+                    <li class="menu">
+                        <a href="#mailing" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <i class="flaticon-user-group-2"></i>
+                                <span>Enrollments</span>
+                            </div>
+                            <div>
+                                <i class="flaticon-right-arrow"></i>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="mailing"  data-parent="#accordionExample">
+                            <li>
+                                <a href="<?=base_url()?>/Enrollment_View">View Student Enrollment</a>
+                            </li>
+                        </ul>
+                    </li>
+
                     
                     <li class="menu">
                         <a href="#tables" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <i class="flaticon-table"></i>
-                                <span>TimeTable </span>
+                                <span>Timetable </span>
                             </div>
                             <div>
                                 <i class="flaticon-right-arrow"></i>
@@ -277,16 +276,14 @@
                         <a href="#users" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <i class="flaticon-user-6"></i>
-                                <span> Profile <?= session()->get('user_name')?></span>
+                                <span> Profile - <?= session()->get('user_name')?></span>
                             </div>
                             <div>
                                 <i class="flaticon-right-arrow"></i>
                             </div>
                         </a>
                         <ul class="collapse submenu list-unstyled" id="users" data-parent="#accordionExample">
-                            <li>
-                                <a href="user_profile.html"> Profile </a>
-                            </li>
+                           
                             <li>
                                 <a href="<?=base_url()?>/User_PasswordReset"> Change Password </a>
                             </li>
