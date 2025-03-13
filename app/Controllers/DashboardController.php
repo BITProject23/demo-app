@@ -22,7 +22,9 @@ class DashboardController extends BaseController
         $batchModel = new BatchModel();
         $data['today_class'] = $batchModel->select('count(*) AS count')
         ->join('tbl_batch_timeframe','tbl_batch_timeframe.batch_id  = tbl_batch.batch_id') 
-        ->where('batch_start_date <=',date('Y-m-d'))->where('batch_end_date >=',date('Y-m-d'))->where('batch_day',date('l'))->first();
+        ->where('batch_start_date <=',date('Y-m-d'))->where('batch_end_date >=',date('Y-m-d'))->first();
+        // ->where('batch_day',date('l'))->first();
+        
 
         $enrollmentModel = new EnrollmentModel();
         $data['today_enrollments'] = $enrollmentModel->select('count(*) AS count')  //count is mysql
