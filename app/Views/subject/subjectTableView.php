@@ -53,6 +53,17 @@
                             
                             <?php endif; ?>
 
+                            <?php if(session()->has('errors')) : ?>
+
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        <?= session()->getFlashdata('errors');?>
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                    </div>
+
+                            <?php endif; ?> 
+
 
 
                             <div class="widget-content widget-content-area">
@@ -63,9 +74,9 @@
                                                 <th>Subject ID</th>
                                                 <th>Subject Name</th>
                                                 <th>Subject code</th>
+                                                <th>Subject status</th>
                                                 <th>Edit</th>
                                                 <th>Delete</th>
-                                                <!-- <th class="invisible"></th> -->
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -74,8 +85,9 @@
                                                     <td><?= $sub['subject_id']?></td>
                                                     <td><?= $sub['subject_name']?></td>
                                                     <td><?= $sub['subject_code']?></td>
+                                                    <td><?= $sub['subject_status']?></td>
                                                     <td class="text-center"><a href="<?=base_url()?>/Subject_Edit/<?= $sub['subject_id']?>" data-toggle="tooltip" data-placement="top"><i class="flaticon-edit  bg-success p-1 text-white br-6 mb-1"></i></a></td>
-                                                    <td class="text-center"><a href="" data-toggle="tooltip" data-placement="top" title="Delete"><i class="flaticon-delete  bg-danger p-1 text-white br-6 mb-1"></i></a></td>   
+                                                    <td class="text-center"><a href="#" onclick="deleteData('<?=base_url()?>/Subject_Delete/<?= $sub['subject_id']?>')" data-toggle="tooltip" data-placement="top" title="Delete"><i class="flaticon-delete  bg-danger p-1 text-white br-6 mb-1"></i></a></td>
                                                 </tr>
                                             <?php endforeach; ?>       
                                         </tbody>
@@ -84,9 +96,9 @@
                                                 <th>Subject ID</th>
                                                 <th>Subject Name</th>
                                                 <th>Subject code</th>
+                                                <th>Subject status</th>
                                                 <th>Edit</th>
                                                 <th>Delete</th>
-                                                <!-- <th class="invisible"></th> -->
                                             </tr>
                                         </tfoot>
                                     </table>
