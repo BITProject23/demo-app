@@ -42,11 +42,27 @@
                                 </div>
                             </div>
 
-                            <!-- < ?php if(session()->getFlashdata('success')): ?>
-                            
-                            < ?php echo session()->getFlashdata('success'); ?>
-                            
-                            < ?php endif; ?> -->
+                            <?php if(session()->has('success')):?>
+
+                                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                    <?= session()->getFlashdata('success');?>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                            <?php endif ?>
+
+                            <?php if(session()->has('errors')) : ?>
+
+                                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                    <?= session()->getFlashdata('errors');?>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                </div>
+
+                            <?php endif; ?>
 
 
 
@@ -58,15 +74,10 @@
                                                 <th>Batch ID</th>
                                                 <th>Course Name</th>
                                                 <th>Batch No</th>
-                                                <!-- <th>Day </th> -->
-                                                <!-- <th>Time From</th> -->
-                                                <!-- <th>Time To</th> -->
                                                 <th>Start Date</th>
                                                 <th>End Date</th>
                                                 <th>Timetable</th>
                                                 <th>Edit</th>
-                                                <!-- <th>Delete</th> -->
-                                                <!-- <th class="invisible"></th> -->
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -81,7 +92,7 @@
                                                     <td><?= $batch['batch_start_date']?></td>
                                                     <td><?= $batch['batch_end_date']?></td>
                                                     <td class="text-center">
-                                                        <a href="<?=base_url()?>/Batch_Timetable/<?= $batch['batch_id']?>" data-toggle="tooltip" data-placement="top" target="_blank"><i class="flaticon-calendar-1  bg-primary p-1 text-white br-6 mb-1"></i></a>
+                                                        <a href="<?=base_url()?>/Batch_Timetable/<?= $batch['batch_id']?>" data-toggle="tooltip" data-placement="top"><i class="flaticon-calendar-1  bg-primary p-1 text-white br-6 mb-1"></i></a>
                                                     </td>
                                                     <td class="text-center"><a href="<?=base_url()?>/Batch_Edit/<?= $batch['batch_id']?>" data-toggle="tooltip" data-placement="top"><i class="flaticon-edit  bg-success p-1 text-white br-6 mb-1"></i></a></td>
                                                     <!-- <td class="text-center"><a href="" data-toggle="tooltip" data-placement="top" title="Delete"><i class="flaticon-delete  bg-danger p-1 text-white br-6 mb-1"></i></a></td> -->
@@ -94,14 +105,9 @@
                                                 <th>Batch ID</th>
                                                 <th>Course Name</th>
                                                 <th>Batch No</th>
-                                                <!-- <th>Day </th> -->
-                                                <!-- <th>Time From</th> -->
-                                                <!-- <th>Time To</th> -->
                                                 <th>Start Date</th>
                                                 <th>End Date</th>
                                                 <th>Edit</th>
-                                                <!-- <th>Delete</th> -->
-                                                <!-- <th class="invisible"></th> -->
                                             </tr>
                                         </tfoot>
                                     </table>
