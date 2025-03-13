@@ -18,7 +18,6 @@
                                 <li><a href="index-2.html"><i class="flaticon-home-fill"></i></a></li>
                                 <li><a href="#">Course-Subject</a></li>
                                 <li><a href="#">View Course-Subject</a> </li>
-                                <!-- <li class="active"><a href="#">Order Sorting</a> </li> -->
                             </ul>
                         </div>
                     </div>
@@ -53,6 +52,16 @@
                         
                             <?php endif; ?>
 
+                            <?php if(session()->has('errors')) : ?>
+                                    
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        <?= session()->getFlashdata('errors');?>
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                    </div>
+                            <?php endif; ?> 
+
 
 
                             <div class="widget-content widget-content-area">
@@ -64,8 +73,7 @@
                                                 <th>Course Name</th>
                                                 <th>Subject Name</th>
                                                 <th>Edit</th>
-                                                <th>Status</th>
-                                                <!-- <th class="invisible"></th> -->
+                                                <th>Delete</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -78,18 +86,17 @@
                                                         <a href="<?=base_url()?>/courseSubjectEdit/<?= $course['course_subject_id']?>" data-toggle="tooltip" data-placement="top"><i class="flaticon-edit  bg-success p-1 text-white br-6 mb-1"></i></a>
                                                     </td>
 
-                                                    <td class="text-center">     
-                                                    <?php
+                                                    <td class="text-center"><a href="#" onclick="deleteData('<?=base_url()?>/courseSubject_Delete/<?= $course['course_subject_id']?>')" data-toggle="tooltip" data-placement="top" title="Delete"><i class="flaticon-delete  bg-danger p-1 text-white br-6 mb-1"></i></a>     
+                                                    <!-- < ?php
                                                         if($course['status']=='INACTIVE'){
                                                           echo $course['status'];                  
                                                         }else{
                                                     ?>
 
-                                                        <a href="<?=base_url()?>/courseSubjectChangeStatus/<?= $course['course_subject_id']?>" data-toggle="tooltip" data-placement="top">
-                                                        <!-- <i class="flaticon-delete  bg-danger p-1 text-white br-6 mb-1"></i> -->
-                                                        <?=$course['status']?>
+                                                        <a href="< ?=base_url()?>/courseSubjectChangeStatus/< ?= $course['course_subject_id']?>" data-toggle="tooltip" data-placement="top">
+                                                        < ?=$course['status']?>
                                                         </a>
-                                                    <?php } ?>
+                                                    < ?php } ?> -->
                                                     </td> 
                                                 </tr>
                                             <?php endforeach; ?>    
@@ -101,8 +108,7 @@
                                                 <th>Course Name</th>
                                                 <th>Subject Name</th>
                                                 <th>Edit</th>
-                                                <th>Status</th>
-                                                <!-- <th class="invisible"></th> -->
+                                                <th>Delete</th>
                                             </tr>
                                         </tfoot>
                                     </table>
