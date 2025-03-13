@@ -47,6 +47,17 @@
 
                                 <?php endif ?>
 
+                                <?php if(session()->has('errors')) : ?>
+
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        <?= session()->getFlashdata('errors');?>
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                    </div>
+
+                                <?php endif; ?>
+
                                 
                                 <div class="row">
                                     <div class="col-xl-12 col-md-12 col-sm-12 col-12">
