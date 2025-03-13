@@ -48,7 +48,7 @@
 
                                 <div class="row">
                                     <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <a href="<?=base_url()?>/" class="btn btn-dark btn-rounded mb-2 mr-2"><span>Back to previous</span></a>
+                                        <a href="<?=base_url()?>/View_Marks" class="btn btn-dark btn-rounded mb-2 mr-2"><span>Back to previous</span></a>
                                     </div>                                                                        
                                 </div>
                             </div>
