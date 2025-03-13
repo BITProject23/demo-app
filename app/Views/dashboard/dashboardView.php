@@ -62,7 +62,7 @@
                             <div class="row">
                                 <div class="col-md-6 col-6">
                                     <h6 class="value"><?= $today_payments['total'] ?></h6>
-                                    <p class="mt-2">Today Payments</p>
+                                    <p class="mt-2">Today Payments<br><br><br></p>
                                 </div>
                                 <div class="col-md-6 col-6 text-right">
                                     <i class="flaticon-dollar-coin"></i>
@@ -94,7 +94,7 @@
                             <div class="row">
                                 <div class="col-md-6 col-6">
                                     <h6 class="value"><?= $total_lecturers['count'] ?></h6>
-                                    <p class="mt-2">Total Lecturers</p>
+                                    <p class="mt-2">Total Lecturers<br><br></p>
                                 </div>
                                 <div class="col-md-6 col-6 text-right">
                                     <i class="flaticon-user-11"></i>
@@ -108,7 +108,7 @@
                             <div class="row">
                                 <div class="col-md-6 col-6">
                                 <h6 class="value"><?= $total_batches['count'] ?></h6>
-                                    <p class="mt-2">Total Batches</p>
+                                    <p class="mt-2">Total Batches<br><br><br></p>
                                 </div>
                                 <div class="col-md-6 col-6 text-right">
                                     <i class="flaticon-crm-screen"></i>
@@ -122,7 +122,7 @@
                             <div class="row">
                                 <div class="col-md-6 col-6">
                                     <h6 class="value"><?= $total_courses['count'] ?></h6>
-                                    <p class="mt-2">Total Courses</p>
+                                    <p class="mt-2">Total Courses<br><br><br></p>
                                 </div>
                                 <div class="col-md-6 col-6 text-right">
                                     <i class="flaticon-simple-screen-line"></i>
@@ -137,30 +137,16 @@
                                 <div class="row">
 
                                     <div class="col-lg-6 mb-4">
-                                        <h5 style="color:black;"><b>Students Grading Chart</b></h5>
+                                        <h5 style="color:black;"><b>Student Grading Chart</b></h5>
                                         <div id="simplecolumnchartdiv" style="overflow: hidden; text-align: left;"></div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="widget-header">
-                                            <h5 style="color:black;"><b>Students Enrollments within Last six months </b> </h5>
+                                            <h5 style="color:black;"><b>Student Enrollments within Last six months </b> </h5>
                                         </div>
                                         <div id="differentcolorchartdiv" style="overflow: hidden; text-align: left;"></div>
                                     </div>
                                 </div>
-
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="widget-header">
-                                            <h5 style="color:black;"><b>Students Payments of Last six months</b> </h5>
-                                        </div>
-                                        <div id="zoomablechartdiv" style="overflow: hidden; text-align: left;"></div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div id="" style="overflow: hidden; text-align: left;"></div>
-                                    </div>
-                                </div>
-
-                                <hr>
 
                                 <div class="row">
 
@@ -171,6 +157,30 @@
                                         <div id="simplepiechartdiv" style="overflow: hidden; text-align: left;"></div>
                                     </div>
                                 </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="widget-header">
+                                            <h5 style="color:black;"><b>Student Payments of Last six months</b> </h5>
+                                        </div>
+                                        <div id="zoomablechartdiv" style="overflow: hidden; text-align: left;"></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div id="" style="overflow: hidden; text-align: left;"></div>
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <!-- <div class="row">
+
+                                    <div class="col-lg-12">
+                                        <div class="widget-header">
+                                            <h5 style="color:black;"><b>Number of Students in Each Course </b></h5>
+                                        </div>
+                                        <div id="simplepiechartdiv" style="overflow: hidden; text-align: left;"></div>
+                                    </div>
+                                </div> -->
                 </div>
 
                 
@@ -280,22 +290,6 @@ $(document).ready( function() {
     }
   });
 
-  chart.addListener("init", handleInit);
-
-    chart.addListener("rollOverSlice", function(e) {
-    handleRollOver(e);
-    });
-
-    function handleInit(){
-    chart.legend.addListener("rollOverItem", handleRollOver);
-  }
-
-  function handleRollOver(e){
-    var wedge = e.dataItem.wedge.node;
-    wedge.parentNode.appendChild(wedge);
-  }
-
-
   var chart = AmCharts.makeChart( "zoomablechartdiv", {
         "type": "serial",
         "theme": "light",
@@ -322,7 +316,7 @@ $(document).ready( function() {
             "adjustBorderColor": false,
             "color": "#ffffff",
             "type": "smoothedLine",
-            // "lineColor": "#1AD271",
+             "lineColor": "#1AD271",
             "balloonColor" : "#1AD271"
           },
           "fillAlphas": 0.2,
