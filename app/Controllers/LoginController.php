@@ -17,7 +17,7 @@ class LoginController extends BaseController
         $loginModel = new UserModel();
 
         $username = $this->request->getPost('user_name');
-        $password = $this->request->getPost('user_password')[0];
+        $password = $this->request->getPost('user_password');
 
         $user = $loginModel->where('user_name',$username)->first(); //where('tbl col name',loginform username) //first->take the first record
 
