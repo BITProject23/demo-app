@@ -34,8 +34,17 @@ class AppointController extends BaseController
 
         $appointModel = new AppointModel();
 
+        $check = $appointModel->where('lecturer_id', $lecturerId)
+        ->where('batch_id', $this->request->getPost('batches'))
+        ->where('course_id', $this->request->getPost('courses'))
+        ->where('subject_id', $this->request->getPost('subjects'))->countAllResults();
+
+        if($check > 0){
+            return redirect()->back()->withInput()->with('errors', "Lecturer alredy Appointed");
+        }
+
         if($appointModel->save($data)){
-            return redirect()->to('Lecturer_View')->with('success','Lecturer has been Appointed Successfully!');
+            return redirect()->to('Appointment_View')->with('success','Lecturer has been Appointed Successfully!');
         }else{
             return redirect()->back()->withInput()->with('errors',$appointModel->errors());
         }
@@ -57,6 +66,19 @@ class AppointController extends BaseController
         $data['lecturers'] = $appointModel->findAll();
         
         return view('appoint/appointTableView',$data);
+
+    }
+
+    public function deleteData($id){
+
+        $appointModel = new AppointModel();
+
+        if($appointModel->where('appoint_id',$id)->delete()){
+
+            return redirect()->to('Appointment_View')->with('success','Appointment deteled Successfully!');
+        }else{
+            return redirect()->back()->withInput()->with('errors','Appointment delete Failed');
+        }
 
     }
 
