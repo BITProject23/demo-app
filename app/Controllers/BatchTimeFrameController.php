@@ -29,6 +29,17 @@ class BatchTimeFrameController extends BaseController
         ];
 
         $batchTimeframeModel = new BatchTimeFrameModel();
+
+        $check = $batchTimeframeModel->where('batch_id', $batchId)
+        ->where('batch_day', $this->request->getPost('batch_day'))
+        ->where('batch_time_from', $this->request->getPost('batch_time_from'))
+        ->where('batch_time_to', $this->request->getPost('batch_time_to'))->countAllResults();
+
+        if($check > 0){
+            return redirect()->back()->withInput()->with('errors', "This Time Schedule is alredy added");
+        }
+
+        $batchTimeframeModel = new BatchTimeFrameModel();
         $batchTimeframeModel->insert($data); 
         $batch_timeframe_id = $batchTimeframeModel->getInsertID();
 
@@ -50,8 +61,9 @@ class BatchTimeFrameController extends BaseController
             $result = $batchSubjectTimeTableModel->save($data);
            endforeach;
 
+
         if($result){
-            return redirect()->to('Batch_Timetable/'.$batchId)->with('success','Enroll Student Successfully!');
+            return redirect()->to('Batch_Timetable/'.$batchId)->with('success','Batch Time Schedule added Successfully!');
         }else{
             return redirect()->back()->withInput()->with('errors',$batchTimeframeModel->errors());
         }
@@ -71,6 +83,19 @@ class BatchTimeFrameController extends BaseController
         $data['batchTimes'] = $batchTimeframeModel->where('batch_id', $batchId)->all();
 
         return view('batch/batchTableView',$data);
+    }
+
+    public function load_subject_time_data()
+    {
+        $batchSubjectTimeTableModel = new BatchSubjectTimeTableModel();
+        $selectedValue = $this->request->getPost('selectedValue');
+
+        $data['subjecttimes'] = $batchSubjectTimeTableModel->select('tbl_batch_subject_timetable.subject_id ,tbl_batch_subject_timetable.subject_time_from,
+        tbl_batch_subject_timetable.subject_time_to , tbl_subject.subject_name')
+        ->join('tbl_subject','tbl_subject.subject_id  = tbl_batch_subject_timetable.subject_id')
+        ->where('tbl_batch_subject_timetable.batch_timeframe_id', $selectedValue)->findAll();
+
+        return view('batch/ajaxSubjectTimeBybatchtime',$data);
     }
 }
 ?>
