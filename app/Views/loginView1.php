@@ -31,7 +31,7 @@
 
         <div class="row"> 
             <div class="col-md-12 text-center mb-4">
-                <!-- <img alt="logo" src="public/assets_1/assets/img/was_logo1.jpeg" class="theme-logo"> -->
+                <img alt="logo" src="public/assets_1/assets/img/was_logo1.jpeg" class="theme-logo">
             </div>
 
             <?php if(session()->has('error')) : ?>
