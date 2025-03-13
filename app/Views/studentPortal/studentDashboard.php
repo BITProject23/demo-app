@@ -15,51 +15,16 @@
                 </div>
                 
                 <div class="row layout-spacing accounts-widgets">
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-xl-0 mb-4">
-                        <div class="widget-content widget-content-area br-4 accounts-income">
-                            <div class="row">
-                                <div class="col-md-6 col-6">
-                                    <!-- <h6 class="value">< ?= $today_reg_student['count'] ?></h6> -->
-                                    <p class="mt-2">Today Registered Students</p>
-                                </div>
-                                <div class="col-md-6 col-6 text-right">
-                                    <i class="flaticon-currency"></i>
-                                </div>
-                            </div>
-                            <div class="progress br-30 mb-0 mt-5">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-xl-0 mb-4">
-                        <div class="widget-content widget-content-area br-4 accounts-cogs">
-                            <div class="row">
-                                <div class="col-md-6 col-6">
-                                    <!-- <h6 class="value">< ?= $today_payments['total'] ?></h6> -->
-                                    <p class="mt-2">Today Payments</p>
-                                </div>
-                                <div class="col-md-6 col-6 text-right">
-                                    <i class="flaticon-dollar-coin"></i>
-                                </div>
-                            </div>
-                            <div class="progress br-30 mb-0 mt-5">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-sm-0 mb-4">
+                  <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-sm-0 mb-4">
                         <div class="widget-content widget-content-area br-4 accounts-profit">
                             <div class="row">
                                 <div class="col-md-6 col-6">
-                                    <!-- <h6 class="value">< ?= $today_class['count'] ?></h6> -->
-                                    <p class="mt-2">Today Classes</p>
+                                    <h6 class="value"><?= $today_class['count'] ?></h6>
+                                    <p class="mt-2">Today Classes<br><br></p>
                                 </div>
                                 <div class="col-md-6 col-6 text-right">
-                                    <i class="flaticon-money"></i>
+                                    <i class="flaticon-notes-6"></i>
                                 </div>
-                            </div>
-                            <div class="progress br-30 mb-0 mt-5">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
@@ -67,15 +32,39 @@
                         <div class="widget-content widget-content-area br-4 accounts-expenses">
                             <div class="row">
                                 <div class="col-md-6 col-6">
-                                    <!-- <h6 class="value">< ?= $today_enrollments['count'] ?></h6> -->
-                                    <p class="mt-2">Today Enrollments</p>
+                                    <h6 class="value"><?= $total_enrollments['count'] ?></h6>
+                                    <p class="mt-2">Total Enrollments</p>
                                 </div>
                                 <div class="col-md-6 col-6 text-right">
-                                    <i class="flaticon-wallet"></i>
+                                    <i class="flaticon-employees"></i>
                                 </div>
                             </div>
-                            <div class="progress br-30 mb-0 mt-5">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 37%" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-xl-0 mb-4">
+                        <div class="widget-content widget-content-area br-4 accounts-cogs">
+                            <div class="row">
+                                <div class="col-md-6 col-6">
+                                    <h6 class="value"><?= $total_assignments['count'] ?></h6>
+                                    <p class="mt-2">Total Assignments</p>
+                                </div>
+                                <div class="col-md-6 col-6 text-right">
+                                    <i class="flaticon-crm-screen"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="widget-content widget-content-area br-4 accounts-expenses">
+                            <div class="row">
+                                <div class="col-md-6 col-6">
+                                    <h6 class="value"><?= $total_courses['count'] ?></h6>
+                                    <p class="mt-2">Today Courses</p>
+                                </div>
+                                <div class="col-md-6 col-6 text-right">
+                                    <i class="flaticon-simple-screen-line"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
