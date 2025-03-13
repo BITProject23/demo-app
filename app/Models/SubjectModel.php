@@ -9,7 +9,8 @@ class SubjectModel extends Model
 
     protected $table = 'tbl_subject';
     protected $primaryKey = 'subject_id ';
-    protected $allowedFields =['subject_name','subject_code',];
+    protected $allowedFields =['subject_name','subject_code','subject_status'];
+    protected $useSoftDeletes = 'true';
 
 
 }
